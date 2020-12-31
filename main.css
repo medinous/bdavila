@@ -316,33 +316,6 @@ a:active{
 /******************************************************/
 
 
-
-
-a.bettina:hover:after {
-    content: "";
-    color: #FF9900;
-    width: 240px;
-    height: 240px;
-    position: absolute;
-    top: 0;
-    right: 200;
-    background: white;
-    z-index: -1;
-    background-image: url("images/bettina.jpeg");
-    /*url("https://media.giphy.com/media/YR2jtrB0e75263jBnS/giphy.gif");*/
-}
-
-a.munich:hover:after {
-    content: "";
-    min-width: 480px;
-    min-height: 270px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: -1;
-    background-image: url("https://media.giphy.com/media/3xz2BCe5jn2j4OM9ZS/giphy.gif");
-}
-
 a.brazil:hover:after {
     content: "";
     min-width: 250px;
@@ -388,17 +361,8 @@ a.reads:hover:after {
     background-image: url("images/reads.jpg");
 }
 
-a.dissertation:hover:after {
-    content: "";
-    min-width: 320px;
-    min-height: 285px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: -1;
-    background-image: url("images/dissertation-thumb.png");
-}
 
+/*
 
 a.portfolio1:hover:after {
     content: "";
@@ -465,6 +429,8 @@ a.portfolio6:hover:after {
     z-index: -1;
     background-image: url("images/reads.jpg");
 }
+
+*/
 
 /******************************************************/
 /***********************  HEADER  ************************/
