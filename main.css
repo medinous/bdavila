@@ -930,8 +930,9 @@ footer a .back {
     font-size: 28px;
     }
     
-    .close a {
-    font-size: 28px;
+    
+    .fa, .fas { 
+    font-size: 48px;
  }
     
     .menu-left {
