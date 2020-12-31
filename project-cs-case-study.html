@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Case study: Couchsurfing app</title>
+       <!-- <meta name="description" content="An interactive getting started guide for Brackets.">-->
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+        <link href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" rel="stylesheet"> 
+        <!-- favicon -->
+        <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+        <link rel="manifest" href="favicon/site.webmanifest">
+        <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+
+        
+        <script type="text/javascript">
+            
+            // Hide Header on on scroll down
+            var didScroll;
+            var lastScrollTop = 0;
+            var delta = 15;
+            var navbarHeight = $('header').outerHeight();
+
+            $(window).scroll(function(event){
+                didScroll = true;
+            });
+
+            setInterval(function() {
+                if (didScroll) {
+                    hasScrolled();
+                    didScroll = false;
+                }
+            }, 250);
+
+            function hasScrolled() {
+                var st = $(this).scrollTop();
+
+                // Make sure they scroll more than delta
+                if(Math.abs(lastScrollTop - st) <= delta)
+                    return;
+
+                // If they scrolled down and are past the navbar, add class .nav-up.
+                // This is necessary so you never see what is "behind" the navbar.
+                if (st > lastScrollTop && st > navbarHeight){
+                    // Scroll Down
+                    $('header').removeClass('nav-down').addClass('nav-up');
+                } else {
+                    // Scroll Up
+                    if(st + $(window).height() < $(document).height()) {
+                        $('header').removeClass('nav-up').addClass('nav-down');
+                    }
+                }
+
+                lastScrollTop = st;
+}
+            
+        </script>
+    </head>
+    
+    <body>
+        
+    <header>
+        <a href="home.html"><span class="menu-left"><span class="purple">Bettina D'ávila/</span> Sr Product Designer</span></a>
+        <span class="menu-right">bettina.davila@gmail.com <a href="https://www.linkedin.com/in/bettina-martins/" target="_blank"><i class="fab fa-linkedin"></i></a></span>
+    </header>
+              
+    <div id="container-portfolio">
+
+    
+    <div id="container-single" class="portfolio-wrapper">  
+        
+            
+        <!-- CLOSE -->            
+        <span class="close">
+            <a href="latest-projects.html">
+                <i class="fas fa-arrow-left"></i>
+                <!--<span style="margin-left: 8px; font-size: 16px;">Latest projects</span>-->
+            </a>
+        </span> 
+      
+        <h1 class="single">Case study: Couchsurfing app</h1> 
+        
+        <p class="left">This case study is a side project, with no commercial intentions.
+        </p>
+
+        
+        <span class="space"></span>  
+        
+        
+        <h3><span class="purple">01/ </span>What is Couchsurfing?</h3>
+        <p class="left">CouchSurfing is a homestay and social networking service accessible via a website and a mobile app. The platform is a gift economy; hosts are not allowed to charge for lodging. It is based on the idea that people are generally kind.
+        </p>
+        
+        <h3><span class="purple">02/ </span>Building trust</h3>
+        <p class="left">I would say any peer-to-peer solution currently available in the market requires a significant trust to be developed for product success. Why? Because they should address the users directly (how to increase customer sign up, for example), as opposed to other solutions for businesses that are based on licensing and other strategies for engagement. In the tech industry, specially after Cambridge Analytica scandal, trust means fully transparency on data privacy: "what will you do with my personal information?" or "why should I give it to you?". People and products might have some things in common: they can all be transparent, reliable, helpful, secure.
+        </p>
+
+        <p class="left">
+            <ul>
+                <li>You are more compelled to use a product if people you TRUST are using and recommending it AND if you can relate to the problems that the product is solving for the them.</li>
+                <li>What the product can do to you is to be transparent in all touch-points about what you are giving and what you are getting, and if you are okay with this exchange. No black patterns, no surprises, full control over your decisions.</li>
+            </ul>
+        </p>
+    
+
+            
+        <h3><span class="purple">03/ </span>Aha! moments and key milestones increase customer trust</h3> 
+                <p class="left">The entire UX of a product is important, but there are moments through the end-to-end product experience where trust is really important or significantly effected: the Aha! moments. When we map the aha! moments and the key milestones lived by the user, we can transform these key points into strategies for customer delight and retention.</p>
+                <p class="left">The onboarding strategy is definitely one of them. A successful product should not only be successful in increasing the number of registrations but also in retaining users through constant engagement. The key is to understand the user journey in all of their touch-points, in and out of the screen. For more details, <a href="https://medium.com/nyc-design/onboarding-your-users-story-is-everything-d3bad0303df" target="_blank">here's an article I wrote about the importance of user onboarding</a>.</p>
+                
+                <!-- IMAGE -->
+                <img style="box-shadow: none;" src="images/05couchsurfing/Onboarding_Cycle.png" alt="thumb">
+
+  
+                <p class="left">And what is a aha! moment? This is a phenomenon in the software business, the point where the clouds suddenly part for the user and the benefits immediately become excitingly clear. It is the must-have experience that keeps people coming back, and make sure new users experience it. Sadly, this aha! moment usually comes way too late: if it's too deep inside the product, you’ve already lost. The key is to get the users to understand the product in the context of their own lives.</p>
+                <p class="left">And what about the key milestones? For most businesses, there are two key milestones that need to be reached before a customer can reach their full value potential:</p>
+                
+                <!-- IMAGE -->
+                <a href="#img-2"><img style="box-shadow: none;" src="images/05couchsurfing/Customer-lifecycle.png" alt="thumb"></a>
+
+                <a href="#" class="lightbox" id="img-2">
+                  <span style="background-image: url('images/05couchsurfing/Customer-lifecycle.png')"></span>
+                </a>  
+                
+                <p class="left">As you can see on the first infographic, there can be many aha! moments between the sign up and first success. So, to finally respond to the challenge questions:</p>
+                <p class="left">Besides grasping the sign up process (question 1), I will choose these two "moments that matter" in the user journey for question 2: one aha! moment after the sign up & the user first success.</p>
+                <p class="left">On Couchsurfing, this will be translated as:
+                        <ul>
+                            <li>Sign up > Aha! moment > First success</li>
+                            <li>Sign up > Build & verify profile > Request acommodation</li>
+                        </ul>
+                </p>
+                
+        
+    <div id="single-wrapper-bg-1">
+        
+        <div id="single-wrapper-content">
+        
+            <h3><span class="purple">04/ </span>Solution</h3> 
+            <p class="left">Here are my suggestions for the Couchsurfing app based on my previous arguments.</p>
+
+            
+            <h3>1. Sign up</h3>
+            <p class="left">
+                <ul>
+                    <li class="results">Add a short onboarding flow before the sign up form, and not after.</li>
+                </ul>
+             </p>
+            <p class="left">Always be transparent and make users know the benefits they'll get in their lives when they are delivering any personal information. That makes users more confident about what they are getting next.
+        </p>
+        
+                <!-- IMAGE -->
+                <a href="#img-3"><img style="box-shadow: none;" src="images/05couchsurfing/Flow-01.png" alt="thumb"></a>
+                <a href="#" class="lightbox" id="img-3">
+                  <span style="background-image: url('images/05couchsurfing/Flow-01.png')"></span>
+                </a>
+        
+                <ul>
+                    <li class="results">Remove field "gender" from the sign up form.</li>
+                </ul>
+        
+                <p class="left">Apart from avoiding any discomfort for users whose gender are non-conformist, removing this field makes the sign up process shorter and easier to be accomplished. 
+                </p>
+                <ul>
+                    <li class="results">Add actionable empty states.</li>
+                </ul>
+                <p class="left">Build for context and help users achieve the most of the benefits the product provides. When landing on an empty screen, we should point the user to the next important action. For example: complete the profile, confirm email or get the profile verified.</p>
+        
+                <!-- IMAGE -->
+                <a href="#img-4"><img style="box-shadow: none;" src="images/05couchsurfing/Flow-02.png" alt="thumb"></a>
+                <a href="#" class="lightbox" id="img-4">
+                  <span style="background-image: url('images/05couchsurfing/Flow-02.png')"></span>
+                </a>
+        
+        </div>
+
+    </div>
+
+        <h3>2. Build & verify profile</h3> 
+        <p class="left">Currently the profile form is very long and dull. Moreover, when you try to a different screen to request a stay, if you have not enough information on your profile, you'll get a message saying you need at least 50% of the profile complemented to request it. </p>
+        <p class="left">
+                <ul>
+                    <li class="results">Display pre-requisite information as earlier as possible.</li>
+                </ul>
+        </p>
+            <p class="left">This increases transparency and improve usability.</p>
+        </p>
+        <p class="left">
+                <ul>
+                    <li class="results">Add gamification.</li>
+                </ul>
+        </p>
+            <p class="left">Gamification makes the process more dynamic and interactive, which might help people engage better with their task. Plus, the more people fill out their profile, the better we can ensure trust within the Couchsurfing community.</p>
+        </p>
+
+                <!-- IMAGE -->
+                <a href="#img-5"><img style="box-shadow: none;" src="images/05couchsurfing/Flow-03.png" alt="thumb"></a>
+                <a href="#" class="lightbox" id="img-5">
+                  <span style="background-image: url('images/05couchsurfing/Flow-03.png')"></span>
+                </a>
+
+
+<div id="single-wrapper-bg-1">
+        
+        <div id="single-wrapper-content">
+            
+        <h3>3. Request accommodation</h3> 
+        <p class="left">
+                <ul>
+                    <li class="results">To have your profile verified is a plus, because people get better chances to being hosted and build trust in the community. But since it requires payment, it should not be mandatory. However, in the app the verification form pops up everytime I try to make a reservation - and this is the opposite of what it shows on the landing screen</li>
+                    <li class="results">Clearer UI to book date and place</li>
+                    <li class="results">To have your profile verified is a plus, because people get better chances to being hosted and build trust in the community. But since it requires payment, it should not be mandatory. However, in the app the verification form pops up everytime I try to make a reservation - and this is the opposite of what it shows on the landing screen</li>
+                </ul>
+        </p>
+    
+                <!-- IMAGE -->
+                <a href="#img-6"><img style="box-shadow: none;" src="images/05couchsurfing/Flow-04.png" alt="thumb"></a>
+                <a href="#" class="lightbox" id="img-6">
+                  <span style="background-image: url('images/05couchsurfing/Flow-04.png')"></span>
+                </a>
+    
+        </div>
+</div>
+
+
+            <h3><span class="purple">05/ </span>A little bit of UI</h3> 
+            <p class="left">Some description here</p>
+
+                <!-- IMAGE -->
+                <a href="#img-7"><img style="box-shadow: none;" src="images/05couchsurfing/CS-UI.png" alt="thumb"></a>
+                <a href="#" class="lightbox" id="img-7">
+                  <span style="background-image: url('images/05couchsurfing/CS-UI.png')"></span>
+                </a>
+               
+
+        <footer>   
+        <!-- CLOSE -->            
+            <span>
+                <div class='dotted-gradient'></div>
+                <a href="latest-projects.html">                 
+                    <button>Back to latest projects</button>
+                </a>    
+            </span>
+        </footer>  
+
+    </div> <!-- end of container-single -->
+    
+        </div>
+    
+        
+                  
+    
+    </body>
+
+</html>

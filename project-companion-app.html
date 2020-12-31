@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>AB Tasty Companion app</title>
+       <!-- <meta name="description" content="An interactive getting started guide for Brackets.">-->
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+        <link href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" rel="stylesheet"> 
+        <!-- favicon -->
+        <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+        <link rel="manifest" href="favicon/site.webmanifest">
+        <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+
+        
+        <script type="text/javascript">
+            
+            // Hide Header on on scroll down
+            var didScroll;
+            var lastScrollTop = 0;
+            var delta = 15;
+            var navbarHeight = $('header').outerHeight();
+
+            $(window).scroll(function(event){
+                didScroll = true;
+            });
+
+            setInterval(function() {
+                if (didScroll) {
+                    hasScrolled();
+                    didScroll = false;
+                }
+            }, 250);
+
+            function hasScrolled() {
+                var st = $(this).scrollTop();
+
+                // Make sure they scroll more than delta
+                if(Math.abs(lastScrollTop - st) <= delta)
+                    return;
+
+                // If they scrolled down and are past the navbar, add class .nav-up.
+                // This is necessary so you never see what is "behind" the navbar.
+                if (st > lastScrollTop && st > navbarHeight){
+                    // Scroll Down
+                    $('header').removeClass('nav-down').addClass('nav-up');
+                } else {
+                    // Scroll Up
+                    if(st + $(window).height() < $(document).height()) {
+                        $('header').removeClass('nav-up').addClass('nav-down');
+                    }
+                }
+
+                lastScrollTop = st;
+}
+            
+        </script>
+    </head>
+    
+    <body>
+        
+    <header>
+        <a href="home.html"><span class="menu-left"><span class="purple">Bettina D'ávila/</span> Sr Product Designer</span></a>
+        <span class="menu-right">bettina.davila@gmail.com <a href="https://www.linkedin.com/in/bettina-martins/" target="_blank"><i class="fab fa-linkedin"></i></a></span>
+    </header>
+              
+    <div id="container-portfolio">
+
+    
+    <div id="container-single" class="portfolio-wrapper">  
+        
+            
+        <!-- CLOSE -->            
+        <span class="close">
+            <a href="latest-projects.html">
+                <i class="fas fa-arrow-left"></i>
+                <!--<span style="margin-left: 8px; font-size: 16px;">Latest projects</span>-->
+            </a>
+        </span> 
+      
+        <h1 class="single">AB Tasty Companion app</h1>
+        <p class="left">Some intro here.
+        </p>
+
+        <span class="space"></span> 
+        
+        <h3><span class="purple">01/ </span>Context</h3>
+        <p class="left">AB Tasty Companion is a mobile application for AB Tasty users to follow and monitor their campaigns on-the-go. We wanted to solve the problem of users being unable to take immediate action whenever there is a bug or any other critical error on their campaigns whenever they are away from their work environment, such as commuting in the train or away on holidays. This is a new approach for the company because it is a B2C product.
+        </p>
+        <p class="left"><span style="font-weight: bold;">Target Audience:</span> AB Tasty users, but more specifically CRO managers & consultants that use the tool on a daily-basis.
+        </p>
+        <p class="left"><span style="font-weight: bold;">Product goals:</span> Campaign monitoring in mobility (play and pause), user notification on important changes in their campaigns and account details. This is a first mobile application and we are developing a scalable framework to be enriched with new features in the future.
+        </p>
+        <p class="left"><span style="font-weight: bold;">Metrics of Success:</span> Number of downloads, users satisfaction (by survey & interview) and CSMs satisfaction (by survey & interview).
+        </p>
+
+
+        <div id="single-wrapper-bg-1">
+        
+        <div id="single-wrapper-content">
+            
+        <h3><span class="purple">02/ </span>Process</h3> 
+        <p class="left">We started the research by studying our personas and user journey. One month before we started the project, another squad had done some intense research on our customers in order to update the the three main personas we have as established profiles of our main users. Therefore, we were able to use them on this project to start drawing the navigation structure for the app and the intended user journey for each persona.</p>
+        
+                        <!-- IMAGE -->
+                <a href="#img-1"><img src="images/03mobileapp/app-userflow.jpg" alt="thumb"></a>
+            <div class="subtitle">General userflow for the app</div>
+
+                <a href="#" class="lightbox" id="img-1">
+                  <span style="background-image: url('images/03mobileapp/app-userflow.jpg')"></span>
+                </a> 
+            
+        
+            <p class="left">
+                <blockquote><span style="font-weight: bold;">Scenario 1:</span> I had the opportunity to organise and document the whole project from end-to-end with the help of the PM, including not only UX design-related tasks (scope, research findings, UI guidelines) but also creating user stories and technical specifications for the developers and describing story telling scenarios for the product marketing team.</blockquote>
+            </p> 
+            
+                      <!-- IMAGE -->
+                <a href="#img-2"><img src="images/03mobileapp/app-Journey%20Map-1.jpg" alt="thumb"></a>
+                <div class="subtitle">Journey map for user scenario #1</div>
+
+
+                <a href="#" class="lightbox" id="img-2">
+                  <span style="background-image: url('images/03mobileapp/app-Journey%20Map-1.jpg')"></span>
+                </a> 
+            
+            <p class="left">
+                <blockquote><span style="font-weight: bold;">Scenario 2:</span> One of the tests Samantha set up is not performing well, so her boss call her one day after work to complaint about the numbers and to suggest that perhaps AB Tasty tag is compromising the performance of the targeted pages. The only way to know the answer is removing the tag from their website, in order to assess where the problem comes from. Samantha opens her AB Tasty mobile application right away and clears the framework on the spot.</blockquote>
+            </p> 
+        
+                  <!-- IMAGE -->
+                <a href="#img-3"><img src="images/03mobileapp/app-Journey%20Map-2.jpg" alt="thumb"></a>
+                <div class="subtitle">Journey map for user scenario #2</div>
+
+
+                <a href="#" class="lightbox" id="img-3">
+                  <span style="background-image: url('images/03mobileapp/app-Journey%20Map-2.jpg')"></span>
+                </a> 
+        
+            <p class="left">
+                <blockquote><span style="font-weight: bold;">Scenario 3:</span> It's Saturday morning and Samantha is at home with her family when she gets an urgent request to start a personalisation campaign that was on hold. With AB Tasty mobile app, she can play the campaign right away with only 2 clicks. The personalisation campaign is now running and Samantha can enjoy her breakfast at home.</blockquote>
+            </p> 
+        
+                  <!-- IMAGE -->
+                <a href="#img-4"><img src="images/03mobileapp/app-Journey%20Map-3.jpg" alt="thumb"></a>
+                <div class="subtitle">Journey map for user scenario #3</div>
+
+
+                <a href="#" class="lightbox" id="img-4">
+                  <span style="background-image: url('images/03mobileapp/app-Journey%20Map-3.jpg')"></span>
+                </a> 
+        
+    
+        </div>
+    
+        </div> <!-- single-wrapper-bg -->
+    
+        <h3><span class="purple">03/ </span>Solution phase</h3>      
+        <p class="left">The project was happening at the same time as the UI revamp of the platform, so we had the incredible support from Morgane, the visual designer, to create the illustrations and visual assets for the app.</p>
+        <p class="left">And here are some snapshots of the wireframes being built in Sketch.</p>
+
+              <!-- IMAGE -->
+                <a href="#img-6"><img src="images/03mobileapp/app-wireframes2.png" alt="thumb"></a>
+                <div class="subtitle">Low-fidelity prototype in Sketch</div>
+
+
+                <a href="#" class="lightbox" id="img-6">
+                  <span style="background-image: url('images/03mobileapp/app-wireframes2.png')"></span>
+                </a> 
+   
+                
+                <!-- IMAGE -->
+                <a href="#img-1-1"><img src="images/03mobileapp/app-notifications-userflow.png" alt="thumb"></a>
+                <div class="subtitle">Userflow for the Notifications Center done in <a href="http://overflow.io" target="_blank">Overflow</a></div>
+
+
+                <a href="#" class="lightbox" id="img-1-1">
+                  <span style="background-image: url('images/03mobileapp/app-notifications-userflow.png')"></span>
+                </a> 
+                
+   
+        <h3><span class="purple">04/ </span>Outcome</h3> 
+        <p class="left">We launched the Companion app version 1.0 for all AB Tasty customers in October 2018. The users should use the same credentials they already have for the desktop app, which means no registration is needed. They can simply download the app on their personal mobile devices. 
+        </p>
+    <ul>
+    <li>The Companion app is currently available on <a href="https://apps.apple.com/fr/app/ab-tasty/id1447135336?l=en" target="_blank">App Store</a> and <a href="https://play.google.com/store/apps/details?id=com.abtasty.companion&hl=en" target="_blank">Google Play</a>, only in English.</li> 
+    <li>And <a href="https://www.notion.so/bettinaspace/Latest-projects-f9aceda6dc29425f8aefa5340633d2e0#d8bc1ff3f76d45509f8744956ae4c125" target="_blank">here is an article</a> explaining how the app works.</li>
+        </ul>
+                
+    
+            <!-- IMAGE -->
+        <!--<img style="box-shadow: none;" src="images/03mobileapp/app-appstore.png" alt="thumb">-->
+        
+    
+        <div id="single-wrapper-bg-2">
+        
+                 <!-- IMAGE -->
+                <img style="box-shadow: none; width: 70%;" src="images/03mobileapp/app-banner5.png" alt="thumb">
+
+
+        </div> <!-- single-wrapper-bg-dark -->  
+  
+
+        <h3><span class="purple">05/ </span>Challenges & Learnings</h3> 
+        <p class="left">The company created a new team to work exclusively on this project. It was also the first project where I had to build something from scratch. I've worked on the research phase, wireframes, user testing, and also created the high-fidelity mockups and deliverables for the developers.</p>
+        <p class="left">I had the opportunity to organise and document the whole project from end-to-end with the help of the PM, including not only UX design-related tasks (scope, research findings, UI guidelines) but also creating user stories and technical specifications for the developers and describing story telling scenarios for the product marketing team.</p>
+        
+        <h3><span class="purple">06/ </span>Team</h3>    
+        <p class="left">
+            Product Manager: Julie Dumont<br/>
+            Product Designer: Bettina D'avila<br/>
+            Visual Designer: Morgane Ruaud<br/>
+            iOS Developer: Adel Ferguen<br/>
+            Android Developer: Raphaël Blanadet
+        </p>
+
+        
+        <footer>   
+        <!-- CLOSE -->            
+            <span>
+                <div class='dotted-gradient'></div>
+                <a href="latest-projects.html">                 
+                    <button>Back to latest projects</button>
+                </a>    
+            </span>
+        </footer>  
+    
+
+    </div> <!-- end of container-single -->
+    
+        </div>
+    
+        
+                  
+    
+    </body>
+
+</html>

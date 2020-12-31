@@ -1,0 +1,950 @@
+@font-face {
+font-family: 'Segoe UI Regular';
+font-style: normal;
+font-weight: normal;
+src: local('Segoe UI Regular'), url('font/Segoe UI.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Segoe UI Italic';
+font-style: normal;
+font-weight: normal;
+src: local('Segoe UI Italic'), url('font/Segoe UI Italic.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Segoe UI Bold';
+font-style: normal;
+font-weight: normal;
+src: local('Segoe UI Bold'), url('font/Segoe UI Bold.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Segoe UI Bold Italic';
+font-style: normal;
+font-weight: normal;
+src: local('Segoe UI Bold Italic'), url('font/Segoe UI Bold Italic.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'geomanistregular';
+    src: url('font/geomanist-regular-webfont.eot');
+    src: url('font/geomanist-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/geomanist-regular-webfont.woff2') format('woff2'),
+         url('font/geomanist-regular-webfont.woff') format('woff'),
+         url('font/geomanist-regular-webfont.ttf') format('truetype'),
+         url('font/geomanist-regular-webfont.svg#geomanistregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+html {
+    /*background: #e6e9e9;
+    background-image: linear-gradient(270deg, rgb(230, 233, 233) 0%, rgb(216, 221, 221) 100%); */
+    -webkit-font-smoothing: antialiased;
+    cursor: cell;
+
+}
+
+
+body {
+    background: #fff;
+    color: black;
+    /*font-family: 'Courier';*/
+    margin: 0 auto;
+    padding: 0;
+    /*padding: 2em 2em 4em;*/
+    text-align: center;
+    overflow-x: hidden;
+}
+
+
+.custom-cursor {
+  cursor: url(images/my-cursor.png), auto;
+}
+
+
+b, strong {
+    font-weight: 600;
+}
+
+
+samp {
+    display: none;
+}
+
+
+img {
+    animation: colorize 2s cubic-bezier(0, 0, .78, .36) 1;
+    background: transparent;
+    border: /*10px solid rgba(0, 0, 0, 0.12);*/ none;
+    border-radius: 8px;
+    display: block;
+    margin: 1.8em auto;
+    /* max-width: 95%;*/
+    width: 100%;
+    object-fit: cover;
+    
+    -webkit-box-shadow: 5px 5px 16px 4px rgba(0,0,0,0.08); 
+    box-shadow: 5px 5px 16px 4px rgba(0,0,0,0.08);
+}
+
+    img:hover {
+        opacity: 0.8;
+}
+
+
+
+/*******************  TEXT  *******************/
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'geomanistregular', Roboto;
+    /*font-family: 'Geomanist-Bold';*/
+    font-size: 36px;
+    line-height: 1.4;
+    /*letter-spacing: 1.1px;*/
+}
+
+.single {
+    font-size: 40px;
+    max-width: 800px;
+    
+    animation: fadeInRight;
+    animation-duration: 0.4s; 
+}
+
+h2 {
+    font-size: 26px;
+        font-family: 'Geomanist-Bold', Roboto;
+
+    color: #000;
+    text-transform: uppercase;
+    margin-top: 32px;
+}
+
+h3 {
+    font-family: 'geomanistregular', Roboto;
+    font-size: 24px;
+    margin-left: 0;
+    margin-top: 48px;
+}
+
+h4 {
+    font-family: 'geomanistregular', Roboto;
+    font-size: 16px;
+    margin-left: 0;
+    color: #B9B9B9;
+    text-transform: uppercase;  
+    line-height: 1.8;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+h5 {
+    font-family: 'geomanistregular', Roboto;
+    font-size: 12px;
+    color: #B9B9B9;
+    line-height: 1.8;
+    margin: : 0 auto !important;
+}
+
+
+p {
+    font-family: 'geomanistregular', Roboto;
+    font-size: 16px;
+    line-height: 1.8;
+    font-weight: 500;
+}
+
+.subtitle {
+    font-family: 'geomanistregular', Roboto;
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+    margin: 12px 0 40px 0;
+}
+
+ul {
+    animation: fadeInUp;
+    animation-duration: 0.4s; 
+}
+
+li {
+    line-height: 1.8;
+    font-size: 18px;
+    list-style: none;
+}
+
+li:before { 
+    content: '\1F449';
+    font-size: 18px;
+    margin-right: 10px; 
+} 
+
+
+    li.results:before { 
+        content: '\2705';
+        font-size: 18px;
+    } 
+
+        li.painpoints {
+        font-size: 18px;
+    }
+
+        li.painpoints:before { 
+        content: '\274C';
+        font-size: 16px;
+    } 
+
+
+
+blockquote {  
+    color: #6E6E6E;
+    font-family: 'geomanistregular', Roboto;
+    font-size: 18px;
+    line-height: 1.8;
+    text-align: left;
+    max-width: 700px;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+button {  
+    font-family: 'Segoe UI Bold', Roboto;
+    font-size: 12px;
+    border-color: black;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 2px;
+    cursor: crosshair;
+    padding: 24px 40px;
+    text-transform: uppercase;
+    margin-top: 16px;
+    margin-bottom: 40px;
+    }
+
+    button:hover {  
+        color: #6653FF;
+        border: 2px solid #6653FF;
+             
+        animation: pulse; /* referring directly to the animation's @keyframe declaration */
+        animation-duration: 1s; /* don't forget to set a duration! */
+}
+
+     button:activated,
+     button:visited {  
+        color: black;
+        border: 2px solid black; 
+}
+ 
+a {
+    font-family: 'geomanistregular', Roboto;
+    text-decoration: none !important;    
+    /*border-bottom: 2px solid #121212;*/
+    position: relative;
+    cursor: context-menu;
+    color: black;
+
+}
+
+a:hover {
+    color: #6653FF!important;
+    border-bottom: 0px solid #121212;
+}
+
+a:visited,
+a:active{
+    color: black;
+}
+
+::selection {
+        background-color: #6653FF;
+        color: white;
+}
+
+.active {
+        background-color: none;
+        color: #6653FF!important;
+        font-weight: bold;
+        text-decoration: none;
+        /*font-size: 23px;*/
+}
+
+.space {
+    height: 24px;
+    display: table;
+}
+
+.center {
+    text-align: center;
+}
+
+.left {
+    text-align: left;
+}
+
+.purple {
+    color: #6653FF;
+}
+
+.gray {
+    color: #666;
+}
+
+.fas, .fab
+{  
+        color: black;
+        animation: wobble; /* referring directly to the animation's @keyframe declaration */
+        animation-duration: 1s; /* don't forget to set a duration! */
+}
+
+.fas:hover {  
+        animation: pulse; /* referring directly to the animation's @keyframe declaration */
+        animation-duration: 1s; /* don't forget to set a duration! */
+}
+
+
+
+/******************************************************/
+/*******************  HOVER IMAGES  *******************/
+/******************************************************/
+
+
+
+
+a.bettina:hover:after {
+    content: "";
+    color: #FF9900;
+    width: 240px;
+    height: 240px;
+    position: absolute;
+    top: 0;
+    right: 200;
+    background: white;
+    z-index: -1;
+    background-image: url("images/bettina.jpeg");
+    /*url("https://media.giphy.com/media/YR2jtrB0e75263jBnS/giphy.gif");*/
+}
+
+a.munich:hover:after {
+    content: "";
+    min-width: 480px;
+    min-height: 270px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    background-image: url("https://media.giphy.com/media/3xz2BCe5jn2j4OM9ZS/giphy.gif");
+}
+
+a.brazil:hover:after {
+    content: "";
+    min-width: 250px;
+    min-height: 350px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    background-image: url("https://media.giphy.com/media/Dl2seYrwPvfjO/giphy.gif");
+}
+
+a.sleeps:hover:after {
+    content: "";
+    min-width: 345px;
+    min-height: 243px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    background-image: url("images/sleeps.jpg");
+}
+
+
+a.drums:hover:after {
+    content: "";
+    min-width: 270px;
+    min-height: 272px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    background-image: url("images/drums2.jpg");
+}
+
+a.reads:hover:after {
+    content: "";
+    min-width: 345px;
+    min-height: 245px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    background-image: url("images/reads.jpg");
+}
+
+a.dissertation:hover:after {
+    content: "";
+    min-width: 320px;
+    min-height: 285px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    background-image: url("images/dissertation-thumb.png");
+}
+
+
+a.portfolio1:hover:after {
+    content: "";
+    min-width: 320px;
+    min-height: 285px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    background-image: url("images/bettina.jpeg");
+}
+
+a.portfolio2:hover:after {
+    content: "";
+    min-width: 650px;
+    min-height: 285px;
+    position: absolute;
+    top: 0;
+    right:0;
+    z-index: -1;
+    background-image: url("images/02mobileapp/cover.png");
+}
+
+a.portfolio3:hover:after {
+    content: "";
+    min-width: 650px;
+    min-height: 285px;
+    position: absolute;
+    top: 0;
+    right:0;
+    z-index: -1;
+    background-image: url("images/02mobileapp/cover.png");
+}
+
+a.portfolio4:hover:after {
+    content: "";
+    min-width: 320px;
+    min-height: 285px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    background-image: url("images/bettina.jpeg");
+}
+
+a.portfolio5:hover:after {
+    content: "";
+    min-width: 650px;
+    min-height: 285px;
+    position: absolute;
+    top: 0;
+    right:0;
+    z-index: -1;
+    background-image: url("images/reads.jpg");
+}
+
+a.portfolio6:hover:after {
+    content: "";
+    min-width: 650px;
+    min-height: 285px;
+    position: absolute;
+    top: 0;
+    right:0;
+    z-index: -1;
+    background-image: url("images/reads.jpg");
+}
+
+/******************************************************/
+/***********************  HEADER  ************************/
+/******************************************************/
+
+header {
+    background: #fff;
+    height: 40px;
+    position: fixed;
+    transition: top 0.2s ease-in-out;
+    width: 100%;
+    z-index: 1000;
+    font-family: 'geomanistregular', Roboto;
+    font-size: 18px;
+    padding-top: 16px;
+    -webkit-box-shadow: 3px 3px 16px 4px rgba(0,0,0,0.04); 
+    box-shadow: 3px 3px 16px 4px rgba(0,0,0,0.04);
+    
+    animation: fadeInDown; 
+    animation-duration: 0.4s; 
+}
+
+.nav-up {
+    top: -60px;
+}
+
+    .menu-left {
+        float: left;
+        display: inline-block;
+        margin-left: 22%;
+    }
+
+    .menu-right {
+        float: right;
+        display: inline-block;
+        margin-right: 22%;
+        font-size: 14px;
+    }
+
+.fab {
+        margin-left: 8px;
+    }
+
+
+/******************************************************/
+/***********************  CONTAINER  ************************/
+/******************************************************/
+
+#container {
+    margin: 0 auto;
+    display:table;
+    font-family: 'geomanistregular', Roboto;
+}
+
+
+/* INTRO */
+
+
+#intro {
+    text-align:center;
+    margin: 36px 17%;  
+    
+    animation: fadeIn;
+    animation-duration: 1s;
+}
+
+    #intro p {
+        display: inline-block;
+        font-size: 38px;
+        line-height: 2;
+        text-align: left;
+    }
+
+      #intro a {
+         border-bottom: 2px solid #121212;
+        }
+
+
+/* PORTFOLIO */
+
+
+#container-portfolio {
+    text-align: left;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-family: 'geomanistregular', Roboto;
+    position: relative;
+}
+
+
+.nav  {
+        display: block;
+        margin: 100px 0 40px 0;
+        text-align: left;
+        text-transform: uppercase;
+    }
+    
+    .nav a {
+        color: #B9B9B9;
+        border-bottom: none;
+        font-size: 21px;
+     }
+
+         .nav a:hover {
+              animation: pulse; 
+              animation-duration: 1s;
+            }
+
+
+.latest-projects {
+    animation: fadeInUp; 
+    animation-duration: 0.4s; 
+
+}
+
+.portfolio1,
+.portfolio2,
+.portfolio3,
+.portfolio4,
+.portfolio5,
+.portfolio6 {
+    font-family: 'Segoe UI Regular', Roboto ;
+    font-size: 38px;
+    /*margin-right: 8px;*/
+    /*font-weight: bold;*/
+    line-height: 2;
+    display: inline-block;
+    width: 100%;
+}
+
+.portfolio {
+    border-bottom: 2px solid #121212;
+}
+
+.portfolio-description {
+    font-family: 'geomanistregular', Roboto;
+   /* margin-right: 12px;*/
+    font-weight: normal;
+    font-size: 18px;
+    border-bottom: none !important;
+    color: #666;
+}
+
+
+/* PORTFOLIO SINGLE */
+ 
+    #container-single {
+        position: absolute;
+        top: 96px;
+        right: 15%;
+        left: 15%;
+        font-family: 'geomanistregular', Roboto;
+        
+        animation: fadeIn;
+        animation-duration: 0.4s; 
+    }
+
+        
+        #container-single h1 {
+            animation: fadeInUp; 
+            animation-duration: 0.4s; 
+        }
+
+    /*    #container-single h3 {
+            animation: fadeInRight; 
+            animation-duration: 0.4s;
+        } 
+    */
+    
+
+        #container-single p {
+            animation: fadeInUp; 
+            animation-duration: 0.4s; 
+        }
+
+        .portfolio-wrapper a {
+            color: #6653FF; 
+        }
+
+
+    #single-wrapper-bg-1 {
+        width: 100vw;
+        position: relative;
+        margin-left: -50vw;
+        margin-top: 80px;
+        margin-bottom: 80px;
+        left: 50%;      
+        background: #F7F7F7;
+        padding: 24px 0 60px 0;
+    }
+
+        #single-wrapper-content {
+            margin-right: 22%;
+            margin-left: 22%;
+    }
+
+    #single-wrapper-bg-2 {
+        width: 100vw;
+        position: relative;
+        margin-left: -50vw;
+        margin-top: 80px;
+        margin-bottom: 80px;
+        left: 50%;      
+        background: #6653FF;
+        padding: 48px 0;
+    }
+
+        #single-wrapper-content-dark {
+            margin-right: 22%;
+            margin-left: 22%;
+    }
+
+         #single-wrapper-content-dark p {
+            color: white;
+    }
+
+
+.close a {
+    font-size: 21px;
+ }
+
+
+     
+  
+    /* LEFT */
+
+/* 
+
+    #portfolio-left {
+        top: 0;
+        left: 15%;
+        position: fixed;
+        width: 30%;
+        
+        animation: bounceInDown; 
+        animation-duration: 0.6s;      
+        
+    }
+
+       #portfolio-left p {
+           font-family: 'Segoe UI Bold Italic';
+            display: inline-block;
+            font-size: 18px;
+            line-height: 2;
+            text-align:left;
+        }
+
+
+           #portfolio-left .emoji:hover  {
+
+                animation: pulse;
+                animation-duration: 1s;   
+        }
+
+
+        #contact-info {
+                display: block;
+                text-align: left;
+                text-transform: uppercase;
+                margin: 24px 0;  
+                display: table;
+            }
+
+            #contact-info p {
+                 font-family: 'geomanistregular', 'Roboto';
+                font-size: 14px;
+                color: #B9B9B9;
+                text-transform: none;
+
+            }
+
+            #contact-info a {
+                    font-size: 14px;
+                    color: #B9B9B9;
+                    border-bottom: none;
+                    float:left;
+                    margin: 0 !important;
+
+                    animation: wobble; 
+                    animation-duration: 1s; 
+                 }
+
+   */
+
+    /* RIGHT */
+
+
+/*    #portfolio-right {
+        position: absolute;
+        right: 15%;
+        left: 30%;
+        font-family: 'geomanistregular', Roboto;
+        float: left;
+        
+        animation: fadeInRight; 
+        animation-duration: 0.4s; 
+    }
+
+#portfolio1, 
+#portfolio2, 
+#portfolio3, 
+#portfolio4, 
+#portfolio5, 
+#portfolio6 {
+    padding-top: 164px !important;   
+   }  
+
+
+
+.cover-img {
+    width: 100%;
+    max-height: 240px !important;
+    
+            }
+
+*/
+ 
+
+
+
+/* DISSERTACAO */
+
+
+.dissertacao-img {
+        width: 200px;
+        height: auto;
+        margin-bottom: 24px;
+        display: inline-block;
+}
+
+
+
+
+/**** FOOTER ***/
+
+footer {
+   margin: 48px 0 24px 0;
+   padding: 48px 0 24px 0;
+   /*border-top: 2px solid #F1F1F1;
+   border-bottom: none !important;*/
+   text-align: center;
+   /* border-top: 5px dotted black;*/
+
+}
+
+footer a .back {
+   margin-left: 8px;
+   font-size: 21px;  
+   color: black;
+}
+
+        /**** divider ***/
+
+        footer div {
+          padding: 10px 50px;
+          width: 5px;
+          margin: 0 auto;
+          margin-bottom: 24px;
+        }
+
+        .dotted-gradient {
+          background-image: linear-gradient(to right, black 40%, rgba(255, 255, 255, 0) 20%);
+          background-position: top;
+          background-size: 18px 8px;
+          background-repeat: repeat-x;
+        }
+
+
+
+/**** LIGHTBOX-LIKE CSS ***/
+
+.lightbox {
+  /* Default to hidden */
+  display: none;
+
+  /* Overlay entire screen */
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  
+  /* A bit of padding around image */
+  padding: 1em;
+
+  /* Translucent background */
+  background: rgba(255, 255, 255, 0.8);
+    
+  animation: fadeIn; /
+  animation-duration: 1s; 
+}
+
+
+.lightbox:target {
+  display: block;
+}
+
+.lightbox span {
+  /* Full width and height */
+  display: block;
+  width: 100%;
+  height: 100%;
+
+  /* Size and position background image */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+
+
+
+/******************************************************/
+
+@media screen and (max-device-width:1280px), screen and (max-width:1280px) {   
+    
+    #intro {
+        margin: 20px 8%; 
+    }
+    
+    #container-portfolio ,
+    #container-single {
+        margin-right: 2%;
+        margin-left: 2%;
+    }
+    
+    p {
+        font-size: 21px;
+    }
+    
+
+    .menu-left {
+            margin-left: 18%;
+        }
+
+    .menu-right {
+            margin-right: 18%;
+        }   
+    
+}
+
+@media screen and (max-device-width:768px), screen and (max-width:768px) {   
+    
+    #intro {
+        margin: 20px 5%; 
+    }
+    #container-portfolio,
+    #container-single {
+        margin-right: 0%;
+        margin-left: 0%;
+    }
+    
+    #intro p {
+        font-size: 48px;
+    }
+    a.bettina:hover:after,
+    a.rachel:hover:after {
+    right: 0;
+    }
+    
+    h1 .single {
+    font-size: 60px;
+    }
+    
+    p {
+    font-size: 28px;
+    }
+    
+    .close a {
+    font-size: 28px;
+ }
+    
+    .menu-left {
+            margin-left: 15%;
+        }
+
+    .menu-right {
+            margin-right: 15%;
+        }
+    
+}
+
