@@ -884,9 +884,23 @@ footer a .back {
         margin-left: 0%;
     }
     
-    #intro p{
+    #intro p {
         font-size: 64px;
     }
+    
+   .portfolio1,
+    .portfolio2,
+    .portfolio3,
+    .portfolio4,
+    .portfolio5,
+    .portfolio6 {
+        font-size: 64px;
+    }
+    
+    .portfolio-description {
+        display: none;
+    }
+    
     
     #container-single p {
         font-size: 48px;
