@@ -876,7 +876,7 @@ footer a .back {
 @media screen and (max-device-width:768px), screen and (max-width:768px) {   
     
     #intro {
-        margin: 20px 5%; 
+        margin: 20px 10%; 
     }
     #container-portfolio,
     #container-single {
@@ -884,17 +884,33 @@ footer a .back {
         margin-left: 0%;
     }
     
-    #intro p {
+    #intro p{
+        font-size: 64px;
+    }
+    
+    #container-single p {
         font-size: 48px;
     }
+    
+    #container-single h3 {
+        font-size: 56px;
+    }
+    
+    .single {
+    font-size: 60px;
+    }
+    
+    button {
+    font-size: 32px;
+    }
+    
+    
     a.bettina:hover:after,
     a.rachel:hover:after {
     right: 0;
     }
     
-    h1 .single {
-    font-size: 60px;
-    }
+
     
     p {
     font-size: 28px;
@@ -912,5 +928,4 @@ footer a .back {
             margin-right: 15%;
         }
     
-}
 
