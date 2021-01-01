@@ -935,12 +935,7 @@ footer a .back {
     font-size: 48px;
  }
     
-    .menu-left {
-            margin-left: 15%;
-        }
-
-    .menu-right {
-            margin-right: 15%;
-        }
-    
+ header { 
+    display: none;
+ }
 
