@@ -935,7 +935,32 @@ footer a .back {
     font-size: 48px;
  }
     
- header { 
+header { 
+    height: 88px;
+ }
+    
+    .nav-up {
+    top: -88px;
+}
+
+.menu-left {    
+    margin-left: 15%;
+    font-size: 48px;
+ }
+    
+        #sr  { 
     display: none;
  }
-
+    
+.menu-right {
+    margin-right: 15%;
+    font-size: 48px;
+    }
+    
+    #email  { 
+    display: none;
+ }
+    
+        .portfolio-wrapper {
+        margin-top: 80px;
+    }
