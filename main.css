@@ -358,29 +358,7 @@ a.reads:hover:after {
 
 
 
-a.lottie:hover:after {
-    content: "";
-    min-width: 345px;
-    min-height: 295px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: -1;
-    background-image: url("images/lottie.png");
-}
-
-a.companionapp:hover:after {
-    content: "";
-    min-width: 345px;
-    min-height: 202px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: -1;
-    background-image: url("images/companion-app.png");
-}
-
-a.reset:hover:after {
+a.portfolio2:hover:after {
     content: "";
     min-width: 345px;
     min-height: 285px;
@@ -392,6 +370,39 @@ a.reset:hover:after {
 }
 
 
+a.portfolio3:hover:after {
+    content: "";
+    min-width: 345px;
+    min-height: 202px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    background-image: url("images/companion-app.png");
+}
+
+
+a.portfolio5:hover:after {
+    content: "";
+    min-width: 345px;
+    min-height: 259px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    background-image: url("images/sprint.JPG");
+}
+
+a.portfolio6:hover:after {
+    content: "";
+    min-width: 345px;
+    min-height: 295px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    background-image: url("images/lottie.png");
+}
 
 
 /******************************************************/
