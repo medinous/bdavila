@@ -408,7 +408,7 @@ a.portfolio5:hover:after {
 a.portfolio6:hover:after {
     content: "";
     min-width: 345px;
-    min-height: 295px;
+    min-height: 202px;
     position: absolute;
     top: 0;
     right: 0;
