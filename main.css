@@ -402,9 +402,7 @@ a.portfolio4:hover:after {
     z-index: -1;
     background-image: url("images/cover-cs.jpg");
     animation: slideInRight; 
-    animation-duration: 0.8s; 
-    -webkit-filter: blur(2px); /* Safari 6.0 - 9.0 */
-    filter: blur(2px);
+    animation-duration: 0.5s; 
 }
 
 
