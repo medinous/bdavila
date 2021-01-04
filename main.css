@@ -376,7 +376,7 @@ a.portfolio2:hover:after {
 
 a.portfolio3:hover:after {
     content: "";
-    min-width: 1056px;
+    min-width: 500px;
     min-height: 610px;
     position: absolute;
     top: 0;
@@ -390,7 +390,7 @@ a.portfolio3:hover:after {
 
 a.portfolio4:hover:after {
     content: "";
-    min-width: 1000px;
+    min-width: 500px;
     min-height: 525px;
     position: absolute;
     top: 0;
@@ -404,7 +404,7 @@ a.portfolio4:hover:after {
 
 a.portfolio5:hover:after {
     content: "";
-    min-width: 1000px;
+    min-width: 500px;
     min-height: 750px;
     position: absolute;
     top: 0;
@@ -417,7 +417,7 @@ a.portfolio5:hover:after {
 
 a.portfolio6:hover:after {
     content: "";
-    min-width: 1000px;
+    min-width: 500px;
     min-height: 586px;
     position: absolute;
     top: 0;
