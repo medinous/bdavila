@@ -370,62 +370,62 @@ a.portfolio2:hover:after {
     z-index: -1;
     background-image: url("images/cover-reset.jpg");
     animation: slideInRight; 
-    animation-duration: 1s; 
+    animation-duration: 0.8s; 
 }
 
 
 a.portfolio3:hover:after {
     content: "";
     min-width: 500px;
-    min-height: 610px;
+    min-height: 310px;
     position: absolute;
     top: 0;
     right: 0;
     z-index: -1;
     background-image: url("images/cover-app.png");
     animation: slideInRight; 
-    animation-duration: 1s; 
+    animation-duration: 0.8s; 
 }
 
 
 a.portfolio4:hover:after {
     content: "";
     min-width: 500px;
-    min-height: 525px;
+    min-height: 225px;
     position: absolute;
     top: 0;
     right: 0;
     z-index: -1;
     background-image: url("images/cover-cs.jpg");
     animation: slideInRight; 
-    animation-duration: 1s; 
+    animation-duration: 0.8s; 
 }
 
 
 a.portfolio5:hover:after {
     content: "";
     min-width: 500px;
-    min-height: 750px;
+    min-height: 450px;
     position: absolute;
     top: 0;
     right: 0;
     z-index: -1;
     background-image: url("images/cover-training.jpg");
     animation: slideInRight; 
-    animation-duration: 1s; 
+    animation-duration: 0.8s; 
 }
 
 a.portfolio6:hover:after {
     content: "";
     min-width: 500px;
-    min-height: 586px;
+    min-height: 286px;
     position: absolute;
     top: 0;
     right: 0;
     z-index: -1;
     background-image: url("images/cover-lottie.png");
     animation: slideInRight; 
-    animation-duration: 1s; 
+    animation-duration: 0.8s; 
 }
 
 
