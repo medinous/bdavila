@@ -375,7 +375,7 @@ a.portfolio2:hover:after {
 a.portfolio3:hover:after {
     content: "";
     min-width: 500px;
-    min-height: 290;
+    min-height: 290px;
     position: absolute;
     top: 0;
     right: 0;
