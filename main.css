@@ -922,7 +922,8 @@ footer a .back {
     font-size: 48px;
  }
     
-header { 
+/*
+    header { 
     height: 88px;
     padding-top: 20px;
  }
@@ -952,3 +953,5 @@ header {
         .portfolio-wrapper {
         margin-top: 80px;
     }
+    
+    */
