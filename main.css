@@ -387,6 +387,8 @@ a.portfolio3:hover:after {
     background-image: url("images/cover-app.png");
     animation: slideInRight; 
     animation-duration: 0.5s; 
+  -webkit-filter: blur(5px); /* Safari 6.0 - 9.0 */
+  filter: blur(5px);
 }
 
 a.portfolio4:hover:after {
