@@ -374,13 +374,13 @@ a.portfolio2:hover:after {
 
 a.portfolio3:hover:after {
     content: "";
-    min-width: 345px;
-    min-height: 202px;
+    min-width: 500px;
+    min-height: 290;
     position: absolute;
     top: 0;
     right: 0;
     z-index: -1;
-    background-image: url("images/companion-app.png");
+    background-image: url("images/cover-app.png");
     animation: slideInRight; 
     animation-duration: 1s; 
 }
