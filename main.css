@@ -371,15 +371,15 @@ a.portfolio2:hover:after {
     background-image: url("images/cover-reset.jpg");
     animation: slideInRight; 
     animation-duration: 0.8s; 
-    -webkit-filter: blur(3px); /* Safari 6.0 - 9.0 */
-    filter: blur(3px);
+    -webkit-filter: blur(2px); /* Safari 6.0 - 9.0 */
+    filter: blur(2px);
 }
 
 
 a.portfolio3:hover:after {
     content: "";
     min-width: 500px;
-    min-height: 310px;
+    min-height: 289px;
     position: absolute;
     top: 0;
     right: 0;
@@ -387,13 +387,15 @@ a.portfolio3:hover:after {
     background-image: url("images/cover-app.png");
     animation: slideInRight; 
     animation-duration: 0.8s; 
+    -webkit-filter: blur(2px); /* Safari 6.0 - 9.0 */
+    filter: blur(2px);
 }
 
 
 a.portfolio4:hover:after {
     content: "";
-    min-width: 500px;
-    min-height: 225px;
+    min-width: 600px;
+    min-height: 315px;
     position: absolute;
     top: 0;
     right: 0;
@@ -401,13 +403,15 @@ a.portfolio4:hover:after {
     background-image: url("images/cover-cs.jpg");
     animation: slideInRight; 
     animation-duration: 0.8s; 
+    -webkit-filter: blur(2px); /* Safari 6.0 - 9.0 */
+    filter: blur(2px);
 }
 
 
 a.portfolio5:hover:after {
     content: "";
     min-width: 500px;
-    min-height: 450px;
+    min-height: 375px;
     position: absolute;
     top: 0;
     right: 0;
@@ -415,12 +419,14 @@ a.portfolio5:hover:after {
     background-image: url("images/cover-training.jpg");
     animation: slideInRight; 
     animation-duration: 0.8s; 
+    -webkit-filter: blur(2px); /* Safari 6.0 - 9.0 */
+    filter: blur(2px);
 }
 
 a.portfolio6:hover:after {
     content: "";
     min-width: 500px;
-    min-height: 286px;
+    min-height: 293px;
     position: absolute;
     top: 0;
     right: 0;
@@ -428,6 +434,8 @@ a.portfolio6:hover:after {
     background-image: url("images/cover-lottie.png");
     animation: slideInRight; 
     animation-duration: 0.8s; 
+    -webkit-filter: blur(2px); /* Safari 6.0 - 9.0 */
+    filter: blur(2px);
 }
 
 
