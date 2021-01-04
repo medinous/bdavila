@@ -360,13 +360,13 @@ a.reads:hover:after {
 
 a.portfolio2:hover:after {
     content: "";
-    min-width: 360px;
-    min-height: 257px;
+    min-width: 500px;
+    min-height: 319px;
     position: absolute;
     top: 0;
     right: 0;
     z-index: -1;
-    background-image: url("images/resetpassword.jpg");
+    background-image: url("images/cover-reset.jpg");
     animation: slideInRight; 
     animation-duration: 1s; 
 }
@@ -388,13 +388,13 @@ a.portfolio3:hover:after {
 
 a.portfolio4:hover:after {
     content: "";
-    min-width: 360px;
-    min-height: 194px;
+    min-width: 800px;
+    min-height: 460px;
     position: absolute;
     top: 0;
     right: 0;
     z-index: -1;
-    background-image: url("images/cs-cover.jpg");
+    background-image: url("images/cover-cs.jpg");
     animation: slideInRight; 
     animation-duration: 1s; 
 }
