@@ -367,7 +367,7 @@ a.portfolio2:hover:after {
     right: 0;
     z-index: -1;
     background-image: url("images/resetpassword.jpg");
-    animation: hinge; 
+    animation: slideInRight; 
     animation-duration: 1s; 
 }
 
