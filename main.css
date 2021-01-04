@@ -357,75 +357,42 @@ a.reads:hover:after {
 }
 
 
-/*
 
-a.portfolio1:hover:after {
+a.lottie:hover:after {
     content: "";
-    min-width: 320px;
+    min-width: 345px;
+    min-height: 295px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    background-image: url("images/lottie.png");
+}
+
+a.companionapp:hover:after {
+    content: "";
+    min-width: 345px;
+    min-height: 202px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    background-image: url("images/companion-app.png");
+}
+
+a.reset:hover:after {
+    content: "";
+    min-width: 345px;
     min-height: 285px;
     position: absolute;
     top: 0;
     right: 0;
     z-index: -1;
-    background-image: url("images/bettina.jpeg");
+    background-image: url("images/resetpassword.png");
 }
 
-a.portfolio2:hover:after {
-    content: "";
-    min-width: 650px;
-    min-height: 285px;
-    position: absolute;
-    top: 0;
-    right:0;
-    z-index: -1;
-    background-image: url("images/02mobileapp/cover.png");
-}
 
-a.portfolio3:hover:after {
-    content: "";
-    min-width: 650px;
-    min-height: 285px;
-    position: absolute;
-    top: 0;
-    right:0;
-    z-index: -1;
-    background-image: url("images/02mobileapp/cover.png");
-}
 
-a.portfolio4:hover:after {
-    content: "";
-    min-width: 320px;
-    min-height: 285px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: -1;
-    background-image: url("images/bettina.jpeg");
-}
-
-a.portfolio5:hover:after {
-    content: "";
-    min-width: 650px;
-    min-height: 285px;
-    position: absolute;
-    top: 0;
-    right:0;
-    z-index: -1;
-    background-image: url("images/reads.jpg");
-}
-
-a.portfolio6:hover:after {
-    content: "";
-    min-width: 650px;
-    min-height: 285px;
-    position: absolute;
-    top: 0;
-    right:0;
-    z-index: -1;
-    background-image: url("images/reads.jpg");
-}
-
-*/
 
 /******************************************************/
 /***********************  HEADER  ************************/
