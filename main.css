@@ -364,7 +364,7 @@ a.portfolio2:hover:after {
     min-height: 285px;
     position: absolute;
     top: 0;
-    left: 0;
+    right: 0;
     z-index: -1;
     background-image: url("images/resetpassword.png");
 }
@@ -376,7 +376,7 @@ a.portfolio3:hover:after {
     min-height: 202px;
     position: absolute;
     top: 0;
-    left: 0;
+    right: 0;
     z-index: -1;
     background-image: url("images/companion-app.png");
 }
@@ -385,10 +385,10 @@ a.portfolio3:hover:after {
 a.portfolio4:hover:after {
     content: "";
     min-width: 345px;
-    min-height: 117px;
+    min-height: 177px;
     position: absolute;
     top: 0;
-    left: 0;
+    right: 0;
     z-index: -1;
     background-image: url("images/cs-cover.jpg");
 }
@@ -400,7 +400,7 @@ a.portfolio5:hover:after {
     min-height: 259px;
     position: absolute;
     top: 0;
-    left: 0;
+    right: 0;
     z-index: -1;
     background-image: url("images/sprint.JPG");
 }
@@ -411,7 +411,7 @@ a.portfolio6:hover:after {
     min-height: 295px;
     position: absolute;
     top: 0;
-    left: 0;
+    right: 0;
     z-index: -1;
     background-image: url("images/lottie.png");
 }
