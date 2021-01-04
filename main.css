@@ -370,7 +370,9 @@ a.portfolio2:hover:after {
     z-index: -1;
     background-image: url("images/cover-reset.jpg");
     animation: slideInRight; 
-    animation-duration: 0.5s; 
+    animation-duration: 0.5s;
+  -webkit-filter: blur(5px); /* Safari 6.0 - 9.0 */
+  filter: blur(5px);
 }
 
 
