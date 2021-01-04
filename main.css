@@ -381,6 +381,8 @@ a.portfolio3:hover:after {
     right: 0;
     z-index: -1;
     background-image: url("images/companion-app.png");
+    animation: slideInRight; 
+    animation-duration: 1s; 
 }
 
 
@@ -393,6 +395,8 @@ a.portfolio4:hover:after {
     right: 0;
     z-index: -1;
     background-image: url("images/cs-cover.jpg");
+    animation: slideInRight; 
+    animation-duration: 1s; 
 }
 
 
@@ -405,6 +409,8 @@ a.portfolio5:hover:after {
     right: 0;
     z-index: -1;
     background-image: url("images/sprint.JPG");
+    animation: slideInRight; 
+    animation-duration: 1s; 
 }
 
 a.portfolio6:hover:after {
@@ -416,6 +422,8 @@ a.portfolio6:hover:after {
     right: 0;
     z-index: -1;
     background-image: url("images/lottie.png");
+    animation: slideInRight; 
+    animation-duration: 1s; 
 }
 
 
