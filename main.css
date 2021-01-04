@@ -648,101 +648,6 @@ header {
  }
 
 
-     
-  
-    /* LEFT */
-
-/* 
-
-    #portfolio-left {
-        top: 0;
-        left: 15%;
-        position: fixed;
-        width: 30%;
-        
-        animation: bounceInDown; 
-        animation-duration: 0.6s;      
-        
-    }
-
-       #portfolio-left p {
-           font-family: 'Segoe UI Bold Italic';
-            display: inline-block;
-            font-size: 18px;
-            line-height: 2;
-            text-align:left;
-        }
-
-
-           #portfolio-left .emoji:hover  {
-
-                animation: pulse;
-                animation-duration: 1s;   
-        }
-
-
-        #contact-info {
-                display: block;
-                text-align: left;
-                text-transform: uppercase;
-                margin: 24px 0;  
-                display: table;
-            }
-
-            #contact-info p {
-                 font-family: 'geomanistregular', 'Roboto';
-                font-size: 14px;
-                color: #B9B9B9;
-                text-transform: none;
-
-            }
-
-            #contact-info a {
-                    font-size: 14px;
-                    color: #B9B9B9;
-                    border-bottom: none;
-                    float:left;
-                    margin: 0 !important;
-
-                    animation: wobble; 
-                    animation-duration: 1s; 
-                 }
-
-   */
-
-    /* RIGHT */
-
-
-/*    #portfolio-right {
-        position: absolute;
-        right: 15%;
-        left: 30%;
-        font-family: 'geomanistregular', Roboto;
-        float: left;
-        
-        animation: fadeInRight; 
-        animation-duration: 0.4s; 
-    }
-
-#portfolio1, 
-#portfolio2, 
-#portfolio3, 
-#portfolio4, 
-#portfolio5, 
-#portfolio6 {
-    padding-top: 164px !important;   
-   }  
-
-
-
-.cover-img {
-    width: 100%;
-    max-height: 240px !important;
-    
-            }
-
-*/
- 
 
 
 
@@ -813,7 +718,7 @@ footer a .back {
   padding: 1em;
 
   /* Translucent background */
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.9);
     
   animation: fadeIn; /
   animation-duration: 1s; 
@@ -883,7 +788,7 @@ footer a .back {
         font-size: 64px;
     }
     
-   .portfolio1,
+    .portfolio1,
     .portfolio2,
     .portfolio3,
     .portfolio4,
@@ -922,6 +827,8 @@ footer a .back {
     font-size: 48px;
  }
     
+    
+/* HEADER */
     
     header { 
     height: 88px;
