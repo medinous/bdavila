@@ -358,6 +358,8 @@ a.reads:hover:after {
 
 
 
+
+
 a.portfolio2:hover:after {
     content: "";
     min-width: 500px;
@@ -374,8 +376,8 @@ a.portfolio2:hover:after {
 
 a.portfolio3:hover:after {
     content: "";
-    min-width: 500px;
-    min-height: 290px;
+    min-width: 1056px;
+    min-height: 610px;
     position: absolute;
     top: 0;
     right: 0;
@@ -388,8 +390,8 @@ a.portfolio3:hover:after {
 
 a.portfolio4:hover:after {
     content: "";
-    min-width: 800px;
-    min-height: 460px;
+    min-width: 1000px;
+    min-height: 525px;
     position: absolute;
     top: 0;
     right: 0;
@@ -402,26 +404,26 @@ a.portfolio4:hover:after {
 
 a.portfolio5:hover:after {
     content: "";
-    min-width: 345px;
-    min-height: 259px;
+    min-width: 1000px;
+    min-height: 750px;
     position: absolute;
     top: 0;
     right: 0;
     z-index: -1;
-    background-image: url("images/sprint.JPG");
+    background-image: url("images/cover-training.jpg");
     animation: slideInRight; 
     animation-duration: 1s; 
 }
 
 a.portfolio6:hover:after {
     content: "";
-    min-width: 345px;
-    min-height: 202px;
+    min-width: 1000px;
+    min-height: 586px;
     position: absolute;
     top: 0;
     right: 0;
     z-index: -1;
-    background-image: url("images/lottie.png");
+    background-image: url("images/cover-lottie.png");
     animation: slideInRight; 
     animation-duration: 1s; 
 }
