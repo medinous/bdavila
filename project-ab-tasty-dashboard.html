@@ -207,36 +207,36 @@
                         <span class="space"></span>
                         
                         <li class="painpoints">The test type icons on the top left are misleading, they look like CTAs more than filters.</li>
-                        <li class="results">All the filtering actions were gathered with the same UI and same behaviour. Afterall, for users, things that looks the same should behave the same and vice-versa.</li>
+                        <li class="results">All the filtering actions were gathered with the same UI and same behaviour. Afterall, for users, things that look the same should behave the same - and vice-versa.</li>
                         <!-- IMAGE -->
               <img src="images/01dashboard/pain-points-04.gif">
                         
                         <span class="space"></span>
                         
-                        <li class="painpoints">Lack of consistency and clarity on the campaigns statuses: not clear when a test should be played (for the first time), paused or republished (when the test was running and you made changes that need to be updated). Also, it is confusing to see action buttons and static content all mixed up in the same components.</li>
-                        <li class="results">I decided to visually separate the actionable elements from the static elements in the interface by pushing the former to the right end of the dashboard. Moreover, it's important not to flood the interface with all possible actions. So, for complex platforms like this one, adding secondary actions under clicks or hovering actions - so the user reveals them in context - will increasy usability. So I added contextual actions for each icon and status, transforming the latter into buttons where actionable options will reveal on hover.</li>
+                        <li class="painpoints">Lack of consistency and clarity on the campaigns statuses: not clear when a test should be played or paused. Also, it is confusing to see action buttons and static content all mixed up in the same components when they don't have a clear differentiation.</li>
+                        <li class="results">I decided to visually separate the actionable elements from the static elements in the interface by pushing the former to the right end of the dashboard table. Moreover, it's important not to flood the interface with all available actions. Instead, adding contextual actions under clicks or hovering behaviours will increasy usability. That's what I did for each campaign list, revealing new primary icons on hover which also reveals contextual actions inside. And for the campaigns status, I transformed them into visible buttons where additional actions are revealed on hover as well.</li>
                         <!-- IMAGE -->
               <img style="max-width:500px;" src="images/01dashboard/pain-points-05.gif">
                         
                         
                         <span class="space"></span>
                         
-                        <li class="painpoints">Folders functionality is confusing. The folder icon/trigger appears in 3 different places on screen, with 3 different look & feel. The users engagement with this feature is very poor.</li>
-                        <li class="results">Currently the folder functionality behaves similarily to a filter. Thus I removed the folder UI at the bottom of the screen and replaced it with a dropdown filter, side-by-side with the other filters. However, the folders feature requires a bit more interaction than other filters so I created a new component for our Design System: a dropdown list with dedicated item actions on hover and a new "create" action at the bottom.</li>
+                        <li class="painpoints">Folders functionality is confusing. The folder icon/trigger appears in 3 different places on screen, with 3 different look & feel. The user engagement with this feature is very poor.</li>
+                        <li class="results">Currently the folder functionality behaves similarily to a filter. Thus I removed the previous folder component from the bottom of the screen and replaced it with a dropdown filter at the top of the table, side-by-side with the other filters. However, the folders management requires a bit more functionalities than the other filters so I created a new component for our Design System: a dropdown list with dedicated actionable items on hover besides a new "create" button at the bottom.</li>
                         <!-- IMAGE -->
               <img style="max-width:500px;" src="images/01dashboard/pain-points-06.gif">
                         
                         <span class="space"></span>
                         
-                        <li class="painpoints">Clients want to delete tests from the folders and they can't.</li>
-                        <li class="results">Still on the same subject,apart from the dropdown component with the mentioned interactions, I decided to create the same interactions directly in each campaign individually. By clicking on "add to folder" option, we can see a check mark on the folder in which that campaign belongs to. The user is free to change that by moving the campaign to another folder, creating a new folder or removing if from the current folder.</li>
+                        <li class="painpoints">Clients want to delete tests from their folders but they can't.</li>
+                        <li class="results">Still on the same subject,apart from the dropdown component with the mentioned interactions, I decided to create the same interactions directly inside the table, in each campaign individually. By clicking on "..." and next "add to folder", the user can see a check mark on the folder in which that campaign belongs to - if that's the case. The user is free to change that by clicking on the folder they want the campaign to be moved to. Plus, the user can create a new folder on the fly or remove the campaign from the current folder by clicking on the option "Remove from current folder".</li>
                         <!-- IMAGE -->
               <img src="images/01dashboard/pain-points-07.gif">
                         
                         <span class="space"></span>
                         
-                        <li class="painpoints">Test ID is very important and it's a common point of communication between the users, CSMs, TSEs, developers and QA team. Currently is not very intuitive on how to see and copy the test ID.</li>
-                        <li class="results">Firstly, I made the test ID more visible by displaying it under a dedicate column in the Dashbaord. Secondly, I added a quick "copy to clipboard" behaviour by just hovering over the number and all you have to do is click to copy.</li>
+                        <li class="painpoints">Test ID is very important because it's a common point of communication between the users, the customer support, CSMs, TSEs, developers and QA team. Currently is not very intuitive on how to see and copy the test ID.</li>
+                        <li class="results">Firstly, I made the test ID more visible on the dashboard by displaying it under a dedicated column. Secondly, I added a quick "copy to clipboard" behaviour by just hovering over the test ID number. All you have to do is click to copy to copyboard.</li>
                         <!-- IMAGE -->
               <img src="images/01dashboard/pain-points-08.gif">
                         
