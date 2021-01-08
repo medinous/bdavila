@@ -357,7 +357,20 @@ a.reads:hover:after {
 }
 
 
-
+a.portfolio1:hover:after {
+    content: "";
+    min-width: 500px;
+    min-height: 319px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    background-image: url("images/cover-dashboard.jpg");
+    animation: slideInRight; 
+    animation-duration: 0.5s;
+  -webkit-filter: blur(5px); /* Safari 6.0 - 9.0 */
+  filter: blur(5px);
+}
 
 
 a.portfolio2:hover:after {
