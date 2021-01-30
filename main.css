@@ -509,7 +509,7 @@ header {
 
 #intro {
     text-align:center;
-    margin: 12px 17%;  
+    margin: 10% 17%;  
     
     animation: fadeIn;
     animation-duration: 1s;
@@ -777,7 +777,7 @@ footer a  {
 @media screen and (max-device-width:1280px), screen and (max-width:1280px) {   
     
     #intro {
-        margin: 40px 8%; 
+        margin: 20px 8%; 
     }
     
     #container-portfolio ,
