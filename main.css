@@ -777,7 +777,7 @@ footer a  {
 @media screen and (max-device-width:1280px), screen and (max-width:1280px) {   
     
     #intro {
-        margin: 8%; 
+        margin: 40px 8%; 
     }
     
     #container-portfolio ,
