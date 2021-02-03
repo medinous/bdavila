@@ -275,6 +275,13 @@ a:active{
   background: linear-gradient(180deg,rgba(255,255,255,0) 50%, #6DEECE 50%);
 }
 
+.button {
+    float: left;
+    margin-top: 24px;
+    font-size: 21px;
+    background: linear-gradient(180deg,rgba(255,255,255,0) 50%, #6DEECE 50%);
+}
+
 .active {
         background-color: none;
         color: #6653FF!important;
@@ -890,6 +897,7 @@ footer a  {
         margin-right: 2%;
         margin-left: 2%;
         padding-top: 80px;
+        padding-bottom: 80px;
     }
     
 
@@ -921,7 +929,11 @@ footer a  {
     #intro p {
         font-size: 50px;
     }
-        
+       
+    
+    .button {
+        font-size: 50px;
+}
     .portfolio1,
     .portfolio2,
     .portfolio3,
@@ -950,10 +962,6 @@ footer a  {
     
     .single {
     font-size: 60px;
-    }
-    
-    button {
-    font-size: 32px;
     }
     
     
@@ -994,5 +1002,10 @@ footer a  {
     
     #email  { 
     display: none;
+ }
+    
+    
+footer a  { 
+    font-size: 50px;
  }
     
