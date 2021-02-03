@@ -175,14 +175,15 @@ ul {
 }
 
 li {
-    line-height: 1.8;
+    line-height: 1.4;
     font-size: 21px;
+    color: black;
     list-style: none;
 }
 
 li:before { 
     content: '\1F449';
-    font-size: 21px;
+    font-size: 18px;
     margin-right: 10px; 
 } 
 
@@ -198,7 +199,7 @@ li:before {
 
         li.painpoints:before { 
         content: '\274C';
-        font-size: 16px;
+        font-size: 18px;
     } 
 
 
