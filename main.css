@@ -892,7 +892,8 @@ footer a  {
         padding-top: 80px;
     }
     
-    p {
+    p,
+    a.highlight {
         font-size: 21px;
     }
     
