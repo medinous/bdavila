@@ -54,13 +54,18 @@ html {
 
 body {
     background: #fff;
-    color: black;
+    color: #393939;
     /*font-family: 'Courier';*/
     margin: 0 auto;
     padding: 0;
     /*padding: 2em 2em 4em;*/
     text-align: center;
     overflow-x: hidden;
+}
+
+
+.custom-cursor {
+  cursor: url(images/my-cursor.png), auto;
 }
 
 
@@ -89,9 +94,9 @@ img {
     box-shadow: 5px 5px 16px 4px rgba(0,0,0,0.08);
 }
 
-  /*  img:hover {
+    img:hover {
         opacity: 0.8;
-} */
+}
 
 
 
@@ -116,10 +121,9 @@ h1, h2, h3, h4, h5, h6 {
 
 h2 {
     font-size: 26px;
-        font-family: 'Geomanist-Bold', Roboto;
+    font-family: 'geomanistregular', Roboto;
 
     color: #000;
-    text-transform: uppercase;
     margin-top: 32px;
 }
 
@@ -132,9 +136,10 @@ h3 {
 
 h4 {
     font-family: 'geomanistregular', Roboto;
-    font-size: 21px;
+    font-size: 16px;
     margin-left: 0;
-    color: #000;
+    color: #B9B9B9;
+    text-transform: uppercase;  
     line-height: 1.8;
     margin-top: 24px;
     margin-bottom: 24px;
@@ -151,7 +156,7 @@ h5 {
 
 p {
     font-family: 'geomanistregular', Roboto;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.8;
     font-weight: 500;
 }
@@ -161,7 +166,7 @@ p {
     font-size: 14px;
     color: #666;
     text-align: center;
-    margin: 4px 0 80px 0;
+    margin: 12px 0 40px 0;
 }
 
 ul {
@@ -171,13 +176,13 @@ ul {
 
 li {
     line-height: 1.8;
-    font-size: 18px;
+    font-size: 21px;
     list-style: none;
 }
 
 li:before { 
     content: '\1F449';
-    font-size: 18px;
+    font-size: 21px;
     margin-right: 10px; 
 } 
 
@@ -227,8 +232,8 @@ button {
         color: #6653FF;
         border: 2px solid #6653FF;
              
-        animation: pulse; 
-        animation-duration: 1s; 
+        animation: pulse; /* referring directly to the animation's @keyframe declaration */
+        animation-duration: 1s; /* don't forget to set a duration! */
 }
 
      button:activated,
@@ -242,14 +247,16 @@ a {
     text-decoration: none !important;    
     /*border-bottom: 2px solid #121212;*/
     position: relative;
-    cursor: pointer;
+    cursor: context-menu;
     color: black;
+    /*background: linear-gradient(180deg,rgba(255,255,255,0) 50%, #C3BBFF 50%);*/
+/* #4DDBB8 */
 
 }
 
 a:hover {
-    color: #6653FF!important;
-    border-bottom: 0px solid #121212;
+    /*color: #6653FF!important;*/
+    background: none;
 }
 
 a:visited,
@@ -260,6 +267,10 @@ a:active{
 ::selection {
         background-color: #6653FF;
         color: white;
+}
+
+.highlight {
+  background: linear-gradient(180deg,rgba(255,255,255,0) 50%, #6DEECE 50%);
 }
 
 .active {
@@ -294,8 +305,8 @@ a:active{
 .fas, .fab
 {  
         color: black;
-        animation: wobble; 
-        animation-duration: 1s;
+        animation: wobble; /* referring directly to the animation's @keyframe declaration */
+        animation-duration: 1s; /* don't forget to set a duration! */
 }
 
 .fas:hover {  
@@ -309,6 +320,33 @@ a:active{
 /*******************  HOVER IMAGES  *******************/
 /******************************************************/
 
+
+
+
+a.bettina:hover:after {
+    content: "";
+    color: #FF9900;
+    width: 240px;
+    height: 240px;
+    position: absolute;
+    top: 0;
+    right: 200;
+    background: white;
+    z-index: -1;
+    background-image: url("images/bettina.jpeg");
+    /*url("https://media.giphy.com/media/YR2jtrB0e75263jBnS/giphy.gif");*/
+}
+
+a.munich:hover:after {
+    content: "";
+    min-width: 480px;
+    min-height: 270px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    background-image: url("https://media.giphy.com/media/3xz2BCe5jn2j4OM9ZS/giphy.gif");
+}
 
 a.brazil:hover:after {
     content: "";
@@ -355,100 +393,83 @@ a.reads:hover:after {
     background-image: url("images/reads.jpg");
 }
 
+a.dissertation:hover:after {
+    content: "";
+    min-width: 320px;
+    min-height: 285px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    background-image: url("images/dissertation-thumb.png");
+}
+
 
 a.portfolio1:hover:after {
     content: "";
-    min-width: 500px;
-    min-height: 319px;
+    min-width: 320px;
+    min-height: 285px;
     position: absolute;
     top: 0;
     right: 0;
     z-index: -1;
-    background-image: url("images/cover-dashboard.jpg");
-    animation: slideInRight; 
-    animation-duration: 0.5s;
-  -webkit-filter: blur(5px); /* Safari 6.0 - 9.0 */
-  filter: blur(5px);
+    background-image: url("images/bettina.jpeg");
 }
-
 
 a.portfolio2:hover:after {
     content: "";
-    min-width: 500px;
-    min-height: 319px;
+    min-width: 650px;
+    min-height: 285px;
     position: absolute;
     top: 0;
-    right: 0;
+    right:0;
     z-index: -1;
-    background-image: url("images/cover-reset.jpg");
-    animation: slideInRight; 
-    animation-duration: 0.5s;
-  -webkit-filter: blur(5px); /* Safari 6.0 - 9.0 */
-  filter: blur(5px);
+    background-image: url("images/02mobileapp/cover.png");
 }
-
 
 a.portfolio3:hover:after {
     content: "";
-    min-width: 600px;
-    min-height: 313px;
+    min-width: 650px;
+    min-height: 285px;
     position: absolute;
     top: 0;
-    right: 0;
+    right:0;
     z-index: -1;
-    background-image: url("images/cover-app.png");
-    animation: slideInRight; 
-    animation-duration: 0.5s; 
-  -webkit-filter: blur(5px); /* Safari 6.0 - 9.0 */
-  filter: blur(5px);
+    background-image: url("images/02mobileapp/cover.png");
 }
 
 a.portfolio4:hover:after {
     content: "";
-    min-width: 600px;
-    min-height: 315px;
+    min-width: 320px;
+    min-height: 285px;
     position: absolute;
     top: 0;
     right: 0;
     z-index: -1;
-    background-image: url("images/cover-cs.jpg");
-    animation: slideInRight; 
-    animation-duration: 0.5s; 
-  -webkit-filter: blur(5px); /* Safari 6.0 - 9.0 */
-  filter: blur(5px);
+    background-image: url("images/bettina.jpeg");
 }
-
 
 a.portfolio5:hover:after {
     content: "";
-    min-width: 500px;
-    min-height: 375px;
+    min-width: 650px;
+    min-height: 285px;
     position: absolute;
     top: 0;
-    right: 0;
+    right:0;
     z-index: -1;
-    background-image: url("images/cover-training.jpg");
-    animation: slideInRight; 
-    animation-duration: 0.5s;
-  -webkit-filter: blur(5px); /* Safari 6.0 - 9.0 */
-  filter: blur(5px);
+    background-image: url("images/reads.jpg");
 }
 
 a.portfolio6:hover:after {
     content: "";
-    min-width: 500px;
-    min-height: 293px;
+    min-width: 650px;
+    min-height: 285px;
     position: absolute;
     top: 0;
-    right: 0;
+    right:0;
     z-index: -1;
-    background-image: url("images/cover-lottie.png");
-    animation: slideInRight; 
-    animation-duration: 0.5s; 
-  -webkit-filter: blur(5px); /* Safari 6.0 - 9.0 */
-  filter: blur(5px);
+    background-image: url("images/reads.jpg");
 }
-
 
 /******************************************************/
 /***********************  HEADER  ************************/
@@ -476,6 +497,7 @@ header {
 }
 
     .menu-left {
+       /* font-family: 'Segoe UI Bold';*/
         float: left;
         display: inline-block;
         margin-left: 22%;
@@ -499,7 +521,7 @@ header {
 
 #container {
     margin: 0 auto;
-    display:table;
+    display: table;
     font-family: 'geomanistregular', Roboto;
 }
 
@@ -509,23 +531,67 @@ header {
 
 #intro {
     text-align:center;
-    margin: 40px 17%;  
-    
-    animation: fadeIn;
-    animation-duration: 1s;
+    margin: 8% 17% 36px 17%;  
 }
 
     #intro p {
         display: inline-block;
-        font-size: 38px;
+        font-size: 32px;
         line-height: 2;
         text-align: left;
+        
+        animation: slideInUp;
+        animation-duration: 0.3s;
     }
 
       #intro a {
-         border-bottom: 2px solid #121212;
+         /*border-bottom: 2px solid #121212;*/
         }
 
+         #intro a:hover {
+          background: none;
+        }
+
+        #intro .hello {
+         font-family: 'Segoe UI Bold';
+         font-size: 50px;
+         padding-bottom: 24px;
+         line-height: 1.4;
+        
+         animation: pulse;
+         animation-duration: 0.4s;
+        }
+
+        span.dynamic {
+            color: #6653FF;
+            /*color: #6DEECE;*/
+            /*color: #000;*/
+        }
+
+.profilepic  {
+    clear: both;
+    display: table;
+    margin-bottom: 24px;  
+}
+
+.profilepic img {
+    width: 130px;
+    height: 130px;
+    float: left;
+    display: block;
+    margin: 0;
+    border-radius: 65% 35% 65% 35% / 35% 65% 35% 65%;
+    box-shadow: none; 
+    
+    animation: pulse;
+    animation-duration: 0.4s;
+}
+
+.profilepic img:hover {
+    animation: pulse;
+    animation-duration: 0.6s;   
+}
+ 
 
 /* PORTFOLIO */
 
@@ -558,26 +624,59 @@ header {
             }
 
 
-.latest-projects {
-    animation: fadeInUp; 
-    animation-duration: 0.4s; 
 
-}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 1rem;
+    }
 
-.portfolio1,
-.portfolio2,
-.portfolio3,
-.portfolio4,
-.portfolio5,
-.portfolio6 {
-    font-family: 'Segoe UI Regular', Roboto ;
-    font-size: 38px;
-    /*margin-right: 8px;*/
-    /*font-weight: bold;*/
-    line-height: 2;
-    display: inline-block;
+   .grid div {
+    /*padding: 1rem;*/
+    position: relative;
+    display: table;
     width: 100%;
+    height: 100%;
+    text-align: center;
+    border-radius: 8px;
+    animation: pulse; 
+    animation-duration: 0.5s; 
 }
+
+    .grid div::before {
+      content: "";
+      display: block;
+      padding-bottom: 100%;
+    }
+
+    .grid div span {
+      display: none;
+      border-radius: 8px;
+    }
+
+    .grid div:hover span {
+    display: visible;
+    color: #fff;
+    font-size: 21px;
+    padding: 40px;
+    display: table-cell;
+    vertical-align: middle;
+    background: #6653FF; 
+   /* background: #6DEECE; */
+    animation: fadeIn; 
+    animation-duration: 0.4s; 
+    }
+
+
+    .grid div span p {
+      text-align: center;
+      font-size: 14px;
+      text-transform: uppercase;
+      color: #E1E1E1;
+    }
+
+
+
 
 .portfolio {
     border-bottom: 2px solid #121212;
@@ -625,8 +724,11 @@ header {
         }
 
         .portfolio-wrapper a {
-            color: #6653FF; 
+            /*color: #6653FF; */
+            background: linear-gradient(180deg,rgba(255,255,255,0) 50%, #6DEECE 50%);
         }
+
+
 
 
     #single-wrapper-bg-1 {
@@ -668,9 +770,11 @@ header {
 
 .close a {
     font-size: 21px;
+    background-size: none;
  }
 
 
+    
 
 
 
@@ -709,7 +813,6 @@ footer a  {
    color: black !important;
 }
 
-
         /**** divider ***/
 
         footer div {
@@ -746,7 +849,7 @@ footer a  {
   padding: 1em;
 
   /* Translucent background */
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, 0.8);
     
   animation: fadeIn; /
   animation-duration: 1s; 
@@ -777,7 +880,7 @@ footer a  {
 @media screen and (max-device-width:1280px), screen and (max-width:1280px) {   
     
     #intro {
-        margin: 20px 8%; 
+        margin: 64px 8%; 
     }
     
     #container-portfolio ,
@@ -804,7 +907,7 @@ footer a  {
 @media screen and (max-device-width:768px), screen and (max-width:768px) {   
     
     #intro {
-        margin: 20px 10%; 
+        margin: 64px 10%; 
     }
     #container-portfolio,
     #container-single {
@@ -812,10 +915,14 @@ footer a  {
         margin-left: 0%;
     }
     
-    #intro p {
-        font-size: 64px;
+    #intro .hello {
+        font-size: 72px;
     }
     
+    #intro p {
+        font-size: 50px;
+    }
+        
     .portfolio1,
     .portfolio2,
     .portfolio3,
@@ -846,28 +953,34 @@ footer a  {
     font-size: 32px;
     }
     
+    
+    a.bettina:hover:after,
+    a.rachel:hover:after {
+    right: 0;
+    }
+    
+
+    
     p {
     font-size: 28px;
     }
     
-    
-    .fa, .fas { 
+      .fa, .fas { 
     font-size: 48px;
  }
     
     
-/* HEADER */
-    
-    header { 
+ header { 
     height: 88px;
     padding-top: 20px;
+
  }
     
     .nav-up {
     top: -88px;
 }
 
-.menu-left {    
+.menu-left {   
     margin-left: 15%;
     font-size: 48px;
  }
@@ -888,4 +1001,3 @@ footer a  {
         .portfolio-wrapper {
         margin-top: 80px;
     }
-    

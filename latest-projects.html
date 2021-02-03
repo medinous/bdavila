@@ -19,56 +19,18 @@
         <link rel="stylesheet" href="main.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
         <link href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" rel="stylesheet">
+        
         <!-- favicon -->
-        <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+        <!-- <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-        <link rel="manifest" href="favicon/site.webmanifest">
-        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <link rel="manifest" href="favicon/site.webmanifest"> -->        
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
       
-        <script type="text/javascript">
-            
-            // Hide Header on on scroll down
-            var didScroll;
-            var lastScrollTop = 0;
-            var delta = 15;
-            var navbarHeight = $('header').outerHeight();
-
-            $(window).scroll(function(event){
-                didScroll = true;
-            });
-
-            setInterval(function() {
-                if (didScroll) {
-                    hasScrolled();
-                    didScroll = false;
-                }
-            }, 250);
-
-            function hasScrolled() {
-                var st = $(this).scrollTop();
-
-                // Make sure they scroll more than delta
-                if(Math.abs(lastScrollTop - st) <= delta)
-                    return;
-
-                // If they scrolled down and are past the navbar, add class .nav-up.
-                // This is necessary so you never see what is "behind" the navbar.
-                if (st > lastScrollTop && st > navbarHeight){
-                    // Scroll Down
-                    $('header').removeClass('nav-down').addClass('nav-up');
-                } else {
-                    // Scroll Up
-                    if(st + $(window).height() < $(document).height()) {
-                        $('header').removeClass('nav-up').addClass('nav-down');
-                    }
-                }
-
-                lastScrollTop = st;
-}
-            
-        </script>
-
+       
     </head>
     
     <body>
@@ -87,37 +49,43 @@
                                         
                         <span class="space"></span>
                         <span class="space"></span>
-                 
-                    <a class="portfolio1" href="project-ab-tasty-dashboard.html">
-                        <span class="portfolio">AB Tasty Dashboard</span>
-                        <span class="portfolio-description">Redesign project for CXO campaigns management
-                        </span>
-                    </a> 
-                 
-                    <a class="portfolio2" href="project-reset-password.html"> 
-                        <span class="portfolio">Reset password</span>
-                        <span class="portfolio-description">Reducing frustration on user journey</span>
-                    </a>
-               
-                    <a class="portfolio3" href="project-companion-app.html"> 
-                        <span class="portfolio">Companion app</span>
-                        <span class="portfolio-description">Mobile solution for AB Tasty's users</span>
-                    </a>
-                  
-                   <a class="portfolio4" href="project-cs-case-study.html"> 
-                        <span class="portfolio">Couchsurfing app</span>
-                        <span class="portfolio-description">Case study</span>
-                    </a> 
-                 
-                    <a class="portfolio5" href="project-ux-training.html">
-                        <span class="portfolio">UX training</span>
-                        <span class="portfolio-description">Workshops and talks</span>
-                    </a>
-                                   
-                    <a class="portfolio6" href="project-lottie-animation.html"> 
-                        <span class="portfolio">Lottie animation</span>
-                        <span class="portfolio-description">Vector animation for iOS and Android</span>
-                    </a>
+                         <div class="grid">
+                        
+                        <!-- portfolio 1 -->        
+                         <a href="project-ab-tasty-dashboard.html"><div style="background-image: url('images/thumb-1.png'); background-size: cover;">
+                            <span class="portfolio1">Dashboard for CXO campaigns management<p>B2B Web Platform</p></span>
+                        </div></a>
+                        
+                        <!-- portfolio 2 -->        
+                        <a href="project-companion-app.html"><div style="background-image: url('images/thumb-2.png'); background-size: cover;">
+                            <span class="portfolio2">Mobile app for CXO campaigns management<p>B2C Mobile App</p></span> 
+                        </div></a>
+                        
+                        <!-- portfolio 3 -->        
+                        <a href="project-reset-password.html"><div style="background-image: url('images/thumb-3.png'); background-size: cover;">
+                            <span class="portfolio3">Resetting your password<p>User flow redesign</p></span>
+                            </div></a>
+                        
+                        <!-- portfolio 4 -->        
+                        <a href="project-cs-case-study.html"><div style="background-image: url('images/thumb-4.png'); background-size: cover;">
+                            <span class="portfolio4">Case study: Couchsurfing app<p>P2P MOBILE APP</p></span>
+                            </div></a>
+                        
+                        <!-- portfolio 5 -->        
+                        <a href="project-lottie-animation.html"><div style="background-image: url('images/thumb-5.png'); background-size: cover;">
+                            <span class="portfolio5">Sending money successfully<p>Lottie animation</p></span>
+                            </div></a>
+                        
+                        <!-- portfolio 6 -->        
+                        <div style="background-image: url('images/thumb-6.png'); background-size: cover;">
+                            <span class="portfolio6"><p>soon</p></span>
+                            </div> 
+                        
+                         <!--  <a href="project-lottie-animation.html"><div style="background-image: url('images/thumb-6.png'); background-size: cover;">
+                            <span class="portfolio6">Widget library<p>Illustrations</p></span>
+                            </div></a> --> 
+ 
+                   </div>
                     
                                 
                 </div>  
