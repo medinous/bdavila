@@ -594,7 +594,7 @@ header {
     animation-duration: 0.4s;
 }
 
-.profilepic img:hover {
+.profilepic:hover img {
     animation: pulse;
     animation-duration: 0.6s;   
 }
