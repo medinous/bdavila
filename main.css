@@ -1010,9 +1010,11 @@ footer a  {
         font-size: 50px;
 }
     ul {
-        padding-left;    
+        padding-left: 0;   
 }
-    li {
+    li,
+    li.results,
+    li.painpoints {
         font-size: 40px;
 } 
     h4 {
