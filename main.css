@@ -704,8 +704,8 @@ header {
     #container-single {
         position: absolute;
         top: 96px;
-        right: 22%;
-        left: 22%;
+        right: 15%;
+        left: 15%;
         font-family: 'geomanistregular', Roboto;
         
         animation: fadeIn;
