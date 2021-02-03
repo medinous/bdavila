@@ -1005,12 +1005,17 @@ footer a  {
     font-size: 48px;
  }
         
-    .button,
-    li {
+    .button {
         font-size: 50px;
 }
     ul {
         margin: 0;
+}
+    li {
+        font-size: 40px;
+} 
+    h4 {
+        font-size: 40px;
 }
        
 footer a  { 
