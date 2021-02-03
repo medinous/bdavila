@@ -949,32 +949,13 @@ footer a  {
     
     .portfolio-description {
         display: none;
-    }
-    
-    
-    #container-single p {
-        font-size: 48px;
-    }
-    
-    #container-single h3 {
-        font-size: 56px;
-    }
-    
-    .single {
-    font-size: 60px;
-    }
-    
+    }   
     
     a.bettina:hover:after,
     a.rachel:hover:after {
     right: 0;
     }
      
-    
-      .fa, .fas { 
-    font-size: 48px;
- }
-    
     
  header { 
     height: 88px;
@@ -1007,5 +988,27 @@ footer a  {
     
 footer a  { 
     font-size: 50px;
- }
+  }
+}
     
+
+@media screen and (max-device-width:500px), screen and (max-width:500px) {   
+
+     #container-single p {
+        font-size: 48px;
+    }
+    
+    #container-single h3 {
+        font-size: 56px;
+    }
+    
+    .single {
+    font-size: 60px;
+    } 
+    
+        
+      .fa, .fas { 
+    font-size: 48px;
+ }
+   
+ }
