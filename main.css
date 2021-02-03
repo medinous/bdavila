@@ -1005,7 +1005,8 @@ footer a  {
     font-size: 48px;
  }
         
-    .button {
+    .button,
+    li {
         font-size: 50px;
 }
        
