@@ -721,7 +721,12 @@ header {
             animation-duration: 0.4s;
         } 
     */
-    
+
+        .excerpt {
+            font-size: 24px;
+            COLOR: #A9A9A9;
+            LINE-HEIGHT: 1.6;
+     }
 
         #container-single p {
             animation: fadeInUp; 
