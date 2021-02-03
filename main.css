@@ -256,7 +256,8 @@ a {
 
 a:hover {
     /*color: #6653FF!important;*/
-    background: none;
+    color: black;
+    background: none !important;
 }
 
 a:visited,
