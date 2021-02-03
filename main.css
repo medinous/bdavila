@@ -939,11 +939,7 @@ footer a  {
     .portfolio6 {
         font-size: 64px;
     }
-    
-    .portfolio-wrapper {
-        margin-top: 80px;
-    }
-    
+
     .portfolio-description {
         display: none;
     }   
@@ -986,7 +982,10 @@ footer a  {
     display: none;
  }
     
-    
+        
+    .portfolio-wrapper {
+        margin-top: 80px;
+    }
     
      #container-single p {
         font-size: 48px;
