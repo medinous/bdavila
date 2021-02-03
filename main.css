@@ -930,10 +930,7 @@ footer a  {
         font-size: 50px;
     }
        
-    
-    .button {
-        font-size: 50px;
-}
+
     .portfolio1,
     .portfolio2,
     .portfolio3,
@@ -956,6 +953,11 @@ footer a  {
     right: 0;
     }
      
+
+ }   
+
+@media screen and (max-device-width:500px), screen and (max-width:500px) {
+    
     
  header { 
     height: 88px;
@@ -985,14 +987,6 @@ footer a  {
     display: none;
  }
     
-    
-footer a  { 
-    font-size: 50px;
-  }
-}
-    
-
-@media screen and (max-device-width:500px), screen and (max-width:500px) {   
 
      #container-single p {
         font-size: 48px;
@@ -1010,5 +1004,13 @@ footer a  {
       .fa, .fas { 
     font-size: 48px;
  }
-   
- }
+        
+    .button {
+        font-size: 50px;
+}
+       
+footer a  { 
+    font-size: 50px;
+  }
+
+}
