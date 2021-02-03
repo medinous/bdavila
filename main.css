@@ -171,6 +171,7 @@ p {
 ul {
     animation: fadeInUp;
     animation-duration: 0.4s; 
+    margin-top: 0;
 }
 
 li {
