@@ -892,13 +892,6 @@ footer a  {
         padding-top: 80px;
     }
     
-    p {
-        font-size: 21px;
-    }
-    
-    a.highlight {
-        font-size: 50px;
-    }
 
     .menu-left {
             margin-left: 18%;
@@ -938,6 +931,10 @@ footer a  {
         font-size: 64px;
     }
     
+    .portfolio-wrapper {
+        margin-top: 80px;
+    }
+    
     .portfolio-description {
         display: none;
     }
@@ -964,12 +961,7 @@ footer a  {
     a.rachel:hover:after {
     right: 0;
     }
-    
-
-    
-    p {
-    font-size: 28px;
-    }
+     
     
       .fa, .fas { 
     font-size: 48px;
@@ -1004,6 +996,3 @@ footer a  {
     display: none;
  }
     
-        .portfolio-wrapper {
-        margin-top: 80px;
-    }
