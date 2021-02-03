@@ -892,11 +892,13 @@ footer a  {
         padding-top: 80px;
     }
     
-    p,
-    a.highlight {
+    p {
         font-size: 21px;
     }
     
+    a.highlight {
+        font-size: 50px;
+    }
 
     .menu-left {
             margin-left: 18%;
