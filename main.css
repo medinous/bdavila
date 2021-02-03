@@ -250,8 +250,6 @@ a {
     position: relative;
     cursor: context-menu;
     color: black;
-    /*background: linear-gradient(180deg,rgba(255,255,255,0) 50%, #C3BBFF 50%);*/
-/* #4DDBB8 */
 
 }
 
@@ -736,6 +734,10 @@ header {
             /*color: #6653FF; */
             background: linear-gradient(180deg,rgba(255,255,255,0) 50%, #6DEECE 50%);
         }
+                .portfolio-wrapper a.lightbox {
+                    /*color: #6653FF; */
+                    background: none;
+                }
 
 
 
