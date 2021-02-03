@@ -962,7 +962,6 @@ footer a  {
  header { 
     height: 88px;
     padding-top: 20px;
-
  }
     
     .nav-up {
@@ -987,7 +986,8 @@ footer a  {
     display: none;
  }
     
-
+    
+    
      #container-single p {
         font-size: 48px;
     }
@@ -1000,7 +1000,9 @@ footer a  {
     font-size: 60px;
     } 
     
-        
+    
+    
+          
       .fa, .fas { 
     font-size: 48px;
  }
@@ -1009,7 +1011,7 @@ footer a  {
         font-size: 50px;
 }
     ul {
-        margin: 0;
+        padding-left;    
 }
     li {
         font-size: 40px;
@@ -1017,6 +1019,12 @@ footer a  {
     h4 {
         font-size: 40px;
 }
+    p {
+        font-size: 48px;
+}
+    
+    
+    
        
 footer a  { 
     font-size: 50px;
