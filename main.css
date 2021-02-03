@@ -256,7 +256,7 @@ a {
 
 a:hover {
     /*color: #6653FF!important;*/
-    color: black;
+    color: black !important;
     background: none !important;
 }
 
@@ -805,7 +805,7 @@ footer {
 }
 
 footer a:hover { 
-   color: #6653FF !important;
+   color: #000 !important;
 }
 
 footer a  {
