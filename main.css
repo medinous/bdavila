@@ -594,7 +594,7 @@ header {
     animation-duration: 0.4s;
 }
 
-.profilepic:hover img {
+.profilepic img:hover {
     	-webkit-transform: scale(1);
 	transform: scale(1);   
 }
