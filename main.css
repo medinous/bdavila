@@ -682,6 +682,11 @@ header {
       color: #E1E1E1;
     }
 
+    .grid a {
+      background: none;
+    }
+
+
 
 
 
