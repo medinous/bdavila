@@ -683,7 +683,7 @@ header {
     }
 
     .grid a {
-      background-color: none;
+      background: none !important;
     }
 
 
