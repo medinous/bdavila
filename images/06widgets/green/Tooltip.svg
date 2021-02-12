@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="120px" height="120px" viewBox="0 0 120 120" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+    <title>widget/Tooltip</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0.468312754" y="0.323700618" width="104.615385" height="76.5729857" rx="6.03076935"></rect>
+        <filter x="-10.5%" y="-9.1%" width="121.0%" height="128.7%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="4" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="3" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.106544384 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-4">
+            <stop stop-color="#009CB2" offset="0%"></stop>
+            <stop stop-color="#217981" offset="100%"></stop>
+        </linearGradient>
+        <path d="M3.69230769,8 L34.7659574,8 L34.7659574,8 L37.0728899,2.29337753 C37.2798803,1.78134878 37.8627604,1.53406629 38.3747892,1.74105664 C38.6261593,1.84267436 38.8254923,2.04200738 38.9271101,2.29337753 L41.2340426,8 L41.2340426,8 L72.3076923,8 C74.3468975,8 76,9.65310246 76,11.6923077 L76,26.3076923 C76,28.3468975 74.3468975,30 72.3076923,30 L3.69230769,30 C1.65310246,30 2.5049979e-15,28.3468975 0,26.3076923 L0,11.6923077 C-2.49730616e-16,9.65310246 1.65310246,8 3.69230769,8 Z" id="path-5"></path>
+        <filter x="-14.5%" y="-17.8%" width="128.9%" height="167.8%" filterUnits="objectBoundingBox" id="filter-6">
+            <feOffset dx="0" dy="4" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="3" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.106544384 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <rect id="path-7" x="0" y="0" width="57" height="4" rx="2"></rect>
+        <filter x="-19.3%" y="-175.0%" width="138.6%" height="650.0%" filterUnits="objectBoundingBox" id="filter-9">
+            <feOffset dx="0" dy="4" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="3" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.106544384 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <linearGradient x1="100%" y1="50%" x2="0%" y2="50%" id="linearGradient-10">
+            <stop stop-color="#B0EBD9" offset="0%"></stop>
+            <stop stop-color="#4DDBB8" offset="100%"></stop>
+        </linearGradient>
+        <path d="M29.6128105,4.20981006 L29.7071,4.2931 L31.8281,6.4141 C32.2191,6.8051 32.2191,7.4371 31.8281,7.8281 C31.6331,8.0231 31.3771,8.1211 31.1211,8.1211 C30.9077667,8.1211 30.6944333,8.05304444 30.5164009,7.91751204 L30.4141,7.8281 L28.2931,5.7071 C27.9021,5.3161 27.9021,4.6831 28.2931,4.2931 C28.6540231,3.93217692 29.2202953,3.90441361 29.6128105,4.20981006 Z M46.414,4.172 C46.805,3.781 47.438,3.781 47.828,4.172 C48.219,4.562 48.219,5.195 47.828,5.586 L47.828,5.586 L45.707,7.707 C45.512,7.902 45.256,8 45,8 C44.744,8 44.488,7.902 44.293,7.707 C43.902,7.316 43.902,6.684 44.293,6.293 L44.293,6.293 Z M38.1211,7.99360578e-15 C38.6346,7.99360578e-15 39.056702,0.386285714 39.1143824,0.883431487 L39.1211,1 L39.1211,4 C39.1211,4.552 38.6741,5 38.1211,5 C37.6076,5 37.185498,4.61371429 37.1278176,4.11656851 L37.1211,4 L37.1211,1 C37.1211,0.448 37.5681,7.99360578e-15 38.1211,7.99360578e-15 Z" id="path-11"></path>
+        <path d="M89,78.9747681 L80.4003577,72.1839122 C79.7620449,71.6818939 78.896536,72.2761505 79.010134,73.1395615 L80.5437076,84.7857811 L82.496512,81.2731651 L85.0943911,86 L87.9127044,84.0629957 L85.3148254,79.3361608 L89,78.9747681 Z" id="path-13"></path>
+    </defs>
+    <g id="widget/Tooltip" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-4" transform="translate(-23.000000, -20.000000)" fill="#D8D8D8" fill-opacity="0" fill-rule="nonzero">
+            <rect id="Rectangle" x="0" y="0" width="160" height="160"></rect>
+        </g>
+        <path d="M85.7770289,120.281519 C115.141615,120.281519 137.328795,34.2141891 117.545348,37.9040719 C97.7619011,41.5939548 91.7186936,40.9013924 91.5912821,30.4618633 C91.4638706,20.0223343 110.486342,-0.333865452 85.7770289,-0.333865452 C74.6498503,-0.333865452 69.885312,33.6004715 51.0631269,37.5659917 C32.2409419,41.5315119 5.75456655,42.4182644 5.75456655,60.7851411 C5.75456655,75.5274219 36.6728982,77.9119718 52.9370836,89.0780125 C69.2988904,100.311074 71.0508043,120.281519 85.7770289,120.281519 Z" id="Oval" fill="#E6F9F9" transform="translate(65.416544, 59.973827) scale(-1, 1) rotate(74.000000) translate(-65.416544, -59.973827) "></path>
+        <g id="Group-4" transform="translate(1.000000, 14.000000)">
+            <g id="screens">
+                <g id="Group"></g>
+            </g>
+        </g>
+        <g id="Group-5" transform="translate(7.000000, 21.000000)">
+            <g id="Group">
+                <g id="gradient/Background" transform="translate(0.531687, 0.676299)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="Mask">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-1"></use>
+                        <use fill="#117EA9" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    </g>
+                    <g id="gradient/Background-Blue" mask="url(#mask-2)" fill="url(#linearGradient-4)">
+                        <g transform="translate(-7.000000, 0.000000)" id="gradient/Background">
+                            <rect x="0" y="0" width="120" height="81"></rect>
+                        </g>
+                    </g>
+                </g>
+            </g>
+            <g id="Group-3" transform="translate(54.000000, 43.000000) scale(1, -1) translate(-54.000000, -43.000000) translate(16.000000, 23.000000)">
+                <g id="Group-2" transform="translate(0.000000, 10.000000)">
+                    <g id="Rectangle">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-6)" xlink:href="#path-5"></use>
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-5"></use>
+                    </g>
+                    <g id="gradient/Background" transform="translate(9.000000, 17.000000)">
+                        <mask id="mask-8" fill="white">
+                            <use xlink:href="#path-7"></use>
+                        </mask>
+                        <g id="Mask">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-9)" xlink:href="#path-7"></use>
+                            <use fill="#2F9BC8" fill-rule="evenodd" xlink:href="#path-7"></use>
+                        </g>
+                        <g id="gradient/Background-Green" mask="url(#mask-8)">
+                            <g transform="translate(-3.000000, 0.000000)" id="gradient/Ready">
+                                <g>
+                                    <polygon fill="url(#linearGradient-10)" transform="translate(32.500000, 2.000000) rotate(-90.000000) translate(-32.500000, -2.000000) " points="30.5 -30.5 34.5 -30.5 34.5 34.5 30.5 34.5"></polygon>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+                <mask id="mask-12" fill="white">
+                    <use xlink:href="#path-11"></use>
+                </mask>
+                <use id="Combined-Shape" fill="#1BD4A9" xlink:href="#path-11"></use>
+            </g>
+        </g>
+        <mask id="mask-14" fill="white">
+            <use xlink:href="#path-13"></use>
+        </mask>
+        <use id="Combined-Shape" fill="#17545A" xlink:href="#path-13"></use>
+    </g>
+</svg>

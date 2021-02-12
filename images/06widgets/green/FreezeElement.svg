@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="120px" height="120px" viewBox="0 0 120 120" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+    <title>widget/FreezeElement</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0.468312754" y="0.323700618" width="104.615385" height="76.5729857" rx="6.03076935"></rect>
+        <filter x="-10.5%" y="-9.1%" width="121.0%" height="128.7%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="4" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="3" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.106544384 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-4">
+            <stop stop-color="#009CB2" offset="0%"></stop>
+            <stop stop-color="#217981" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-5" x="0" y="0" width="91" height="20" rx="3.69230769"></rect>
+        <filter x="-12.1%" y="-35.0%" width="124.2%" height="210.0%" filterUnits="objectBoundingBox" id="filter-6">
+            <feOffset dx="0" dy="4" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="3" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.106544384 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="widget/FreezeElement" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M85.7770289,119.281519 C115.141615,119.281519 137.328795,33.2141891 117.545348,36.9040719 C97.7619011,40.5939548 91.7186936,39.9013924 91.5912821,29.4618633 C91.4638706,19.0223343 110.486342,-1.33386545 85.7770289,-1.33386545 C74.6498503,-1.33386545 69.885312,32.6004715 51.0631269,36.5659917 C32.2409419,40.5315119 5.75456655,41.4182644 5.75456655,59.7851411 C5.75456655,74.5274219 36.6728982,76.9119718 52.9370836,88.0780125 C69.2988904,99.3110743 71.0508043,119.281519 85.7770289,119.281519 Z" id="Oval" fill="#E6F9F9" transform="translate(65.416544, 58.973827) scale(-1, 1) rotate(74.000000) translate(-65.416544, -58.973827) "></path>
+        <g id="Group-4" transform="translate(7.000000, 21.000000)">
+            <g id="Group">
+                <g id="gradient/Background" transform="translate(0.531687, 0.676299)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="Mask">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-1"></use>
+                        <use fill="#117EA9" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    </g>
+                    <g id="gradient/Background-Blue" mask="url(#mask-2)" fill="url(#linearGradient-4)">
+                        <g transform="translate(-7.000000, 0.000000)" id="gradient/Background">
+                            <rect x="0" y="0" width="120" height="81"></rect>
+                        </g>
+                    </g>
+                </g>
+            </g>
+            <g id="Group-2" transform="translate(8.000000, 8.000000)">
+                <g id="Rectangle">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-6)" xlink:href="#path-5"></use>
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-5"></use>
+                </g>
+            </g>
+            <g id="Group-3" transform="translate(33.000000, 36.000000)" fill="#4DDBB8">
+                <polygon id="Line" points="0.5 -0.666666667 6.25 11.3333333 1.25 11.333 1.25 19.103133 -0.25 19.103133 -0.25 11.333 -5.25 11.3333333"></polygon>
+                <polygon id="Line" points="20.5 -0.666666667 26.25 11.3333333 21.25 11.333 21.25 19.103133 19.75 19.103133 19.75 11.333 14.75 11.3333333"></polygon>
+                <polygon id="Line" points="40.5 -0.666666667 46.25 11.3333333 41.25 11.333 41.25 19.103133 39.75 19.103133 39.75 11.333 34.75 11.3333333"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

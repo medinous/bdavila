@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="120px" height="120px" viewBox="0 0 120 120" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+    <title>widget/VirtualClick</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0.468312754" y="0.323700618" width="104.615385" height="76.5729857" rx="6.03076935"></rect>
+        <filter x="-10.5%" y="-9.1%" width="121.0%" height="128.7%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="4" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="3" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.106544384 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-4">
+            <stop stop-color="#009CB2" offset="0%"></stop>
+            <stop stop-color="#217981" offset="100%"></stop>
+        </linearGradient>
+        <path d="M23.6128105,2.20981006 L23.7071,2.2931 L25.8281,4.4141 C26.2191,4.8051 26.2191,5.4371 25.8281,5.8281 C25.6331,6.0231 25.3771,6.1211 25.1211,6.1211 C24.9077667,6.1211 24.6944333,6.05304444 24.5164009,5.91751204 L24.4141,5.8281 L22.2931,3.7071 C21.9021,3.3161 21.9021,2.6831 22.2931,2.2931 C22.6540231,1.93217692 23.2202953,1.90441361 23.6128105,2.20981006 Z M40.414,2.172 C40.805,1.781 41.438,1.781 41.828,2.172 C42.219,2.562 42.219,3.195 41.828,3.586 L41.828,3.586 L39.707,5.707 C39.512,5.902 39.256,6 39,6 C38.744,6 38.488,5.902 38.293,5.707 C37.902,5.316 37.902,4.684 38.293,4.293 L38.293,4.293 Z M32.1211,0 C32.6346,0 33.056702,0.386285714 33.1143824,0.883431487 L33.1211,1 L33.1211,4 C33.1211,4.552 32.6741,5 32.1211,5 C31.6076,5 31.185498,4.61371429 31.1278176,4.11656851 L31.1211,4 L31.1211,1 C31.1211,0.448 31.5681,0 32.1211,0 Z" id="path-5"></path>
+        <rect id="path-7" x="0" y="0" width="63" height="20" rx="3.69230769"></rect>
+        <filter x="-17.5%" y="-35.0%" width="134.9%" height="210.0%" filterUnits="objectBoundingBox" id="filter-9">
+            <feOffset dx="0" dy="4" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="3" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.106544384 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <linearGradient x1="-1.11022302e-14%" y1="50%" x2="100%" y2="50%" id="linearGradient-10">
+            <stop stop-color="#23CD98" offset="0%"></stop>
+            <stop stop-color="#5DCEE2" offset="100%"></stop>
+        </linearGradient>
+        <path d="M53,20.9747681 L44.4003577,14.1839122 C43.7620449,13.6818939 42.896536,14.2761505 43.010134,15.1395615 L44.5437076,26.7857811 L46.496512,23.2731651 L49.0943911,28 L51.9127044,26.0629957 L49.3148254,21.3361608 L53,20.9747681 Z" id="path-11"></path>
+    </defs>
+    <g id="widget/VirtualClick" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M85.7770289,120.281519 C115.141615,120.281519 137.328795,34.2141891 117.545348,37.9040719 C97.7619011,41.5939548 91.7186936,40.9013924 91.5912821,30.4618633 C91.4638706,20.0223343 110.486342,-0.333865452 85.7770289,-0.333865452 C74.6498503,-0.333865452 69.885312,33.6004715 51.0631269,37.5659917 C32.2409419,41.5315119 5.75456655,42.4182644 5.75456655,60.7851411 C5.75456655,75.5274219 36.6728982,77.9119718 52.9370836,89.0780125 C69.2988904,100.311074 71.0508043,120.281519 85.7770289,120.281519 Z" id="Oval" fill="#E6F9F9" transform="translate(65.416544, 59.973827) scale(-1, 1) rotate(74.000000) translate(-65.416544, -59.973827) "></path>
+        <g id="Group-3" transform="translate(7.000000, 21.000000)">
+            <g id="Group-4">
+                <g id="screens">
+                    <g id="Group" transform="translate(0.000000, 0.000000)">
+                        <g id="gradient/Background" transform="translate(0.531687, 0.676299)">
+                            <mask id="mask-2" fill="white">
+                                <use xlink:href="#path-1"></use>
+                            </mask>
+                            <g id="Mask">
+                                <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-1"></use>
+                                <use fill="#117EA9" fill-rule="evenodd" xlink:href="#path-1"></use>
+                            </g>
+                            <g id="gradient/Background-Blue" mask="url(#mask-2)" fill="url(#linearGradient-4)">
+                                <g transform="translate(-7.000000, 0.000000)" id="gradient/Background">
+                                    <rect x="0" y="0" width="120" height="81"></rect>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+            <g id="Group-5" transform="translate(22.000000, 24.000000)">
+                <mask id="mask-6" fill="white">
+                    <use xlink:href="#path-5"></use>
+                </mask>
+                <use id="Combined-Shape" fill="#1BD4A9" xlink:href="#path-5"></use>
+                <g id="Group-2" transform="translate(0.000000, 11.000000)">
+                    <g id="colour/colourDarkGrey1">
+                        <mask id="mask-8" fill="white">
+                            <use xlink:href="#path-7"></use>
+                        </mask>
+                        <g id="Mask">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-9)" xlink:href="#path-7"></use>
+                            <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-7"></use>
+                        </g>
+                        <g id="colour/colourWhite" mask="url(#mask-8)" fill="url(#linearGradient-10)" fill-rule="nonzero">
+                            <g transform="translate(31.500000, 8.000000) rotate(-90.000000) translate(-31.500000, -8.000000) translate(16.000000, -24.000000)" id="colour-white">
+                                <rect x="0" y="0" width="31" height="64"></rect>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+                <mask id="mask-12" fill="white">
+                    <use xlink:href="#path-11"></use>
+                </mask>
+                <use id="Combined-Shape" fill="#17545A" xlink:href="#path-11"></use>
+            </g>
+        </g>
+    </g>
+</svg>

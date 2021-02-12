@@ -62,11 +62,7 @@ body {
     text-align: center;
     overflow-x: hidden;
 }
-
-
-.custom-cursor {
-  cursor: url(images/my-cursor.png), auto;
-}
+ 
 
 
 b, strong {
@@ -222,7 +218,7 @@ button {
     background-color: white;
     border: 2px solid black;
     border-radius: 2px;
-    cursor: crosshair;
+    cursor: pointer;
     padding: 24px 40px;
     text-transform: uppercase;
     margin-top: 16px;
@@ -248,7 +244,7 @@ a {
     text-decoration: none !important;    
     /*border-bottom: 2px solid #121212;*/
     position: relative;
-    cursor: context-menu;
+    cursor: pointer;
     color: black;
 
 }
@@ -521,6 +517,10 @@ header {
         margin-left: 8px;
     }
 
+.fa-linkedin:hover {
+        color: #6653FF;
+    }
+
 
 /******************************************************/
 /***********************  CONTAINER  ************************/
@@ -588,15 +588,15 @@ header {
     display: block;
     margin: 0;
     border-radius: 65% 35% 65% 35% / 35% 65% 35% 65%;
-    box-shadow: none; 
+  /*  box-shadow: none; */
     
     animation: pulse;
     animation-duration: 0.4s;
 }
 
 .profilepic img:hover {
-    	-webkit-transform: scale(1);
-	transform: scale(1);   
+    animation: jello;
+    animation-duration: 0.8s;	 
 }
  
 
@@ -644,7 +644,6 @@ header {
             }
 
 
-
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -687,6 +686,19 @@ header {
     animation-duration: 0.4s; 
     }
 
+        .grid div:hover span.widgets {
+            display: visible;
+            color: #6DEECE;
+          /*  color: #A9A9A9;*/
+            font-size: 16px;
+            padding: 40px;
+            display: table-cell;
+            vertical-align: middle;
+            background: #fff;
+            animation: fadeIn; 
+            animation-duration: 0.4s; 
+            }
+
 
     .grid div span p {
       text-align: center;
@@ -696,8 +708,47 @@ header {
     }
 
 
+.col-container {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+    .col {
+      display: table-cell;
+      padding: 16px;
+      animation: pulse; 
+      animation-duration: 0.5s; 
+    }
+        .col img.latest {
+         width: 210px;
+         height: 210px;
+         border-radius: 65% 35% 65% 35% / 35% 65% 35% 65%;
+         margin-bottom: 40px;
+    }
+       .col:hover h3 {
+        color: #6653FF;
+    }
+       .col:hover p {
+        color: #A9A9A9;
+    }
+       .col:hover img {
+        animation: pulse; 
+        animation-duration: 0.4s; 
+    }
 
+    .col-container h3,
+    .col-container p {
+      margin: 0 auto;
+      text-align: center;
+      margin-bottom: 24px;
+      animation: fadeInUp; 
+      animation-duration: 0.3s; 
+    }
 
+        .col-container p.subtitle {
+          text-transform: uppercase;
+           color: #A9A9A9;
+        }
 
 .portfolio {
     border-bottom: 2px solid #121212;
@@ -741,7 +792,7 @@ header {
         .excerpt {
             font-size: 24px;
             COLOR: #A9A9A9;
-            LINE-HEIGHT: 1.6;
+            line-height: 1.6;
      }
 
         #container-single p {
@@ -755,7 +806,7 @@ header {
         }
                 .portfolio-wrapper a.lightbox {
                     /*color: #6653FF; */
-                    background: white;
+                    background: #fff !important;
                 }
 
 
@@ -932,6 +983,17 @@ footer a  {
     
 }
 
+@media screen and (max-device-width:1024px), screen and (max-width:1024px) {   
+    
+    .col img.latest {
+        width: 150px;
+        height: 150px;
+    }
+    
+}
+
+
+
 @media screen and (max-device-width:768px), screen and (max-width:768px) {   
     
     #intro {
@@ -951,7 +1013,6 @@ footer a  {
         font-size: 50px;
     }
        
-
     .portfolio1,
     .portfolio2,
     .portfolio3,
@@ -970,6 +1031,15 @@ footer a  {
     right: 0;
     }
      
+    
+    .menu-left {
+            margin-left: 15%;
+        }
+
+    .menu-right {
+            margin-right: 15%;
+        }   
+    
 
  }   
 
@@ -1002,8 +1072,7 @@ footer a  {
     #email  { 
     display: none;
  }
-    
-        
+           
     .portfolio-wrapper {
         margin-top: 80px;
     }
@@ -1012,15 +1081,34 @@ footer a  {
         font-size: 48px;
     }
     
+    .grid p {
+        font-size: 14px;
+    }
+    
+
     #container-single h3 {
         font-size: 56px;
     }
     
+        
+    .col {
+      display: block;
+      margin-bottom: 88px;
+    }
+         
+        .col h3 {
+          margin: 48px 0;
+        }
+    
+            .col img.latest {
+             width: 400px;
+             height: 400px;
+            }
+
+    
     .single {
     font-size: 60px;
     } 
-    
-    
     
           
       .fa, .fas { 
@@ -1045,9 +1133,7 @@ footer a  {
         font-size: 48px;
 }
     
-    
-    
-       
+   
 footer a  { 
     font-size: 50px;
   }

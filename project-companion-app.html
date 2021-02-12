@@ -31,6 +31,7 @@
         <link rel="manifest" href="/site.webmanifest">
         
         <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
         <script type="text/javascript">
             
             // Hide Header on on scroll down
@@ -105,13 +106,11 @@
 
         
         <h3><span class="highlight">Context</span></h3>
-        <p class="left">AB Tasty Companion is a B2B mobile application for AB Tasty end users to follow and monitor their campaigns on-the-go. We wanted to solve the problem of users being unable to take immediate action whenever there is a bug or any other critical error on their campaigns whenever they are away from their work environment, such as commuting in the train or away on holidays. This is a new approach for the company because it is a B2C product.
+        <p class="left">AB Tasty Companion is a B2B mobile application for AB Tasty end users to follow and monitor their campaigns on-the-go. We wanted to solve the problem of users being unable to take immediate action whenever there is a bug or any other critical error on their campaigns whenever they are away from their work environment, such as commuting in the train or away on holidays. 
         </p>
-        <p class="left"><span style="font-weight: bold;">Target Audience:</span> AB Tasty users, but more specifically CRO managers & consultants that use the tool on a daily-basis.
+        <p class="left"><span style="font-weight: bold;">Target Audience:</span> AB Tasty users, more specifically CRO managers & consultants that use the tool on a daily-basis.
         </p>
-        <p class="left"><span style="font-weight: bold;">Product goals:</span> Campaign monitoring in mobility (play and pause), user notification on important changes in their campaigns and account details. This is a first mobile application and we are developing a scalable framework to be enriched with new features in the future.
-        </p>
-        <p class="left"><span style="font-weight: bold;">Metrics of Success:</span> Number of downloads, users satisfaction (by survey & interview) and CSMs satisfaction (by survey & interview).
+        <p class="left"><span style="font-weight: bold;">Product goals:</span> Campaign monitoring in mobility, user notification on important changes in their campaigns and account details.
         </p>
         
             
@@ -123,9 +122,10 @@
             <div class="subtitle">General userflow for the app</div>
 
                 <a href="#s" class="lightbox" id="img-1">
-                  <span style="background-image: url('images/03mobileapp/app-userflow.jpg')"></span>
+                  <span style="background-image: url('images/03mobileapp/app-userflow.jpg');"></span>
                 </a> 
-            
+        
+           <!-- <span class="space"></span>-->
    
                       <!-- IMAGE -->
                 <a href="#img-2"><img src="images/03mobileapp/app-Journey%20Map-1.jpg" alt="thumb"></a>
@@ -162,9 +162,11 @@
                   <span style="background-image: url('images/03mobileapp/app-Journey%20Map-3.jpg')"></span>
                 </a> -->
         
+        <p class="left">The scope of the mobile app is not the same as the web solution. Based on the user research, persona and user journey we mapped out, we were able to determine the main focus of the app: to allow users to have an overview of their campaigns and take "emergency" actions if needed, such as playing a campaign, pausing a campaign or clearing the framework (removing the AB Tasty tag immediately from their webiste in case of a bug or conflict of any kind).</p>
+        
     
         <h3><span class="highlight">Ideation</span></h3>
-        <p class="left">The project was happening at the same time as the UI revamp of the platform, so we had the incredible support from Morgane, the visual designer, to create the illustrations and visual assets for the app.</p>
+        <p class="left">The project was happening at the same time as the UI revamp of the platform, so we had the incredible support from Morgane, the visual designer, to create the illustrations and visual assets for the app. First, we created low-fidelity mockups to validate each screen and interaction internally.</p>
 
               <!-- IMAGE -->
                 <a href="#img-6"><img src="images/03mobileapp/app-wireframes2.png" alt="thumb"></a>
@@ -175,24 +177,63 @@
                   <span style="background-image: url('images/03mobileapp/app-wireframes2.png')"></span>
                 </a> 
    
-                
+                        
                 <!-- IMAGE -->
                 <a href="#img-1-1"><img src="images/03mobileapp/app-notifications-userflow.png" alt="thumb"></a>
                 <div class="subtitle">Userflow for the Notifications Center done in <a href="http://overflow.io" target="_blank">Overflow</a></div>
-
 
                 <a href="#s" class="lightbox" id="img-1-1">
                   <span style="background-image: url('images/03mobileapp/app-notifications-userflow.png')"></span>
                 </a> 
                 
-   
-        <h3><span class="highlight">Outcome</span></h3>
-        <p class="left">We launched the Companion app version 1.0 for all AB Tasty customers in October 2018. The users should use the same credentials they already have for the desktop app, which means no registration is needed. They can simply download the app on their personal mobile devices. 
-        </p>
+                
+        <p class="left">Next, after the main screens and naviagtion patterns were finalized, we jumped to the UI, animations and interaction details. Our design system is called Pulsar and presents a "outer space" theme. Thus, me and the Visual designer were able to explore different ideas to merge the system concept with the user experience in the app.</p>
+        
+        <!-- IMAGE -->
+        <img src="images/03mobileapp/pulsar_social.png" alt="Pulsar">
+        <div class="subtitle">Pulsar: AB Tasty's Design System launched in October 2018</div>
+
+        
+        <p class="left">For instance, when the user clear their framework from the app - aka they remove AB Tasty tag from their website - we show an astronaut lost in space. A similar image is shown when the search results in the campaigns list return empty.</p>
+        
+    <div class="col-container">
+        <div class="col"><img src="images/03mobileapp/Framework1.jpg" /></div>
+        <div class="col"><img src="images/03mobileapp/Framework2.jpg" /></div>
+        <div class="col"><img src="images/03mobileapp/Framework3.jpg" /></div>
+    </div> 
+    <div class="subtitle">Removing AB Tasty tag from the website.</div>
+        
+    <div class="col-container">
+        <div class="col"><img src="images/03mobileapp/Framework4.jpg" /></div>
+        <div class="col"><img src="images/03mobileapp/Framework5.jpg" /></div>
+        <div class="col"><img src="images/03mobileapp/Framework6.jpg" /></div>
+    </div> 
+    <div class="subtitle">Putting AB Tasty tag back in the website.</div>
+ 
+         
+    <p class="left">For all actions requesting a loading time, we created a custom loader based on the Pulsar theme: a solar system-like animation with planets spinning around concentric lines. Neat!</p>
+        
+    <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_azph1ueq.json"  background="transparent" speed="1" style="width: 200px; height: 200px; margin: 0 auto;" loop autoplay center></lottie-player>
+        
+    <p class="left">When the user needs to refresh their campaigns list, we offer an animated rocket launching to space, a very nice gamified interaction while waiting for the page to refresh. For this particular animation, we used Lottie library: a very light and compatible solution for all operational systems. While the user holds the finger on screen, the rocket trembles on the ground to prepare to fly. Only after the uses releases the finger that the rocket starts flying.</p>
+        
+    <lottie-player src="https://assets7.lottiefiles.com/packages/lf20_us0xmgat.json"  background="transparent" speed="1"  style="width: 100%; height: auto;" loop autoplay></lottie-player>
+    <div class="subtitle">Pull to refresh: fun and light animation made with Lottie library</div>
+              
+    <div class="col-container">
+      <div class="col"><img src="images/03mobileapp/App-Pull%20to%20refresh-0.jpg" /></div>
+      <div class="col"><img src="images/03mobileapp/App-Pull%20to%20refresh-1.jpg" /></div>
+      <div class="col"><img src="images/03mobileapp/App-Pull%20to%20refresh-2.jpg" /></div>
+    </div>
+        
+    <h3><span class="highlight">Outcome</span></h3>
+    <p class="left">We launched the Companion app version 1.0 for all AB Tasty customers in October 2018. The users should use the same credentials they already have for the desktop app, which means no registration is needed. They can simply download the app on their personal mobile devices. 
+    </p>
+        
     <ul>
-    <li>The Companion app is currently available on <a href="https://apps.apple.com/fr/app/ab-tasty/id1447135336?l=en" target="_blank">App Store</a> and <a href="https://play.google.com/store/apps/details?id=com.abtasty.companion&hl=en" target="_blank">Google Play</a>, only in English.</li> 
-    <li>And <a href="https://www.notion.so/bettinaspace/Latest-projects-f9aceda6dc29425f8aefa5340633d2e0#d8bc1ff3f76d45509f8744956ae4c125" target="_blank">here is an article</a> explaining how the app works.</li>
-        </ul>
+        <li>The Companion app is currently available on <a href="https://apps.apple.com/fr/app/ab-tasty/id1447135336?l=en" target="_blank">App Store</a> and <a href="https://play.google.com/store/apps/details?id=com.abtasty.companion&hl=en" target="_blank">Google Play</a>, only in English.</li> 
+        <li>And <a href="https://www.notion.so/bettinaspace/Latest-projects-f9aceda6dc29425f8aefa5340633d2e0#d8bc1ff3f76d45509f8744956ae4c125" target="_blank">here is an article</a> explaining how the app works.</li>
+    </ul>
                 
     
             <!-- IMAGE -->
@@ -229,52 +270,39 @@
                 
                 <span class="space"></span>
             
-                    <span class="highlight" style="font-size: 24px;">See other projects</span>
+                    <span class="highlight" style="font-size: 24px;">Latest projects</span>
    
             </span>
               
         </footer> 
     
-        
-        
-        
+
     
-            <div class="grid">
-                        
-                        <!-- portfolio 1 -->        
-                         <a style="background: none;"  href="project-ab-tasty-dashboard.html"><div style="background-image: url('images/thumb-1.png'); background-size: cover;">
-                            <span class="portfolio1">Dashboard for CXO campaigns management<p>B2B Web Platform</p></span>
-                        </div></a>
-                        
-                        <!-- portfolio 2 -->        
-                        <a style="background: none;" href="project-companion-app.html"><div style="background-image: url('images/thumb-2.png'); background-size: cover; opacity: 0.3;">
-                           <!-- <span class="portfolio2">Mobile app for CXO campaigns management<p>B2C Mobile App</p></span> -->
-                        </div></a>
-                        
-                        <!-- portfolio 3 -->        
-                        <a style="background: none;" href="project-reset-password.html"><div style="background-image: url('images/thumb-3.png'); background-size: cover;">
-                            <span class="portfolio3">Resetting your password<p>User flow redesign</p></span>
-                            </div></a>
-                        
-                        <!-- portfolio 4 -->        
-                        <a style="background: none;" href="project-cs-case-study.html"><div style="background-image: url('images/thumb-4.png'); background-size: cover;">
-                            <span class="portfolio4">Case study: Couchsurfing app<p>P2P MOBILE APP</p></span>
-                            </div></a>
-                        
-                        <!-- portfolio 5 -->        
-                        <a style="background: none;" href="project-lottie-animation.html"><div style="background-image: url('images/thumb-5.png'); background-size: cover;">
-                            <span class="portfolio5">Sending money successfully<p>Lottie animation</p></span>
-                            </div></a>
-                        
-                        <!-- portfolio 6 -->        
-                        <div style="background-image: url('images/thumb-6.png'); background-size: cover;">
-                            <span class="portfolio6"><p>soon</p></span>
-                        </div>
-                        
-                         <!--  <a style="background: none;" href="project-lottie-animation.html"><div style="background-image: url('images/thumb-6.png'); background-size: cover;">
-                            <span class="portfolio6">Widget library<p>Illustrations</p></span>
-                            </div></a> --> 
-            </div>
+        <div class="col-container">
+            
+
+              <div class="col">
+                    <a href="project-ab-tasty-dashboard.html"><img class="latest" src="images/thumb-1.png" /></a>
+                    <h3>Dashboard for CXO campaigns management</h3>
+                    <p class="subtitle">B2B Web Platform</p>
+                    <p>AB Tasty is an all-inclusive B2B/SaaS tool for website and customer experience optimization.</p>
+          </div>
+            
+             <div class="col" style="opacity: 0.3;">
+                    <img class="latest" src="images/thumb-2.png" />
+                    <h3>Mobile app for CXO campaigns management</h3>
+                    <p class="subtitle">B2C Mobile App</p>
+                    <p>B2B mobile application for end users to follow and monitor their campaigns on-the-go.</p>
+          </div>
+            
+              <div class="col">
+                    <a href="project-reset-password.html"><img class="latest" src="images/thumb-3.png" /></a>
+                    <h3>Helping users to create a new password</h3>
+                    <p class="subtitle">B2B Web Platform</p>
+                    <p>Changing our password is often necessary and, sometimes, mandatory. But never a fun task.</p>
+          </div>
+
+      </div>
     
                 <span class="space"></span>
                 <span class="space"></span>

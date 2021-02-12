@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="120px" height="120px" viewBox="0 0 120 120" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 62 (91390) - https://sketch.com -->
+    <title>widget/iFrameClickTracking</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0.468312754" y="0.323700618" width="104.615385" height="76.5729857" rx="6.03076935"></rect>
+        <filter x="-10.5%" y="-9.1%" width="121.0%" height="128.7%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="4" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="3" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.106544384 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-4">
+            <stop stop-color="#009CB2" offset="0%"></stop>
+            <stop stop-color="#217981" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="widget/iFrameClickTracking" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M85.7770289,120.281519 C115.141615,120.281519 137.328795,34.2141891 117.545348,37.9040719 C97.7619011,41.5939548 91.7186936,40.9013924 91.5912821,30.4618633 C91.4638706,20.0223343 110.486342,-0.333865452 85.7770289,-0.333865452 C74.6498503,-0.333865452 69.885312,33.6004715 51.0631269,37.5659917 C32.2409419,41.5315119 5.75456655,42.4182644 5.75456655,60.7851411 C5.75456655,75.5274219 36.6728982,77.9119718 52.9370836,89.0780125 C69.2988904,100.311074 71.0508043,120.281519 85.7770289,120.281519 Z" id="Oval" fill="#E6F9F9" transform="translate(65.416544, 59.973827) scale(-1, 1) rotate(74.000000) translate(-65.416544, -59.973827) "></path>
+        <g id="gradient/Background" transform="translate(7.531687, 21.676299)">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <g id="Mask">
+                <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-1"></use>
+                <use fill="#117EA9" fill-rule="evenodd" xlink:href="#path-1"></use>
+            </g>
+            <g id="gradient/Background-Blue" mask="url(#mask-2)" fill="url(#linearGradient-4)">
+                <g transform="translate(-7.000000, 0.000000)" id="gradient/Background">
+                    <rect x="0" y="0" width="120" height="81"></rect>
+                </g>
+            </g>
+        </g>
+        <g id="Group" transform="translate(14.000000, 30.000000)" fill="#217981">
+            <rect id="Rectangle" x="0" y="0" width="93" height="20" rx="3.69230769"></rect>
+            <rect id="Rectangle" x="0" y="48" width="93" height="15" rx="3.69230769"></rect>
+            <rect id="Rectangle" x="0" y="24" width="44" height="20" rx="3.69230769"></rect>
+            <rect id="Rectangle-Copy" x="48" y="24" width="44" height="20" rx="3.69230769"></rect>
+        </g>
+        <path d="M63.4036851,91.9816893 C78.6613452,91.9816893 90.1896683,47.0268785 79.91031,48.9541834 C69.6309516,50.8814882 66.4909378,50.519748 66.4247356,45.0669583 C66.3585333,39.6141686 76.2424933,28.9816893 63.4036851,28.9816893 C57.6220709,28.9816893 55.1464458,46.7063206 45.3665532,48.7775968 C35.5866606,50.848873 21.8245015,51.3120428 21.8245015,60.9054561 C21.8245015,68.6056653 37.8894781,69.8511668 46.3402497,75.6834291 C54.8417447,81.550698 55.7520286,91.9816893 63.4036851,91.9816893 Z" id="Oval" fill="#35C9AD" opacity="0.574335007" transform="translate(52.824501, 60.481689) scale(-1, 1) rotate(74.000000) translate(-52.824501, -60.481689) "></path>
+        <path d="M61.952198,77.0862013 C69.8271193,77.0862013 75.7772216,53.5384432 70.4717463,54.5479839 C65.1662711,55.5575245 63.9645679,60.0919238 63.930399,57.2357006 C63.8962301,54.3794774 57.6903971,53.370532 52.6427106,54.4554861 C47.5950241,55.5404403 40.4919742,55.7830531 40.4919742,60.8081743 C40.4919742,64.8416172 46.2315201,68.0414187 50.5932087,71.0964132 C54.9810771,74.1697446 58.0029559,77.0862013 61.952198,77.0862013 Z" id="Oval" fill="#35C9AD" opacity="0.83" transform="translate(56.491974, 65.557835) scale(-1, 1) rotate(74.000000) translate(-56.491974, -65.557835) "></path>
+        <path d="M90.637388,68.3414163 C93.3999709,68.3414163 101.753393,60.3316655 101.753393,51.6292228 C101.753393,42.92678 100.234365,32.3414163 97.4717818,32.3414163 C94.7091989,32.3414163 92.469683,39.3961401 92.469683,48.0985828 C92.469683,56.8010256 87.874805,68.3414163 90.637388,68.3414163 Z" id="Oval" fill="#35C9AD" opacity="0.57" transform="translate(95.753393, 50.341416) rotate(-20.000000) translate(-95.753393, -50.341416) "></path>
+        <path d="M94.2981313,61.9102432 C95.6794228,61.9102432 99.8561338,57.9053678 99.8561338,53.5541464 C99.8561338,49.202925 99.0966197,43.9102432 97.7153282,43.9102432 C96.3340368,43.9102432 95.2142788,47.437605 95.2142788,51.7888264 C95.2142788,56.1400478 92.9168398,61.9102432 94.2981313,61.9102432 Z" id="Oval-Copy" fill="#35C9AD" opacity="0.829440104" transform="translate(96.856134, 52.910243) rotate(-20.000000) translate(-96.856134, -52.910243) "></path>
+        <g id="icon/Check/Solid/16" transform="translate(96.000000, 80.000000)">
+            <rect id="Rectangle" fill="#FFFFFF" opacity="0" x="0" y="0" width="24" height="24"></rect>
+            <circle id="Oval" fill="#FFFFFF" cx="12" cy="12" r="12"></circle>
+            <polygon id="Fill-1" fill="#4DDBB8" points="16.4425029 8.379 11.1855 13.758 8.121 10.5 6 12.6225 11.1855 18 18.5635029 10.5"></polygon>
+        </g>
+    </g>
+</svg>

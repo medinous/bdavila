@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="120px" height="120px" viewBox="0 0 120 120" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+    <title>widget/PromotionalBanner</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0.468312754" y="0.323700618" width="104.615385" height="76.5729857" rx="6.03076935"></rect>
+        <filter x="-10.5%" y="-9.1%" width="121.0%" height="128.7%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="4" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="3" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.106544384 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-4">
+            <stop stop-color="#009CB2" offset="0%"></stop>
+            <stop stop-color="#217981" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-5" x="0" y="0" width="89" height="20" rx="3.69230769"></rect>
+        <filter x="-12.4%" y="-35.0%" width="124.7%" height="210.0%" filterUnits="objectBoundingBox" id="filter-6">
+            <feOffset dx="0" dy="4" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="3" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.106544384 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <path d="M47.537,38.3760851 C47.7114615,38.0366244 48.1289231,37.902772 48.4688462,38.0752622 C51.2636923,39.4993413 53,42.3261106 53,45.4516329 C53,49.4320166 50.1670769,52.7631472 46.4057692,53.5517723 L46.4057692,53.5517723 L46.6806154,53.7580706 C46.9866154,53.9864476 47.0489231,54.419053 46.8190769,54.7233257 C46.6833846,54.9047854 46.475,55 46.2645385,55 C46.1198462,55 45.9751538,54.9544626 45.8505385,54.8620078 L45.8505385,54.8620078 L44.2838462,53.6904545 C44.1010769,53.5545322 44.0173077,53.3447841 44.0186923,53.1343461 C44.0145385,53.1026079 44,53.0743195 44,53.0412014 C44,52.7872958 44.144,52.5747879 44.3489231,52.4547347 L44.3489231,52.4547347 L45.3202308,51.1638181 C45.5500769,50.8581655 45.9841538,50.7981389 46.2894615,51.0258259 C46.5954615,51.254203 46.6577692,51.6868084 46.4279231,51.991771 L46.4279231,51.991771 L46.3053846,52.1546018 C49.346,51.4266932 51.6153846,48.7013481 51.6153846,45.4516329 C51.6153846,42.8470309 50.1684615,40.4915049 47.8388462,39.3040824 C47.4982308,39.1309022 47.3632308,38.7148559 47.537,38.3760851 Z M43.1809231,36.2738314 C43.4107692,35.9719965 43.8448462,35.9097131 44.1494615,36.1369448 L44.1494615,36.1369448 L45.7161538,37.2984273 C45.8636154,37.4065676 45.9598462,37.5694627 45.9861538,37.748784 C45.991,37.7823213 45.9813077,37.815174 45.9813077,37.8487112 C45.9847692,37.8808796 46,37.9089413 46,37.9424785 C46,38.1936654 45.8566923,38.4044707 45.6517692,38.523562 L45.6517692,38.523562 L44.6797692,39.8048202 C44.5433846,39.9841416 44.3356923,40.0785933 44.1252308,40.0785933 C43.9805385,40.0785933 43.8351538,40.0341051 43.7105385,39.9417067 C43.4045385,39.7151595 43.3422308,39.2860201 43.5720769,38.9835008 L43.5720769,38.9835008 L43.6946154,38.8219747 C40.654,39.5440513 38.3846154,42.2475608 38.3846154,45.4712393 C38.3846154,48.1377894 39.9686154,50.5798456 42.4200769,51.6941022 C42.7676154,51.8515218 42.9199231,52.2580749 42.7593077,52.6016601 C42.643,52.8521625 42.3923846,53 42.13,53 C42.0330769,53 41.9354615,52.9801514 41.8413077,52.9370322 C38.9003846,51.6010194 37,48.6702781 37,45.4712393 C37,41.5234309 39.8329231,38.2189894 43.5942308,37.4359983 L43.5942308,37.4359983 L43.3193846,37.2320373 C43.0126923,37.00549 42.9510769,36.5763507 43.1809231,36.2738314 Z" id="path-7"></path>
+    </defs>
+    <g id="widget/PromotionalBanner" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M85.7770289,119.281519 C115.141615,119.281519 137.328795,33.2141891 117.545348,36.9040719 C97.7619011,40.5939548 91.7186936,39.9013924 91.5912821,29.4618633 C91.4638706,19.0223343 110.486342,-1.33386545 85.7770289,-1.33386545 C74.6498503,-1.33386545 69.885312,32.6004715 51.0631269,36.5659917 C32.2409419,40.5315119 5.75456655,41.4182644 5.75456655,59.7851411 C5.75456655,74.5274219 36.6728982,76.9119718 52.9370836,88.0780125 C69.2988904,99.3110743 71.0508043,119.281519 85.7770289,119.281519 Z" id="Oval" fill="#E6F9F9" transform="translate(65.416544, 58.973827) scale(-1, 1) rotate(74.000000) translate(-65.416544, -58.973827) "></path>
+        <g id="Group-4" transform="translate(7.000000, 21.000000)">
+            <g id="screens">
+                <g id="Group" transform="translate(0.000000, 0.000000)">
+                    <g id="gradient/Background" transform="translate(0.531687, 0.676299)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <g id="Mask">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-1"></use>
+                            <use fill="#117EA9" fill-rule="evenodd" xlink:href="#path-1"></use>
+                        </g>
+                        <g id="gradient/Background-Blue" mask="url(#mask-2)" fill="url(#linearGradient-4)">
+                            <g transform="translate(-7.000000, 0.000000)" id="gradient/Background">
+                                <rect x="0" y="0" width="120" height="81"></rect>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+            <g id="Group-3" transform="translate(9.000000, 5.000000)">
+                <g id="Group-2" transform="translate(0.000000, 3.000000)">
+                    <g id="Rectangle">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-6)" xlink:href="#path-5"></use>
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-5"></use>
+                    </g>
+                </g>
+                <text id="www" font-family="Lato-Bold, Lato" font-size="18" font-weight="bold" fill="#1BD4A9">
+                    <tspan x="23.643" y="18">www</tspan>
+                </text>
+                <mask id="mask-8" fill="white">
+                    <use xlink:href="#path-7"></use>
+                </mask>
+                <use id="Combined-Shape" fill="#FFFFFF" xlink:href="#path-7"></use>
+            </g>
+        </g>
+    </g>
+</svg>

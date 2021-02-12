@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="120px" height="120px" viewBox="0 0 120 120" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+    <title>widget/GoogleFormPopin</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="1" width="98.4615385" height="91.0769231" rx="5.68615387"></rect>
+        <filter x="-17.8%" y="-13.7%" width="135.5%" height="138.4%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="5" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.106544384 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <path d="M5.68615387,0.230769231 L92.7753846,0.230769231 C95.9157607,0.230769231 98.4615385,2.77654703 98.4615385,5.9169231 L98.4615385,17.3076923 L98.4615385,17.3076923 L0,17.3076923 L0,5.9169231 C-3.8458515e-16,2.77654703 2.5457778,0.230769231 5.68615387,0.230769231 Z" id="path-3"></path>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-5">
+            <stop stop-color="#009CB2" offset="0%"></stop>
+            <stop stop-color="#217981" offset="100%"></stop>
+        </linearGradient>
+        <path d="M23.765625,0.554469849 L23.765625,12.6005041 C23.765625,14.2618451 25.1294948,15.611288 26.8119135,15.611288 L39,15.611288 L39,50.5434984 C39,52.2044968 37.6371458,53.5544698 35.9559799,53.5544698 L3.04402013,53.5544698 C1.36516294,53.5544698 0,52.206412 0,50.5434984 L0,3.56544128 C0,1.90444288 1.36285424,0.554469849 3.04402013,0.554469849 L23.765625,0.554469849 Z" id="path-6"></path>
+        <linearGradient x1="100%" y1="50%" x2="0%" y2="50%" id="linearGradient-8">
+            <stop stop-color="#B0EBD9" offset="0%"></stop>
+            <stop stop-color="#4DDBB8" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="widget/GoogleFormPopin" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-4" transform="translate(-23.000000, -22.000000)">
+            <rect id="Rectangle" fill-opacity="0" fill="#D8D8D8" fill-rule="nonzero" x="0" y="0" width="160" height="160"></rect>
+            <path d="M108.777029,142.281519 C138.141615,142.281519 160.328795,56.2141891 140.545348,59.9040719 C120.761901,63.5939548 114.718694,62.9013924 114.591282,52.4618633 C114.463871,42.0223343 133.486342,21.6661345 108.777029,21.6661345 C97.6498503,21.6661345 92.885312,55.6004715 74.0631269,59.5659917 C55.2409419,63.5315119 28.7545666,64.4182644 28.7545666,82.7851411 C28.7545666,97.5274219 59.6728982,99.9119718 75.9370836,111.078012 C92.2988904,122.311074 94.0508043,142.281519 108.777029,142.281519 Z" id="Oval" fill="#E6F9F9" transform="translate(88.416544, 81.973827) scale(-1, 1) rotate(74.000000) translate(-88.416544, -81.973827) "></path>
+            <g id="Modal" transform="translate(31.000000, 32.230769)">
+                <g id="Rectangle">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                </g>
+                <g id="gradient/Background" transform="translate(0.000000, 0.769231)">
+                    <mask id="mask-4" fill="white">
+                        <use xlink:href="#path-3"></use>
+                    </mask>
+                    <use id="Mask" fill="#2F9BC8" xlink:href="#path-3"></use>
+                    <g id="gradient/Background-Blue" mask="url(#mask-4)" fill="url(#linearGradient-5)">
+                        <g transform="translate(-8.000000, 0.000000)" id="gradient/Background">
+                            <rect x="0" y="0" width="120" height="19"></rect>
+                        </g>
+                    </g>
+                </g>
+                <ellipse id="Oval" fill="#217981" cx="8.52071006" cy="9.53846154" rx="2.84023669" ry="2.84615385"></ellipse>
+                <ellipse id="Oval-Copy-2" fill="#217981" cx="16.0946746" cy="9.53846154" rx="2.84023669" ry="2.84615385"></ellipse>
+                <ellipse id="Oval-Copy-3" fill="#217981" cx="23.6686391" cy="9.53846154" rx="2.84023669" ry="2.84615385"></ellipse>
+            </g>
+            <g id="Group-5" transform="translate(64.000000, 59.000000)">
+                <g id="google_forms_icon">
+                    <g id="gdocs_backdrop">
+                        <path d="M23.765625,1 L26.2561899,3.46153732 C29.4240939,6.59251937 34.5618458,11.6703907 37.730938,14.8025471 L39,16.0568182 L30.0146391,17.0838882 C25.5882761,17.5898428 22.3722862,14.4155099 22.8336941,9.97292734 L23.765625,1 Z" id="Rectangle-22-Copy" fill="#E6F9F9"></path>
+                        <g id="gradient/Background" transform="translate(0.000000, 0.445530)">
+                            <mask id="mask-7" fill="white">
+                                <use xlink:href="#path-6"></use>
+                            </mask>
+                            <use id="Mask" fill="#673AB7" fill-rule="nonzero" xlink:href="#path-6"></use>
+                            <g id="gradient/Background-Green" mask="url(#mask-7)">
+                                <g transform="translate(-41.000000, -3.000000)" id="gradient/Ready">
+                                    <g>
+                                        <polygon fill="url(#linearGradient-8)" transform="translate(60.000000, 30.000000) rotate(-90.000000) translate(-60.000000, -30.000000) " points="30 -30 90 -30 90 90 30 90"></polygon>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                        <polygon id="Triangle-1" fill="#000000" opacity="0.100338153" points="26.203125 16.0568182 39 16.0568182 39 26.5965909"></polygon>
+                    </g>
+                    <g id="gf_specific" transform="translate(6.000000, 28.000000)" fill="#FFFFFF">
+                        <circle id="Oval-35" cx="2.07308426" cy="1.5" r="1.5"></circle>
+                        <circle id="Oval-35-Copy" cx="2.07308426" cy="7.680034" r="1.5"></circle>
+                        <circle id="Oval-35-Copy-2" cx="2.07308426" cy="13.860068" r="1.5"></circle>
+                        <rect id="Rectangle-24" x="5.00231797" y="0" width="20.7238887" height="3"></rect>
+                        <rect id="Rectangle-24-Copy" x="5.00231797" y="6.180034" width="20.7238887" height="3"></rect>
+                        <rect id="Rectangle-24-Copy-2" x="5.00231797" y="12.360068" width="20.7238887" height="3"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
