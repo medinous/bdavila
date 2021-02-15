@@ -90,8 +90,9 @@ img {
     box-shadow: 5px 5px 16px 4px rgba(0,0,0,0.08);
 }
 
-    img:hover {
-        /*opacity: 0.8;*/
+    .portfolio img:hover {
+        animation: pulse; 
+        animation-duration: 0.4s; 
 }
 
 
