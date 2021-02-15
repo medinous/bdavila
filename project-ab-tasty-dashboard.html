@@ -163,90 +163,133 @@
             <div class="subtitle" style="margin-top: 12px;">Animation created with Adobe XD to show the transition between tabs</div>
 
              <p class="left">A new round of usability testing sessions took place after the project was validated by the C-level board. I wanted to make sure that the final solution for the MVP was correctly solving the problems we framed before starting the development cycle.</p>
+        
               
             <h3><span class="highlight">Main pain points & solutions found</span></h3>
+        
+      
+             <h4>State vs. action</h4>
+             <table>
+                <tr>
+                    <th><li class="painpoints"></li></th>
+                    <td>Lack of consistency and clarity on the campaigns statuses: not clear when a test should be played or paused.</td>  
+                </tr>
+                <tr>
+                    <th><li class="results"></li></th>
+                    <td>The solution found was to visually separate the static elements from buttons, that require action. We also cleared up the dashboard view and hid seconday actions on hover, improving usability and reducing clicks.</td>                    
+                </tr>
+            </table> 
+        
+        
+         <div style="margin-bottom: -24px;" class="col-container">
+
+                <div class="col">
+                    <img style="box-shadow: none; border-radius: 0;" src="images/01dashboard/solution-3.png">
+                 </div>
+
+                <div class="col">
+                    <img style="box-shadow: none; border-radius: 0;" src="images/01dashboard/solution-4.png">
+                </div>
+             
+         </div>
+        
+             <h4>Status visibility</h4>
+            <table>
+                <tr>
+                    <th><li class="painpoints"></li></th>
+                    <td>According to many clients, it was impossible to know which campaigns are in QA mode. This caused distress and waste of time before launching a campaign.</td>  
+                </tr>
+                <tr>
+                    <th><li class="results"></li></th>
+                    <td>A simple change in the UI solved the problem. The QA mode status is now quickly detectable amongst the other status buttons thanks to its outlines.</td>                    
+                </tr>
+            </table>
+        
+            <!-- IMAGE -->
+            <img style="box-shadow: none; border-radius: 0;" src="images/01dashboard/solution-1.png" />
+
+             <!-- IMAGE -->
+            <img style="box-shadow: none; border-radius: 0;" src="images/01dashboard/pain-points-02.gif">     
+        
+             <h4>Same functionality, different UI</h4>
+             <table>
+                <tr>
+                    <th><li class="painpoints"></li></th>
+                    <td>Filter components look more like CTAs than filters.</td>  
+                </tr>
+                <tr>
+                    <th><li class="results"></li></th>
+                    <td>All the filtering actions were gathered with the same UI and same behaviour. Things that look the same should behave the same - for better usability.</td>                    
+                </tr>
+            </table>   
+        
+                  
+            <!-- IMAGE -->
+            <img style="box-shadow: none;" src="images/01dashboard/pain-points-04.gif">
+
+
+        
+             <h4>Folders management</h4>
+             <table>
+                <tr>
+                    <th><li class="painpoints"></li></th>
+                    <td>Folders functionality is confusing. The folder components appear in 3 different places on screen, with 3 different UI and behaviours. The user engagement with this feature is very poor.</td>  
+                </tr>
+                <tr>
+                    <th><li class="results"></li></th>
+                    <td>Currently the folder functionality behaves like a filter. So I removed all the previous components and created a single new one: a dropdown list with dedicated actionable items on hover including a new "create" CTA at the bottom.</td>                    
+                </tr>
+            </table>       
+        
+            <div class="col-container">
+    
+                    <div class="col">
+                        <img style="box-shadow: none; border-radius: 0;" src="images/01dashboard/solution-2-2.png">
+                    </div>
+
+                    <div class="col">
+                        <img style="box-shadow: none; border-radius: 0;" src="images/01dashboard/solution-2-3.png">
+                   </div>
                 
-                <p class="left">
-                    <ul>                                            
-                        <li class="painpoints">According to many clients, it was impossible to know which campaigns are in QA mode. This causesed distress and waste of time before launching a campaign.</li>
-                    
-                        <span class="space"></span>
+            </div>
 
-                        <li class="results">A simple change in the UI solve the problem. The new status button is now detectable in less than a second, when scanning the dashboard.</li>
-                        
-                       <!-- IMAGE -->
-              <img src="images/01dashboard/pain-points-02.gif">
-                        
-                        <span class="space"></span>
-                        
-                        <li class="painpoints">Start and end dates of campaigns are not clear.</li>
-                        
-                        <span class="space"></span>
-                        
-                        <li class="results">Previously only the creation date was visible. The solution found was to combine all important dates related to the campaign lifecycle: creation date, when the campaing was last played and when it was last paused.</li>
-                        
-                       <!-- IMAGE -->
-              <img style="max-width:500px;" src="images/01dashboard/pain-points-03.gif">
-                        
-                        <span class="space"></span>
-                        
-                        <li class="painpoints">Filter components look more like CTAs than filters.</li>
-                        
-                        <span class="space"></span>
+ 
 
-                        <li class="results">All the filtering actions were gathered with the same UI and same behaviour. Things that look the same should behave the same - for better usability.</li>
-                        
-                        <!-- IMAGE -->
-              <img src="images/01dashboard/pain-points-04.gif">
-                        
-                        <span class="space"></span>
-                        
-                        <li class="painpoints">Lack of consistency and clarity on the campaigns statuses: not clear when a test should be played or paused.</li>
-                        
-                        <span class="space"></span>
-                        
-                        <li class="results">The solution found was to visually separate the static elements from actions. Also, we added contextual actions to be revealed under clicks and hover behaviours, not to cluester the dashboard view with unnecessary information.</li>
-                        
-                        <!-- IMAGE -->
-              <img style="max-width:500px;" src="images/01dashboard/pain-points-05.gif">
-                                    
-                        <span class="space"></span>
-                        
-                        <li class="painpoints">Folders functionality is confusing. The folder icon/trigger appears in 3 different places on screen, with 3 different look & feel. The user engagement with this feature is very poor.</li>
-                        
-                        <span class="space"></span>
-                        
-                        <li class="results">Currently the folder functionality behaves like a filter. Therefore I removed the previous folder component from the bottom of the screen and replaced it with a dropdown filter at the top of the table, side-by-side with the other filters. However, the folders management requires a bit more functionalities than the other filters so I created a new component for our Design System: a dropdown list with dedicated actionable items on hover besides a new "create" button at the bottom.</li>
-                        
-                        <!-- IMAGE -->
-              <img style="max-width:500px;" src="images/01dashboard/pain-points-06.gif">
-                        
-                        <span class="space"></span>
-                        
-                        <li class="painpoints">Clients want to delete tests from their folders but they can't.</li>
-                        
-                        <span class="space"></span>
+        
+                               
+           <!--     <table>
+                <tr>
+                    <th><li class="painpoints"></li></th>
+                    <td>Clients want to delete tests from their folders but they can't.</td>  
+                </tr>
+                <tr>
+                    <th><li class="results"></li></th>
+                    <td>Still on the same subject, apart from the dropdown component with the mentioned interactions, I decided to create the same interactions directly inside the table, in each campaign individually. By clicking on "..." and next "add to folder", the user can see a check mark on the folder in which that campaign belongs to - if that's the case. The user is free to change that by clicking on the folder they want the campaign to be moved to. Plus, the user can create a new folder on the fly or remove the campaign from the current folder by clicking on the option "Remove from current folder".</td>                    
+                </tr>
+            </table> 
+        
+       
+            <img src="images/01dashboard/pain-points-07.gif">-->
+        
+        
+   
+   <!--         <table>
+                <tr>
+                    <th><li class="painpoints"></li></th>
+                    <td>Test ID is very important because it's a common point of communication between the users, the customer support, CSMs, TSEs, developers and QA team. Currently is not very intuitive on how to see and copy the test ID.</td>  
+                </tr>
+                <tr>
+                    <th><li class="results"></li></th>
+                    <td>
+                        Firstly, I made the test ID more visible on the dashboard by displaying it under a dedicated column. Secondly, I added a quick "copy to clipboard" behaviour by just hovering over the test ID number. All you have to do is click to copy to copyboard.</td>                    
+                </tr>
+            </table> 
+        
+      
+            <img src="images/01dashboard/pain-points-08.gif">
+        
+        <span class="space"></span> -->
 
-                        <li class="results">Still on the same subject, apart from the dropdown component with the mentioned interactions, I decided to create the same interactions directly inside the table, in each campaign individually. By clicking on "..." and next "add to folder", the user can see a check mark on the folder in which that campaign belongs to - if that's the case. The user is free to change that by clicking on the folder they want the campaign to be moved to. Plus, the user can create a new folder on the fly or remove the campaign from the current folder by clicking on the option "Remove from current folder".</li>
-                        
-                        <!-- IMAGE -->
-              <img src="images/01dashboard/pain-points-07.gif">
-                        
-                        <span class="space"></span>
-                        
-                        <li class="painpoints">Test ID is very important because it's a common point of communication between the users, the customer support, CSMs, TSEs, developers and QA team. Currently is not very intuitive on how to see and copy the test ID.</li>
-                        
-                        <span class="space"></span>
-
-                        <li class="results">Firstly, I made the test ID more visible on the dashboard by displaying it under a dedicated column. Secondly, I added a quick "copy to clipboard" behaviour by just hovering over the test ID number. All you have to do is click to copy to copyboard.</li>
-                        
-                        <!-- IMAGE -->
-              <img src="images/01dashboard/pain-points-08.gif">
-                        
-                        <span class="space"></span>
-                        
-                    </ul>
-                </p>
   
    
     <h3><span class="highlight">Outcome</span></h3>
