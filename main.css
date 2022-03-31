@@ -62,7 +62,7 @@ body {
     text-align: center;
     overflow-x: hidden;
 }
- 
+
 
 
 b, strong {
@@ -85,14 +85,14 @@ img {
     /* max-width: 95%;*/
     width: 100%;
     object-fit: cover;
-    
-    -webkit-box-shadow: 5px 5px 16px 4px rgba(0,0,0,0.08); 
+
+    -webkit-box-shadow: 5px 5px 16px 4px rgba(0,0,0,0.08);
     box-shadow: 5px 5px 16px 4px rgba(0,0,0,0.08);
 }
 
     .portfolio img:hover {
-        animation: pulse; 
-        animation-duration: 0.4s; 
+        animation: pulse;
+        animation-duration: 0.4s;
 }
 
 
@@ -107,7 +107,7 @@ table {
     margin: 12px 0 0 0;
     font-size: 18px;
     color: #666;
-   /* -webkit-box-shadow: 5px 5px 12px 4px rgba(0,0,0,0.02); 
+   /* -webkit-box-shadow: 5px 5px 12px 4px rgba(0,0,0,0.02);
     box-shadow: 5px 5px 12px 4px rgba(0,0,0,0.02);*/
 }
 
@@ -139,9 +139,9 @@ h1, h2, h3, h4, h5, h6 {
 .single {
     font-size: 40px;
     max-width: 800px;
-    
+
     animation: fadeInRight;
-    animation-duration: 0.4s; 
+    animation-duration: 0.4s;
 }
 
 h2 {
@@ -197,7 +197,7 @@ p {
 
 ul {
     animation: fadeInUp;
-    animation-duration: 0.4s; 
+    animation-duration: 0.4s;
     padding-left: 0;
 }
 
@@ -208,30 +208,30 @@ li {
     list-style: none;
 }
 
-li:before { 
+li:before {
     content: '\1F449';
     font-size: 18px;
-    margin-right: 10px; 
-} 
+    margin-right: 10px;
+}
 
 
-    li.results:before { 
+    li.results:before {
         content: '\2705';
         font-size: 18px;
-    } 
+    }
 
         li.painpoints {
         font-size: 18px;
     }
 
-        li.painpoints:before { 
+        li.painpoints:before {
         content: '\274C';
         font-size: 18px;
-    } 
+    }
 
 
 
-blockquote {  
+blockquote {
     color: #6E6E6E;
     font-family: 'geomanistregular', Roboto;
     font-size: 18px;
@@ -242,7 +242,7 @@ blockquote {
     padding-top: 20px;
 }
 
-button {  
+button {
     font-family: 'Segoe UI Bold', Roboto;
     font-size: 12px;
     border-color: black;
@@ -256,23 +256,23 @@ button {
     margin-bottom: 40px;
     }
 
-    button:hover {  
+    button:hover {
         color: #6653FF;
         border: 2px solid #6653FF;
-             
+
         animation: pulse; /* referring directly to the animation's @keyframe declaration */
         animation-duration: 1s; /* don't forget to set a duration! */
 }
 
      button:activated,
-     button:visited {  
+     button:visited {
         color: black;
-        border: 2px solid black; 
+        border: 2px solid black;
 }
- 
+
 a {
     font-family: 'geomanistregular', Roboto;
-    text-decoration: none !important;    
+    text-decoration: none !important;
     /*border-bottom: 2px solid #121212;*/
     position: relative;
     cursor: pointer;
@@ -337,13 +337,13 @@ a:active{
 }
 
 .fas, .fab
-{  
+{
         color: black;
         animation: wobble; /* referring directly to the animation's @keyframe declaration */
         animation-duration: 1s; /* don't forget to set a duration! */
 }
 
-.fas:hover {  
+.fas:hover {
         animation: pulse; /* referring directly to the animation's @keyframe declaration */
         animation-duration: 1s; /* don't forget to set a duration! */
 }
@@ -519,11 +519,11 @@ header {
     font-family: 'geomanistregular', Roboto;
     font-size: 18px;
     padding-top: 16px;
-    -webkit-box-shadow: 3px 3px 16px 4px rgba(0,0,0,0.04); 
+    -webkit-box-shadow: 3px 3px 16px 4px rgba(0,0,0,0.04);
     box-shadow: 3px 3px 16px 4px rgba(0,0,0,0.04);
-    
-    animation: fadeInDown; 
-    animation-duration: 0.4s; 
+
+    animation: fadeInDown;
+    animation-duration: 0.4s;
 }
 
 .nav-up {
@@ -569,7 +569,7 @@ header {
 
 #intro {
     text-align:center;
-    margin: 8% 17% 36px 17%;  
+    margin: 8% 17% 36px 17%;
 }
 
     #intro p {
@@ -577,7 +577,7 @@ header {
         font-size: 32px;
         line-height: 2;
         text-align: left;
-        
+
         animation: slideInUp;
         animation-duration: 0.3s;
     }
@@ -595,7 +595,7 @@ header {
          font-size: 50px;
          padding-bottom: 24px;
          line-height: 1.4;
-        
+
          animation: pulse;
          animation-duration: 0.4s;
         }
@@ -609,7 +609,7 @@ header {
 .profilepic  {
     clear: both;
     display: table;
-    margin-bottom: 24px;  
+    margin-bottom: 24px;
 }
 
 .profilepic img {
@@ -619,17 +619,19 @@ header {
     display: block;
     margin: 0;
     border-radius: 65% 35% 65% 35% / 35% 65% 35% 65%;
+    box-shadow: 0 !important ;
   /*  box-shadow: none; */
-    
+
     animation: pulse;
     animation-duration: 0.4s;
 }
 
+/*
 .profilepic img:hover {
     animation: jello;
-    animation-duration: 0.8s;	 
-}
- 
+    animation-duration: 0.8s;
+}*/
+
 
 /* Zoom Out #1 */
 .hover03 figure img {
@@ -662,7 +664,7 @@ header {
         text-align: left;
         text-transform: uppercase;
     }
-    
+
     .nav a {
         color: #B9B9B9;
         border-bottom: none;
@@ -670,7 +672,7 @@ header {
      }
 
          .nav a:hover {
-              animation: pulse; 
+              animation: pulse;
               animation-duration: 1s;
             }
 
@@ -689,8 +691,8 @@ header {
     height: 100%;
     text-align: center;
     border-radius: 8px;
-    animation: pulse; 
-    animation-duration: 0.5s; 
+    animation: pulse;
+    animation-duration: 0.5s;
 }
 
     .grid div::before {
@@ -711,10 +713,10 @@ header {
     padding: 40px;
     display: table-cell;
     vertical-align: middle;
-    background: #6653FF; 
+    background: #6653FF;
    /* background: #6DEECE; */
-    animation: fadeIn; 
-    animation-duration: 0.4s; 
+    animation: fadeIn;
+    animation-duration: 0.4s;
     }
 
         .grid div:hover span.widgets {
@@ -726,8 +728,8 @@ header {
             display: table-cell;
             vertical-align: middle;
             background: #fff;
-            animation: fadeIn; 
-            animation-duration: 0.4s; 
+            animation: fadeIn;
+            animation-duration: 0.4s;
             }
 
 
@@ -747,8 +749,8 @@ header {
     .col {
       display: table-cell;
       padding: 16px;
-      animation: pulse; 
-      animation-duration: 0.5s; 
+      animation: pulse;
+      animation-duration: 0.5s;
     }
         .col img.latest {
          width: 210px;
@@ -763,8 +765,8 @@ header {
         color: #A9A9A9;
     }
        .col:hover img {
-        animation: pulse; 
-        animation-duration: 0.4s; 
+        animation: pulse;
+        animation-duration: 0.4s;
     }
 
     .col-container h3,
@@ -772,8 +774,8 @@ header {
       margin: 0 auto;
       text-align: center;
       margin-bottom: 24px;
-      animation: fadeInUp; 
-      animation-duration: 0.3s; 
+      animation: fadeInUp;
+      animation-duration: 0.3s;
     }
 
         .col-container p.subtitle {
@@ -796,28 +798,28 @@ header {
 
 
 /* PORTFOLIO SINGLE */
- 
+
     #container-single {
         position: absolute;
         top: 96px;
         right: 15%;
         left: 15%;
         font-family: 'geomanistregular', Roboto;
-        
+
         animation: fadeIn;
-        animation-duration: 0.4s; 
+        animation-duration: 0.4s;
     }
 
-        
+
         #container-single h1 {
-            animation: fadeInUp; 
-            animation-duration: 0.4s; 
+            animation: fadeInUp;
+            animation-duration: 0.4s;
         }
 
     /*    #container-single h3 {
-            animation: fadeInRight; 
+            animation: fadeInRight;
             animation-duration: 0.4s;
-        } 
+        }
     */
 
         .excerpt {
@@ -827,8 +829,8 @@ header {
      }
 
         #container-single p {
-            animation: fadeInUp; 
-            animation-duration: 0.4s; 
+            animation: fadeInUp;
+            animation-duration: 0.4s;
         }
 
         .portfolio-wrapper a {
@@ -849,7 +851,7 @@ header {
         margin-left: -50vw;
         margin-top: 80px;
         margin-bottom: 80px;
-        left: 50%;      
+        left: 50%;
         background: #F7F7F7;
         padding: 24px 0 60px 0;
     }
@@ -865,7 +867,7 @@ header {
         margin-left: -50vw;
         margin-top: 80px;
         margin-bottom: 80px;
-        left: 50%; 
+        left: 50%;
         background: #6DEECE;
         /*background: #6653FF;*/
         padding: 48px 0;
@@ -887,7 +889,7 @@ header {
  }
 
 
-    
+
 
 
 
@@ -916,13 +918,13 @@ footer {
 
 }
 
-footer a:hover { 
+footer a:hover {
    color: #000 !important;
 }
 
 footer a  {
    margin-left: 8px;
-   font-size: 24px;  
+   font-size: 24px;
    color: black !important;
 }
 
@@ -957,15 +959,15 @@ footer a  {
   left: 0;
   right: 0;
   bottom: 0;
-  
+
   /* A bit of padding around image */
   padding: 1em;
 
   /* Translucent background */
   background: rgba(255, 255, 255, 0.8);
-    
+
   animation: fadeIn; /
-  animation-duration: 1s; 
+  animation-duration: 1s;
 }
 
 
@@ -990,19 +992,19 @@ footer a  {
 
 /******************************************************/
 
-@media screen and (max-device-width:1280px), screen and (max-width:1280px) {   
-    
+@media screen and (max-device-width:1280px), screen and (max-width:1280px) {
+
     #intro {
-        margin: 64px 8%; 
+        margin: 64px 8%;
     }
-    
+
     #container-portfolio ,
     #container-single {
         margin-right: 2%;
         margin-left: 2%;
         padding-bottom: 80px;
     }
-    
+
 
     .menu-left {
             margin-left: 18%;
@@ -1010,40 +1012,40 @@ footer a  {
 
     .menu-right {
             margin-right: 18%;
-        }   
-    
+        }
+
 }
 
-@media screen and (max-device-width:1024px), screen and (max-width:1024px) {   
-    
+@media screen and (max-device-width:1024px), screen and (max-width:1024px) {
+
     .col img.latest {
         width: 150px;
         height: 150px;
     }
-    
+
 }
 
 
 
-@media screen and (max-device-width:768px), screen and (max-width:768px) {   
-    
+@media screen and (max-device-width:768px), screen and (max-width:768px) {
+
     #intro {
-        margin: 64px 10%; 
+        margin: 64px 10%;
     }
     #container-portfolio,
     #container-single {
         margin-right: 0%;
         margin-left: 0%;
     }
-    
+
     #intro .hello {
         font-size: 72px;
     }
-    
+
     #intro p {
         font-size: 50px;
     }
-       
+
     .portfolio1,
     .portfolio2,
     .portfolio3,
@@ -1055,117 +1057,117 @@ footer a  {
 
     .portfolio-description {
         display: none;
-    }   
-    
+    }
+
     a.bettina:hover:after,
     a.rachel:hover:after {
     right: 0;
     }
-     
-    
+
+
     .menu-left {
             margin-left: 15%;
         }
 
     .menu-right {
             margin-right: 15%;
-        }   
-    
+        }
 
- }   
+
+ }
 
 @media screen and (max-device-width:500px), screen and (max-width:500px) {
-    
-    
- header { 
+
+
+ header {
     height: 88px;
     padding-top: 20px;
  }
-    
+
     .nav-up {
     top: -88px;
 }
 
-.menu-left {   
+.menu-left {
     margin-left: 15%;
     font-size: 48px;
  }
-    
-        #sr  { 
+
+        #sr  {
     display: none;
  }
-    
+
 .menu-right {
     margin-right: 15%;
     font-size: 48px;
     }
-    
-    #email  { 
+
+    #email  {
     display: none;
  }
-           
+
     .portfolio-wrapper {
         margin-top: 80px;
     }
-    
+
      #container-single p {
         font-size: 48px;
     }
-    
+
     .grid p {
         font-size: 14px;
     }
-    
+
 
     #container-single h3 {
         font-size: 56px;
     }
-    
-        
+
+
     .col {
       display: block;
       margin-bottom: 88px;
     }
-         
+
         .col h3 {
           margin: 48px 0;
         }
-    
+
             .col img.latest {
              width: 400px;
              height: 400px;
             }
 
-    
+
     .single {
     font-size: 60px;
-    } 
-    
-          
-      .fa, .fas { 
+    }
+
+
+      .fa, .fas {
     font-size: 48px;
  }
-        
+
     .button {
         font-size: 50px;
 }
     ul {
-        padding-left: 0;   
+        padding-left: 0;
 }
     li,
     li.results,
     li.painpoints {
         font-size: 40px;
-} 
+}
     h4 {
         font-size: 40px;
 }
     p {
         font-size: 48px;
 }
-    
-   
-footer a  { 
+
+
+footer a  {
     font-size: 50px;
   }
 
