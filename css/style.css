@@ -1,4 +1,4 @@
-/* -------------------------------- 
+/* --------------------------------
 
 Primary style
 
@@ -76,9 +76,9 @@ section {
 .no-js .cd-words-wrapper b.is-visible {
   opacity: 1;
 }
-/* -------------------------------- 
+/* --------------------------------
 
-xtype 
+xtype
 
 -------------------------------- */
 .cd-headline.type .cd-words-wrapper {
@@ -109,7 +109,7 @@ xtype
 .cd-headline.type .cd-words-wrapper.selected {
  /* background-color: #6653FF;*/
   /*background-color: #C3BBFF;*/
-    background-color: #6DEECE;
+    background-color: #fff4d1;
 }
 .cd-headline.type .cd-words-wrapper.selected::after {
   visibility: hidden;

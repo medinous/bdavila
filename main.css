@@ -53,7 +53,9 @@ html {
 
 
 body {
-    background: #fff;
+  /*  background: #fff;*/
+    background-image: linear-gradient(to right, #dfdcfc, #fff4d1);
+
     color: #393939;
     /*font-family: 'Courier';*/
     margin: 0 auto;
@@ -292,19 +294,19 @@ a:active{
 }
 
 ::selection {
-        background-color: #6DEECE;
+        background-color: #d6d1ff;
         color: black;
 }
 
 .highlight {
-  background: linear-gradient(180deg,rgba(255,255,255,0) 50%, #6DEECE 50%);
+  background: linear-gradient(180deg,rgba(255,255,255,0) 50%, #fff4d1 50%);
 }
 
 .button {
     float: left;
     margin-top: 24px;
     font-size: 21px;
-    background: linear-gradient(180deg,rgba(255,255,255,0) 50%, #6DEECE 50%);
+    background: linear-gradient(180deg,rgba(255,255,255,0) 50%, #d6d1ff50%);
 }
 
 .active {
@@ -577,6 +579,7 @@ header {
         font-size: 32px;
         line-height: 2;
         text-align: left;
+        color: black;
 
         animation: slideInUp;
         animation-duration: 0.3s;
@@ -588,6 +591,7 @@ header {
 
          #intro a:hover {
           background: none;
+          text-decoration: underline  !important ;
         }
 
         #intro .hello {
@@ -601,8 +605,8 @@ header {
         }
 
         span.dynamic {
-            color: #6653FF;
-            /*color: #6DEECE;*/
+            color: black;
+            /*color: #d6d1ff;*/
             /*color: #000;*/
         }
 
@@ -714,14 +718,14 @@ header {
     display: table-cell;
     vertical-align: middle;
     background: #6653FF;
-   /* background: #6DEECE; */
+   /* background: #d6d1ff; */
     animation: fadeIn;
     animation-duration: 0.4s;
     }
 
         .grid div:hover span.widgets {
             display: visible;
-            color: #6DEECE;
+            color: #d6d1ff;
           /*  color: #A9A9A9;*/
             font-size: 16px;
             padding: 40px;
@@ -835,7 +839,7 @@ header {
 
         .portfolio-wrapper a {
             /*color: #6653FF; */
-            background: linear-gradient(180deg,rgba(255,255,255,0) 50%, #6DEECE 50%);
+            background: linear-gradient(180deg,rgba(255,255,255,0) 50%, #d6d1ff 50%);
         }
                 .portfolio-wrapper a.lightbox {
                     /*color: #6653FF; */
@@ -868,7 +872,7 @@ header {
         margin-top: 80px;
         margin-bottom: 80px;
         left: 50%;
-        background: #6DEECE;
+        background: #d6d1ff;
         /*background: #6653FF;*/
         padding: 48px 0;
     }
