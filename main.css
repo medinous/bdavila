@@ -1,4 +1,13 @@
 @font-face {
+    font-family: 'mermaidbold';
+    src: url('font/mermaid1001-webfont.woff2') format('woff2'),
+         url('font/mermaid1001-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
 font-family: 'Segoe UI Regular';
 font-style: normal;
 font-weight: normal;
@@ -53,8 +62,10 @@ html {
 
 
 body {
-  /*  background: #fff;*/
+  /*  background: #fff;
+  background: radial-gradient(circle, rgba(223,220,252,1) 0%, rgba(255,244,209,1) 100%); */
     background-image: linear-gradient(to right, #dfdcfc, #fff4d1);
+
 
     color: #393939;
     /*font-family: 'Courier';*/
@@ -133,7 +144,7 @@ table {
 
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'geomanistregular', Roboto;
+    font-family: 'mermaidbold', Roboto;
     font-size: 36px;
     line-height: 1.4;
 }
@@ -595,8 +606,8 @@ header {
         }
 
         #intro .hello {
-         font-family: 'Segoe UI Bold';
-         font-size: 50px;
+         font-family: 'mermaidbold';
+         font-size: 63px;
          padding-bottom: 24px;
          line-height: 1.4;
 
