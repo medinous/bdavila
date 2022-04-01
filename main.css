@@ -159,21 +159,17 @@ h1, h2, h3, h4, h5, h6 {
 
 h2 {
     font-size: 26px;
-    font-family: 'geomanistregular', Roboto;
-
     color: #000;
     margin-top: 32px;
 }
 
 h3 {
-    font-family: 'geomanistregular', Roboto;
     font-size: 24px;
     margin-left: 0;
     margin-top: 48px;
 }
 
 h4 {
-    font-family: 'geomanistregular', Roboto;
     font-size: 22px;
     margin-left: 0;
     color: #393939;
@@ -185,7 +181,6 @@ h4 {
 }
 
 h5 {
-    font-family: 'geomanistregular', Roboto;
     font-size: 12px;
     color: #B9B9B9;
     line-height: 1.8;
@@ -311,6 +306,9 @@ a:active{
 
 .highlight {
   background: linear-gradient(180deg,rgba(255,255,255,0) 50%, #fff4d1 50%);
+}
+.highlight-2 {
+  background: linear-gradient(180deg,rgba(255,255,255,0) 50%, #dfdcfc 50%);
 }
 
 .button {
@@ -586,12 +584,12 @@ header {
 }
 
     #intro p {
-        display: inline-block;
+        display: block;
         font-size: 32px;
         line-height: 2;
         text-align: left;
         color: black;
-        
+
         animation: slideInUp;
         animation-duration: 0.3s;
     }
@@ -924,17 +922,25 @@ header {
 /**** FOOTER ***/
 
 footer {
-   margin: 48px 0 24px 0;
-   padding: 48px 0 24px 0;
-   /*border-top: 2px solid #F1F1F1;
-   border-bottom: none !important;*/
-   text-align: center;
-   /* border-top: 5px dotted black;*/
+  text-align: left;
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  display: block;
+  margin-right: 10%;
+  margin-left: 10%;
+}
 
+footer h2 {
+  font-family: 'mermaidbold';
+    color: #333;
+    font-size: 40px;
+    display: table;
 }
 
 footer a:hover {
-   color: #000 !important;
+   color: black !important;
 }
 
 footer a  {
@@ -942,22 +948,6 @@ footer a  {
    font-size: 24px;
    color: black !important;
 }
-
-        /**** divider ***/
-
-        footer div {
-          padding: 10px 50px;
-          width: 5px;
-          margin: 0 auto;
-          margin-bottom: 24px;
-        }
-
-        .dotted-gradient {
-          background-image: linear-gradient(to right, black 40%, rgba(255, 255, 255, 0) 20%);
-          background-position: top;
-          background-size: 18px 8px;
-          background-repeat: repeat-x;
-        }
 
 
 
