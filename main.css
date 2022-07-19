@@ -118,7 +118,7 @@ table {
     border-radius: 4px;
     border: #F1F1F1 solid 1px;
     margin: 12px 0 0 0;
-    font-size: 18px;
+    font-size: 16px;
     color: #666;
    /* -webkit-box-shadow: 5px 5px 12px 4px rgba(0,0,0,0.02);
     box-shadow: 5px 5px 12px 4px rgba(0,0,0,0.02);*/
@@ -152,6 +152,7 @@ h1, h2, h3, h4, h5, h6 {
 .single {
     font-size: 40px;
     max-width: 800px;
+    margin-bottom: 0;
 
     animation: fadeInRight;
     animation-duration: 0.4s;
@@ -164,12 +165,14 @@ h2 {
 }
 
 h3 {
+    font-family: 'geomanistregular', Roboto;
     font-size: 24px;
     margin-left: 0;
     margin-top: 48px;
 }
 
 h4 {
+    font-family: 'geomanistregular', Roboto;
     font-size: 22px;
     margin-left: 0;
     color: #393939;
@@ -190,17 +193,18 @@ h5 {
 
 p {
     font-family: 'geomanistregular', Roboto;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.8;
     font-weight: 500;
 }
 
 .subtitle {
     font-family: 'geomanistregular', Roboto;
-    font-size: 16px;
+    font-size: 13px;
     color: #666;
     text-align: center;
     margin: 12px 0 40px 0;
+    line-height: 1.5;
 }
 
 ul {
@@ -211,30 +215,30 @@ ul {
 
 li {
     line-height: 1.8;
-    font-size: 18px;
+    font-size: 16px;
     color: black;
     list-style: none;
 }
 
 li:before {
     content: '\1F449';
-    font-size: 18px;
+    font-size: 16px;
     margin-right: 10px;
 }
 
 
     li.results:before {
         content: '\2705';
-        font-size: 18px;
+        font-size: 16px;
     }
 
         li.painpoints {
-        font-size: 18px;
+        font-size: 16px;
     }
 
         li.painpoints:before {
         content: '\274C';
-        font-size: 18px;
+        font-size: 16px;
     }
 
 
@@ -242,7 +246,7 @@ li:before {
 blockquote {
     color: #6E6E6E;
     font-family: 'geomanistregular', Roboto;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.8;
     text-align: left;
     max-width: 700px;
@@ -545,15 +549,19 @@ header {
        /* font-family: 'Segoe UI Bold';*/
         float: left;
         display: inline-block;
-        margin-left: 22%;
+        margin-left: 10%;
     }
 
     .menu-right {
         float: right;
         display: inline-block;
-        margin-right: 22%;
+        margin-right: 10%;
         font-size: 14px;
     }
+
+.nav-down {
+    animation: linear 1s;
+}
 
 .fab {
         margin-left: 8px;
@@ -585,7 +593,7 @@ header {
 
     #intro p {
         display: block;
-        font-size: 36px;
+        font-size: 1.6em;
         line-height: 2;
         text-align: left;
         color: black;
@@ -605,7 +613,7 @@ header {
 
         #intro .hello {
          font-family: 'mermaidbold';
-         font-size: 63px;
+         font-size: 3em;
          padding-bottom: 24px;
          line-height: 1.4;
 
@@ -758,6 +766,7 @@ header {
   display: table;
   width: 100%;
   height: 100%;
+  margin-top: 40px;
 }
     .col {
       display: table-cell;
@@ -796,6 +805,18 @@ header {
            color: #A9A9A9;
         }
 
+    .row {
+        display: table;
+        line-height: 1.2;
+        margin-bottom: 16px;
+    }
+        .row h3 {
+          margin-bottom: 0;
+        }
+        .row:hover {
+        text-decoration: underline;
+        }
+
 .portfolio {
     border-bottom: 2px solid #121212;
 }
@@ -804,7 +825,7 @@ header {
     font-family: 'geomanistregular', Roboto;
    /* margin-right: 12px;*/
     font-weight: normal;
-    font-size: 18px;
+    font-size: 16px;
     border-bottom: none !important;
     color: #666;
 }
@@ -814,9 +835,7 @@ header {
 
     #container-single {
         position: absolute;
-        top: 96px;
-        right: 15%;
-        left: 15%;
+        margin-top: 80px;
         font-family: 'geomanistregular', Roboto;
 
         animation: fadeIn;
@@ -836,8 +855,7 @@ header {
     */
 
         .excerpt {
-            font-size: 24px;
-            COLOR: #A9A9A9;
+            font-size: 18px;
             line-height: 1.6;
      }
 
@@ -1003,23 +1021,25 @@ footer a  {
 @media screen and (max-device-width:1280px), screen and (max-width:1280px) {
 
     #intro {
-        margin: 64px 8%;
+        margin: 8%;
     }
 
-    #container-portfolio ,
+   /* 
+
+   #container-portfolio ,
     #container-single {
         margin-right: 2%;
         margin-left: 2%;
         padding-bottom: 80px;
     }
-
+*/
 
     .menu-left {
-            margin-left: 18%;
+            margin-left: 10%;
         }
 
     .menu-right {
-            margin-right: 18%;
+            margin-right: 10%;
         }
 
 }
@@ -1038,7 +1058,7 @@ footer a  {
 @media screen and (max-device-width:768px), screen and (max-width:768px) {
 
     #intro {
-        margin: 64px 10%;
+        margin: 10%;
     }
     #container-portfolio,
     #container-single {
@@ -1148,7 +1168,7 @@ footer a  {
 
 
     .single {
-    font-size: 60px;
+    font-size: 48px;
     }
 
 
