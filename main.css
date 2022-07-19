@@ -107,6 +107,9 @@ img {
         animation: pulse;
         animation-duration: 0.4s;
 }
+    #container-single img {
+        width: 80%;
+}
 
 
 /*******************  TABLE  *******************/
@@ -153,6 +156,7 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 40px;
     max-width: 800px;
     margin-bottom: 0;
+    margin-top: 80px;
 
     animation: fadeInRight;
     animation-duration: 0.4s;
@@ -160,7 +164,7 @@ h1, h2, h3, h4, h5, h6 {
 
 h2 {
     font-size: 26px;
-    color: #000;
+    color: #393939;
     margin-top: 32px;
 }
 
@@ -195,7 +199,6 @@ p {
     font-family: 'geomanistregular', Roboto;
     font-size: 16px;
     line-height: 1.8;
-    font-weight: 500;
 }
 
 .subtitle {
@@ -216,7 +219,7 @@ ul {
 li {
     line-height: 1.8;
     font-size: 16px;
-    color: black;
+    color: #393939;
     list-style: none;
 }
 
@@ -257,9 +260,9 @@ blockquote {
 button {
     font-family: 'Segoe UI Bold', Roboto;
     font-size: 12px;
-    border-color: black;
+    border-color: #393939;
     background-color: white;
-    border: 2px solid black;
+    border: 2px solid #393939;
     border-radius: 2px;
     cursor: pointer;
     padding: 24px 40px;
@@ -278,8 +281,8 @@ button {
 
      button:activated,
      button:visited {
-        color: black;
-        border: 2px solid black;
+        color: #393939;
+        border: 2px solid #393939;
 }
 
 a {
@@ -353,7 +356,7 @@ a:active{
 
 .fas, .fab
 {
-        color: black;
+        color: #393939;
         animation: wobble; /* referring directly to the animation's @keyframe declaration */
         animation-duration: 1s; /* don't forget to set a duration! */
 }
@@ -467,13 +470,13 @@ a.portfolio1:hover:after {
 
 a.portfolio2:hover:after {
     content: "";
-    min-width: 650px;
-    min-height: 285px;
+    min-width: 250px;
+    min-height: 185px;
     position: absolute;
-    top: 0;
-    right:0;
+    bottom: 0;
+    left:0px;
     z-index: -1;
-    background-image: url("images/02mobileapp/cover.png");
+    background-image: url("images/bettina.jpeg");
 }
 
 a.portfolio3:hover:after {
@@ -484,41 +487,10 @@ a.portfolio3:hover:after {
     top: 0;
     right:0;
     z-index: -1;
-    background-image: url("images/02mobileapp/cover.png");
-}
-
-a.portfolio4:hover:after {
-    content: "";
-    min-width: 320px;
-    min-height: 285px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: -1;
     background-image: url("images/bettina.jpeg");
 }
 
-a.portfolio5:hover:after {
-    content: "";
-    min-width: 650px;
-    min-height: 285px;
-    position: absolute;
-    top: 0;
-    right:0;
-    z-index: -1;
-    background-image: url("images/reads.jpg");
-}
 
-a.portfolio6:hover:after {
-    content: "";
-    min-width: 650px;
-    min-height: 285px;
-    position: absolute;
-    top: 0;
-    right:0;
-    z-index: -1;
-    background-image: url("images/reads.jpg");
-}
 
 /******************************************************/
 /***********************  HEADER  ************************/
@@ -596,7 +568,7 @@ header {
         font-size: 1.6em;
         line-height: 2;
         text-align: left;
-        color: black;
+        color: #393939;
 
         animation: slideInUp;
         animation-duration: 0.3s;
@@ -622,7 +594,7 @@ header {
         }
 
         span.dynamic {
-            color: black;
+            color: #393939;
             /*color: #d6d1ff;*/
             /*color: #000;*/
         }
@@ -781,7 +753,7 @@ header {
          margin-bottom: 40px;
     }
        .col:hover h3 {
-        color: #6653FF;
+        color: #6653FF !important;
     }
        .col:hover p {
         color: #A9A9A9;
@@ -811,6 +783,8 @@ header {
         margin-bottom: 16px;
     }
         .row h3 {
+        font-family: 'mermaidbold';
+        color: #393939;
           margin-bottom: 0;
         }
         .row:hover {
@@ -824,20 +798,22 @@ header {
 .portfolio-description {
     font-family: 'geomanistregular', Roboto;
    /* margin-right: 12px;*/
-    font-weight: normal;
     font-size: 16px;
     border-bottom: none !important;
     color: #666;
 }
 
 
-/* PORTFOLIO SINGLE */
+/* PORTFOLIO */
 
-    #container-single {
-        position: absolute;
-        margin-top: 80px;
+ #latest-projects {
+    text-align:center;
+    margin: 8% 10% 36px 10%;
+}
+
+    #container-single,
+    #latest-projects {
         font-family: 'geomanistregular', Roboto;
-
         animation: fadeIn;
         animation-duration: 0.4s;
     }
@@ -848,11 +824,6 @@ header {
             animation-duration: 0.4s;
         }
 
-    /*    #container-single h3 {
-            animation: fadeInRight;
-            animation-duration: 0.4s;
-        }
-    */
 
         .excerpt {
             font-size: 18px;
@@ -863,6 +834,7 @@ header {
             animation: fadeInUp;
             animation-duration: 0.4s;
         }
+
 
         .portfolio-wrapper a {
             /*color: #6653FF; */
@@ -1058,8 +1030,25 @@ footer a  {
 @media screen and (max-device-width:768px), screen and (max-width:768px) {
 
     #intro {
-        margin: 10%;
+        margin: 17%;
     }
+
+    .row h3 {
+        font-size: 27px;
+        margin-bottom: 8px;
+    }
+
+
+    .project-excerpt {
+        font-size: 18px;
+    }
+
+
+    /*
+    .cd-intro {
+        display: none;
+    }
+    *
     #container-portfolio,
     #container-single {
         margin-right: 0%;
