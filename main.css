@@ -1048,6 +1048,18 @@ footer a  {
     }
 
 
+    #container-portfolio h1 {
+        font-size: 3em;
+    }
+
+    #container-portfolio p,
+    #container-portfolio h3 {
+        font-size: 2em;
+    }
+
+
+
+
 
     .project-excerpt {
         font-size: 18px;
