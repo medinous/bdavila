@@ -1068,7 +1068,7 @@ footer a  {
     }
 
     p {
-        font-size: 3em;
+        font-size: 3em !important;
         }
 
 
