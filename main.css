@@ -1049,12 +1049,12 @@ footer a  {
 
 
     #container-portfolio h1 {
-        font-size: 3em;
+        font-size: 3em !important;
     }
 
     #container-portfolio p,
     #container-portfolio h3 {
-        font-size: 2em;
+        font-size: 2em !important;
     }
 
 
