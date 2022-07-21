@@ -1033,29 +1033,36 @@ footer a  {
         margin: 17%;
     }
 
-         #intro h1, 
+         #intro h1 {
+        font-size: 3.2em !important;
+        }
+
          #intro p {
         font-size: 3em !important;
         }
 
 
-    .row p {
-        font-size: 2em;
-    }
-
-    .row h3 {
-        font-size: 3em;
-    }
 
 
-    #container-portfolio h1 {
-        font-size: 3em !important;
-    }
+        .row p {
+            font-size: 2em;
+        }
 
-    #container-portfolio p,
-    #container-portfolio h3 {
-        font-size: 2em !important;
-    }
+        .row h3 {
+            font-size: 3em;
+        }
+
+
+
+
+        #container-portfolio h1 {
+            font-size: 3em !important;
+        }
+
+        #container-portfolio p,
+        #container-portfolio h3 {
+            font-size: 2em !important;
+        }
 
 
 
