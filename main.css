@@ -1033,10 +1033,20 @@ footer a  {
         margin: 17%;
     }
 
-    .row h3 {
-        font-size: 27px;
-        margin-bottom: 8px;
+         #intro h1, 
+         #intro p {
+        font-size: 3em !important;
+        }
+
+
+    .row p {
+        font-size: 2em;
     }
+
+    .row h3 {
+        font-size: 3em;
+    }
+
 
 
     .project-excerpt {
@@ -1051,25 +1061,8 @@ footer a  {
         width: 100%;
     }
 
-    h1 {
-        font-size: ;
-    }
 
-    h2 {
-        font-size: ;
-    }
 
-    h3 {
-        font-size: ;
-    }
-
-    h4 {
-        font-size: ;
-    }
-
-    #intro p {
-        font-size: 3em !important;
-        }
 
 
 
