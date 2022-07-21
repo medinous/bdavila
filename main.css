@@ -98,14 +98,13 @@ img {
     /* max-width: 95%;*/
     width: 100%;
     object-fit: cover;
-
     -webkit-box-shadow: 5px 5px 16px 4px rgba(0,0,0,0.08);
     box-shadow: 5px 5px 16px 4px rgba(0,0,0,0.08);
 }
 
     .portfolio img:hover {
-        animation: pulse;
-        animation-duration: 0.4s;
+       /* animation: pulse;
+        animation-duration: 0.4s; */
 }
     #container-single img {
         width: 80%;
@@ -117,10 +116,9 @@ img {
 
 table {
     line-height: 1.5;
-   /* background: #F9F9F9;*/
+    background: #F9F9F9;
     border-radius: 4px;
     border: #F1F1F1 solid 1px;
-    margin: 12px 0 0 0;
     font-size: 16px;
     color: #666;
    /* -webkit-box-shadow: 5px 5px 12px 4px rgba(0,0,0,0.02);
@@ -139,6 +137,7 @@ table {
         table tr:last-child {
         border-bottom: none;
         color: #393939;
+        background: #FFF;
     }
 
 
@@ -147,22 +146,19 @@ table {
 
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'mermaidbold', Roboto;
-    font-size: 36px;
     line-height: 1.4;
 }
 
-.single {
-    font-size: 40px;
-    max-width: 800px;
-    margin-bottom: 0;
-    margin-top: 80px;
-
-    animation: fadeInRight;
-    animation-duration: 0.4s;
+h1 {
+    font-family: 'mermaidbold', Roboto;
+    font-weight: lighter;
+    font-size: 36px;
+    color: #393939;
+    margin-top: 32px;
 }
 
 h2 {
+    font-family: 'mermaidbold', Roboto;
     font-size: 26px;
     color: #393939;
     margin-top: 32px;
@@ -178,16 +174,16 @@ h3 {
 h4 {
     font-family: 'geomanistregular', Roboto;
     font-size: 22px;
-    margin-left: 0;
+    margin: 48px 0 24px 0;
     color: #393939;
     line-height: 1.8;
-    padding-top: 24px;
 }
     h4:first-of-type {
-    padding-top: 20px;
+    margin: 24px 0 24px 0;
 }
 
 h5 {
+    font-family: 'mermaidbold', Roboto;
     font-size: 12px;
     color: #B9B9B9;
     line-height: 1.8;
@@ -201,14 +197,26 @@ p {
     line-height: 1.8;
 }
 
+.single {
+    font-size: 40px;
+    max-width: 800px;
+    margin-bottom: 0;
+    margin-top: 80px;
+    animation: fadeInRight;
+    animation-duration: 0.4s;
+}
+
 .subtitle {
     font-family: 'geomanistregular', Roboto;
     font-size: 13px;
     color: #666;
     text-align: center;
-    margin: 12px 0 40px 0;
     line-height: 1.5;
 }
+    .subtitle:hover {
+    text-decoration: none;
+}
+
 
 ul {
     animation: fadeInUp;
@@ -374,43 +382,6 @@ a:active{
 
 
 
-
-a.bettina:hover:after {
-    content: "";
-    color: #FF9900;
-    width: 240px;
-    height: 240px;
-    position: absolute;
-    top: 0;
-    right: 200;
-    background: white;
-    z-index: -1;
-    background-image: url("images/bettina.jpeg");
-    /*url("https://media.giphy.com/media/YR2jtrB0e75263jBnS/giphy.gif");*/
-}
-
-a.munich:hover:after {
-    content: "";
-    min-width: 480px;
-    min-height: 270px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: -1;
-    background-image: url("https://media.giphy.com/media/3xz2BCe5jn2j4OM9ZS/giphy.gif");
-}
-
-a.brazil:hover:after {
-    content: "";
-    min-width: 250px;
-    min-height: 350px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: -1;
-    background-image: url("https://media.giphy.com/media/Dl2seYrwPvfjO/giphy.gif");
-}
-
 a.sleeps:hover:after {
     content: "";
     min-width: 345px;
@@ -445,30 +416,19 @@ a.reads:hover:after {
     background-image: url("images/reads.jpg");
 }
 
-a.dissertation:hover:after {
+
+a.thumb-1:hover:after {
     content: "";
-    min-width: 320px;
-    min-height: 285px;
+    min-width: 150px;
+    min-height: 150px;
     position: absolute;
     top: 0;
-    right: 0;
-    z-index: -1;
-    background-image: url("images/dissertation-thumb.png");
+    left: 0;
+    z-index: 1000;
+    background-image: url("images/thumb-1.png");
 }
 
-
-a.portfolio1:hover:after {
-    content: "";
-    min-width: 320px;
-    min-height: 285px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: -1;
-    background-image: url("images/bettina.jpeg");
-}
-
-a.portfolio2:hover:after {
+a.thumb-2:hover:after {
     content: "";
     min-width: 250px;
     min-height: 185px;
@@ -476,10 +436,10 @@ a.portfolio2:hover:after {
     bottom: 0;
     left:0px;
     z-index: -1;
-    background-image: url("images/bettina.jpeg");
+    background-image: url("images/thumb-2.png");
 }
 
-a.portfolio3:hover:after {
+a.thumb-3:hover:after {
     content: "";
     min-width: 650px;
     min-height: 285px;
@@ -508,17 +468,16 @@ header {
     padding-top: 16px;
     -webkit-box-shadow: 3px 3px 16px 4px rgba(0,0,0,0.04);
     box-shadow: 3px 3px 16px 4px rgba(0,0,0,0.04);
-
     animation: fadeInDown;
     animation-duration: 0.4s;
 }
 
 .nav-up {
     top: -60px;
+    animation: slideInUp 0.3s;
 }
 
     .menu-left {
-       /* font-family: 'Segoe UI Bold';*/
         float: left;
         display: inline-block;
         margin-left: 10%;
@@ -532,7 +491,7 @@ header {
     }
 
 .nav-down {
-    animation: linear 1s;
+    animation: slideInDown 0.3s;
 }
 
 .fab {
@@ -743,8 +702,8 @@ header {
     .col {
       display: table-cell;
       padding: 16px;
-      animation: pulse;
-      animation-duration: 0.5s;
+     /* animation: pulse;
+      animation-duration: 0.5s; */
     }
         .col img.latest {
          width: 210px;
@@ -758,38 +717,85 @@ header {
        .col:hover p {
         color: #A9A9A9;
     }
-       .col:hover img {
-        animation: pulse;
-        animation-duration: 0.4s;
-    }
+
 
     .col-container h3,
     .col-container p {
       margin: 0 auto;
       text-align: center;
-      margin-bottom: 24px;
       animation: fadeInUp;
       animation-duration: 0.3s;
     }
 
         .col-container p.subtitle {
           text-transform: uppercase;
-           color: #A9A9A9;
+           margin-bottom: 12px;
         }
 
     .row {
         display: table;
         line-height: 1.2;
-        margin-bottom: 16px;
+        margin-bottom: 12px;
+        border: #dfdcfc 1px solid;
+        border-radius: 10px;
+        background: #dfdcfc;
+        padding: 24px;
+        animation: fadeInUp;
+        animation-duration: 0.3s;
     }
-        .row h3 {
-        font-family: 'mermaidbold';
-        color: #393939;
-          margin-bottom: 0;
-        }
+
         .row:hover {
-        text-decoration: underline;
+             border: #6653FF 1px solid;     
+             background: none;
+
+            }
+
+    .row:nth-child(2) {
+                animation: fadeInUp;
+        animation-duration: 0.6s;
+            }
+
+        .row:nth-child(2):hover {
+            border: #6653FF 1px solid;  
+            background:  none;
+             }
+
+    .row:last-child {
+                animation: fadeInUp;
+        animation-duration: 0.9s;
+            }
+
+        .row:last-child:hover {
+            border: #6653FF 1px solid;  
+            background:  none;
+            }
+
+
+        .row h3 {
+            font-family: 'geomanistregular', Roboto;
+            font-weight: lighter;
+            color: #393939;
+            font-size: 1.2em;
+            margin-bottom: 0;
+            }
+
+            .row:hover h3 {
+                    color: #6653FF;
+                    text-decoration: none;
+                    }
+
+            .row:hover p {
+                    
+                    }
+
+   
+        .row .project-excerpt {
+        color: #393939;
+        font-size: 1.6em;
+        margin-bottom: 0;
         }
+
+  
 
 .portfolio {
     border-bottom: 2px solid #121212;
@@ -809,6 +815,8 @@ header {
  #latest-projects {
     text-align:center;
     margin: 8% 10% 36px 10%;
+    animation: fadeInUp;
+    animation-duration: 0.3s;
 }
 
     #container-single,
@@ -817,7 +825,6 @@ header {
         animation: fadeIn;
         animation-duration: 0.4s;
     }
-
 
         #container-single h1 {
             animation: fadeInUp;
@@ -888,7 +895,7 @@ header {
 
 .close a {
     font-size: 21px;
-    background: none;
+    color: white;
  }
 
 
@@ -1043,149 +1050,9 @@ footer a  {
         font-size: 18px;
     }
 
-
-    /*
-    .cd-intro {
-        display: none;
-    }
-    *
-    #container-portfolio,
-    #container-single {
-        margin-right: 0%;
-        margin-left: 0%;
-    }
-
-    #intro .hello {
-        font-size: 72px;
-    }
-
-    #intro p {
-        font-size: 50px;
-    }
-
-    .portfolio1,
-    .portfolio2,
-    .portfolio3,
-    .portfolio4,
-    .portfolio5,
-    .portfolio6 {
-        font-size: 64px;
-    }
-
-    .portfolio-description {
-        display: none;
-    }
-
-    a.bettina:hover:after,
-    a.rachel:hover:after {
-    right: 0;
-    }
-
-
-    .menu-left {
-            margin-left: 15%;
-        }
-
-    .menu-right {
-            margin-right: 15%;
-        }
-
-
- }
-
-@media screen and (max-device-width:500px), screen and (max-width:500px) {
-
-
- header {
-    height: 88px;
-    padding-top: 20px;
- }
-
-    .nav-up {
-    top: -88px;
-}
-
-.menu-left {
-    margin-left: 15%;
-    font-size: 48px;
- }
-
-        #sr  {
-    display: none;
- }
-
-.menu-right {
-    margin-right: 15%;
-    font-size: 48px;
-    }
-
-    #email  {
-    display: none;
- }
-
-    .portfolio-wrapper {
-        margin-top: 80px;
-    }
-
-     #container-single p {
-        font-size: 48px;
-    }
-
-    .grid p {
-        font-size: 14px;
-    }
-
-
-    #container-single h3 {
-        font-size: 56px;
-    }
-
-
     .col {
-      display: block;
-      margin-bottom: 88px;
+        display: table;
     }
 
-        .col h3 {
-          margin: 48px 0;
-        }
-
-            .col img.latest {
-             width: 400px;
-             height: 400px;
-            }
-
-
-    .single {
-    font-size: 48px;
-    }
-
-
-      .fa, .fas {
-    font-size: 48px;
- }
-
-    .button {
-        font-size: 50px;
-}
-    ul {
-        padding-left: 0;
-}
-    li,
-    li.results,
-    li.painpoints {
-        font-size: 40px;
-}
-    h4 {
-        font-size: 40px;
-}
-    p {
-        font-size: 48px;
-}
-
-
-footer a  {
-    font-size: 50px;
-  }
 
 }
