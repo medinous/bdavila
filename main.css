@@ -838,6 +838,7 @@ header {
      }
 
         #container-single p {
+            font-size: 1em !important;
             animation: fadeInUp;
             animation-duration: 0.4s;
         }
