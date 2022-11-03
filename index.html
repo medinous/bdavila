@@ -1,77 +1,490 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
-    <head>
+<head>
 
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-EZKYJK9Q87"></script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EZKYJK9Q87"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-          gtag('config', 'G-EZKYJK9Q87');
-        </script>
+    gtag('config', 'G-EZKYJK9Q87');
+  </script>
 
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Bettina D'ávila - Lead Product Designer</title>
-        <meta name="description" content="Bettina is a Product Designer, problem solver and beer lover. Currently based in Portugal. Check out her latest projects and drop her a message at hello@bdavila.me.">
-        <meta name="keywords" content="Product Design Manager, Lead Product Designer, Senior Product Designer, Product Designer, UX Designer, Product Design, problem solver, Bettina"/>
-        <meta name="subject" content="Product Design portfolio.">
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Bettina D'ávila - Senior Product Designer</title>
+  <meta name="description" content="Bettina is a Product Designer, problem solver and beer lover. Currently based in Portugal. Check out her latest projects and drop her a message at hello@bdavila.me.">
+  <meta name="keywords" content="Product Design Manager, Lead Product Designer, Senior Product Designer, Product Designer, UX Designer, Product Design, problem solver, Bettina"/>
+  <meta name="subject" content="Product Design portfolio.">
+
+  <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=https://fonts.googleapis.com/css?family=Inconsolata:400,500,600,700|Raleway:400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+  <!-- Template Reset CSS File -->
+<!--  <link href="assets/css/reset.css" rel="stylesheet"> -->
+
+<!--   <link rel="stylesheet" href="main.css"> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+  <script src="assets/js/modernizr.js"></script> <!-- Modernizr -->
+  <script src="assets/js/head.built.js"></script>
+
+  <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript">
+
+      // Hide Header on on scroll down
+      var didScroll;
+      var lastScrollTop = 0;
+      var delta = 15;
+      var navbarHeight = $('header').outerHeight();
+
+      $(window).scroll(function(event){
+          didScroll = true;
+      });
+
+      setInterval(function() {
+          if (didScroll) {
+              hasScrolled();
+              didScroll = false;
+          }
+      }, 250);
+
+      function hasScrolled() {
+          var st = $(this).scrollTop();
+
+          // Make sure they scroll more than delta
+          if(Math.abs(lastScrollTop - st) <= delta)
+              return;
+
+          // If they scrolled down and are past the navbar, add class .nav-up.
+          // This is necessary so you never see what is "behind" the navbar.
+          if (st > lastScrollTop && st > navbarHeight){
+              // Scroll Down
+              $('header').removeClass('nav-up').addClass('nav-down');
+          } else {
+              // Scroll Up
+              if(st + $(window).height() < $(document).height()) {
+                  $('header').removeClass('nav-down').addClass('nav-up');
+              }
+          }
+
+          lastScrollTop = st;
+}
+
+  </script>
+
+</head>
+
+<body>
+
+  <!-- ======= Header on scroll ======= -->
+      <!--  <header>
+            <a href="index.html">
+              <div class="menu">
+                <a href="#projects">Projects</a>
+                <a href="#about">About</a>
+                <a href="#publications">Publications</a>
+                <a href="cv/Bettina-2022.pdf" target="_blank">Download CV<span class="bi-arrow-down-circle" style="margin-left: 4px;"></span></a>
+              </div>
+            </a>
+        </header>-->
 
 
-        <meta property="og:image" content="images/bettina.jpeg">
-        <meta name="og:description" content="Bettina is a Product Designer, drummer and beer lover. Currently based in Portugal."/>
+  <!-- ======= Navbar ======= -->
+  <div class="collapse navbar-collapse custom-navmenu" id="main-navbar">
+    <div class="container py-2 py-md-5">
+      <div class="row align-items-start">
+        <!--<div class="col-md-2">
+          <ul class="custom-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li class="active"><a href="works.html">Works</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>-->
+        <div class="col-md-4 d-none d-md-block">
+          <h3>IxDF member</h3>
+          <p>
+            I'm a <a href="https://www.interaction-design.org/bettina-martins-davila/certificate/membership/mc_RsJQlm4FJ?r=bettina-martins-davila" target="_blank">certified member</a> of the Design Interaction Foundation, the biggest online design school globally.
+          <!--  Design is the conscious and intuitive effort to impose meaningful order. Design is the ability to recognize, isolate, define and solve problems.
+          </br>&mdash; Victor Papanek-->
+          </p>
+        </div>
+
+        <div class="col-md-4 d-none d-md-block">
+          <h3>Curriculum</h3>
+          <p>Check out my career path from the past 5 years. See my Linkedin profile to know more.<br>
+          <button style="background: none; border-color: white; margin-top: 1rem"><a href="cv/Bettina-2022.pdf" target="_blank">Download CV</a></button>
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!--<nav class="navbar navbar-light custom-navbar">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+          <img id="logo" class="img-fluid" src="assets/img/logo.png">
+      </a>
+      <a href="#" class="burger" data-bs-toggle="collapse" data-bs-target="#main-navbar">
+        <span></span>
+      </a>
+    </div>
+  </nav>-->
+
+  <nav class="navbar navbar-light custom-navbar">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+          <img id="logo" class="img-fluid" src="assets/img/logo-hover.png">
+      </a>
+      <div class="filters">
+        <!--<a href="https://medium.com/@medinous" target="_blank"><span class="bi bi-medium"></span></a>
+        <a href="https://www.linkedin.com/in/bettina-martins/" target="_blank"><span class="bi bi-linkedin"></span></a>-->
+        <a href="cv/Bettina-2022.pdf" target="_blank">Resumé/CV    <span class="bi-file-earmark-arrow-down"></span></a>
+        <!--<a href="#home" class="active">Home</a>
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#publications">Publications</a>-->
+      </div>
 
 
-        <link rel="stylesheet" href="main.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    </div>
+  </nav>
 
-      <!-- favicon -->
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
-        <link rel="manifest" href="/site.webmanifest">
+  <main id="main">
 
-    	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
-	    <link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
-        <script src="js/modernizr.js"></script> <!-- Modernizr -->
-    </head>
+    <!-- INTRO -->
+    <div class="container">
+        <section class="cd-intro" style="animation: fadeIn; animation-duration: 1s;">
+                    <p class="cd-headline letters type hello">
+                        <span>Hey! I'm Bettina &#128075;<br> I'm a</span>
+                        <span class="cd-words-wrapper waiting dynamic">
+                            <b class="is-visible">product designer</b>
+                            <b>problem solver</b>
+                            <b>strategic thinker</b>
+                        </span>
+                    </p>
+         </section> <!-- cd-intro -->
+         <p style="font-size: 1.3rem; animation: fadeIn; animation-duration: 1.2s;">
+            I'm currently a <a class="highlight" href="https://mozza.io/" target="_blank">Senior Product Designer at Mozza</a>, a crew of experienced product strategists and designers. I have 9+ years of experience in different areas such as fintech, mobility, e-commerce and e-health. Combining this with a personal background in music and cultural project management, I enjoy exploring a range of opportunities for cultural and social empowerment.
+         </p>
+     </div>
 
-    <body>
+    <!-- ======= Works Section ======= -->
+    <section id="projects" class="section site-portfolio">
+      <div class="container">
+        <div class="row mb-5 align-items-center">
+          <div class="col-md-12 col-lg-6 mb-lg-0" data-aos="fade-up">
+            <h4>Check out my latest projects</h4>
+            <!--<p class="mb-0">Some projects from the past year.</p>-->
+          </div>
+          <!--<div class="col-md-12 col-lg-6 text-start text-lg-end" data-aos="fade-up" data-aos-delay="100">
+            <div id="filters" class="filters">
+              <a href="#" data-filter="*" class="active">All</a>
+              <a href="#" data-filter=".web">Web</a>
+              <a href="#" data-filter=".design">Design</a>
+              <a href="#" data-filter=".branding">Branding</a>
+              <a href="#" data-filter=".photography">Photography</a>
+            </div>
+          </div>-->
+        </div>
 
-   <div id="container">
+        <div id="portfolio-grid" class="row no-gutter" data-aos="fade-up" data-aos-delay="200">
 
-            <!-- INTRO -->
+          <div class="item web col-sm-6 col-md-4 col-lg-4 mb-4">
+            <span class="item-wrap fancybox">
+              <div class="work-info">
+                <h3>Onboarding redesign of a monetization platform for content creators</h3>
+                <span>SOON</span>
+              </div>
+              <img class="img-fluid" src="assets/img/thumbs/snipfeed.jpg">
+            </span>
+          </div>
+          <div class="item web col-sm-6 col-md-4 col-lg-4 mb-4">
+            <span class="item-wrap fancybox">
+              <div class="work-info">
+                <h3>Task Manager module for healthcare practiotioners</h3>
+                <span>SOON</span>
+              </div>
+              <img class="img-fluid" src="assets/img/thumbs/01.jpg">
+            </span>
+          </div>
+        <!--  <div class="item photography col-sm-6 col-md-4 col-lg-4 mb-4">
+            <a href="work-02.html" class="item-wrap fancybox">
+            <span class="item-wrap fancybox">
+              <div class="work-info">
+                <h3>Dashboard Redesign</h3>
+                <span>AB Tasty - B2B SaaS Web</span>
+              </div>
+              <img class="img-fluid" src="assets/img/thumbs/02.jpg">
+            </a>
+            </span>
+          </div>-->
+          <div class="item branding col-sm-6 col-md-4 col-lg-4 mb-4">
+            <a href="work-03.html" class="item-wrap fancybox">
+            <span class="item-wrap fancybox">
+              <div class="work-info">
+                <h3>Creation of a B2B mobile app for AB Tasty clients</h3>
+              <span>AB Tasty - B2B SaaS Mobile</span>
+              </div>
+              <img class="img-fluid" src="assets/img/thumbs/03.jpg">
+            </a>
+            </span>
+          </div>
+          <div class="item branding col-sm-6 col-md-4 col-lg-4 mb-4">
+            <a href="work-04.html" class="item-wrap fancybox">
+              <div class="work-info">
+                <h3>Redesign of "reset password" flow in AB Tasty platform</h3>
+                <span>AB Tasty</span>
+              </div>
+              <img class="img-fluid" src="assets/img/thumbs/04.jpg">
+            </a>
+          </div>
+          <div class="item branding col-sm-6 col-md-4 col-lg-4 mb-4">
+            <a href="work-05.html" class="item-wrap fancybox">
+              <div class="work-info">
+                <h3>Icon animation for successful action</h3>
+                <span>Lendstar</span>
+              </div>
+              <img class="img-fluid" src="assets/img/thumbs/05.jpg">
+            </a>
+          </div>
 
-            <div id="intro">
-                <section class="cd-intro">
-                        <p class="cd-headline letters type hello">
-                            <span>Bettina is a</span>
-                            <span class="cd-words-wrapper waiting dynamic">
-                                <b class="is-visible">product designer</b>
-                                <b>problem solver</b>
-                                <b>beer lover &#127867;</b>
-                                <b>drum player &#x1f941;</b>
-                                <b>strategic thinker</b>
-                            </span>
-                        </p>
-	           </section> <!-- cd-intro -->
+        </div>
+      </div>
+    </section><!-- End  Works Section -->
 
+    <!-- ======= ABOUT ======= -->
+    <section id="about" class="section" style="background-color: #fff;">
+      <div class="container">
+        <div class="row mb-5 align-items-center">
+          <div class="col-md-12 col-lg-6 mb-lg-0" data-aos="fade-up">
+            <h2>About me</h2>
+          </div>
+        </div>
+        <div class="row no-gutter" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="col-sm-12 col-md-6 col-lg-6 mb-4" data-aos="fade-up">
+              <p style="font-size: 1.2rem; line-height: 1.7; animation: fadeIn; animation-duration: 1.2s;">
+                I have been working with UX and Product Design for the past 9 years in Brazil, London, Munich, Paris and Lisbon. Here are some of the things I can help you with. Drop me a message at <a href="mailto:hello@bdavila.me">hello@bdavila.me</a> to discuss a collaboration together!
+
+                <ul style="font-size: 1.2rem; line-height: 1.7; padding-left:0;">
+                  <li style="list-style: none; margin-bottom: 12px;">&#x2705;	Build end-to-end UX and UI solutions for digital products;</li>
+                  <li style="list-style: none; margin-bottom: 12px;">&#x2705; Methodology 101: improve your problem framing and ideation phases, refine UX methodologies and build top performing frameworks leveraging your teams</li>
+                  <li style="list-style: none; margin-bottom: 12px;">&#x2705; The UX toolbox: design thinking, sprint methodology, how to apply UX in an Agile environment</li>
+                  <li style="list-style: none; margin-bottom: 12px;">&#x2705; Build a UX-first mindset: tips and tricks to nurture a strong UX culture within your Product team & company</li>
+                </ul>
+              </p>
+
+<!--
+<p style="font-size: 1.2rem; animation: fadeIn; animation-duration: 1.2s;">
+  I undergratuated in Graphic Design and I understood my role as designer while participating in cultural movements on African-Brazilian music during this same period. I fell in love with design because I saw the potential to change things for the better through conscious and responsible management of the environment, the tools and the social and cultural interactions.
+</p>
+<p style="font-size: 1.2rem; animation: fadeIn; animation-duration: 1.2s;">
+  I undergratuated in Graphic Design and I understood my role as designer while participating in cultural movements on African-Brazilian music during this same period. I fell in love with design because I saw the potential to change things for the better through conscious and responsible management of the environment, the tools and the social and cultural interactions.
+</p>
+<p style="font-size: 1.2rem; animation: fadeIn; animation-duration: 1.2s;">
+  To me, design is the ability to recognize, define and solve problems for the real world.
+  If you're curious about how I work, <a href="https://www.figma.com/proto/XmF4VibGhweD45IwKhbyPh/%F0%9F%8C%BF-Service-Design-as-a-competitive-advantage?page-id=136%3A1141&node-id=140%3A1142&starting-point-node-id=140%3A1142" target="_blank">here's a presentation I gave on Service Design as a business advantage</a>, where I talk about my design process and how I navigate this world as a female Latin-American designer.
+</p>-->
+
+            </div>
+            <!--<div class="col-sm-0 col-md-2 col-lg-1 mb-4" data-aos="fade-up"></div>-->
+            <div class="col-sm-12 col-md-6 col-lg-6 mb-4" data-aos="fade-up" style="text-align: center;">
+                <img class="img-fluid" src="assets/img/profile-pic.png" style="border-radius: 0px 80px; height: 400px; width: auto;">
+            </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= Publications ======= -->
+    <section id="publications" class="section">
+      <div class="container">
+        <div class="row mb-5 align-items-center">
+          <div class="col-md-12 col-lg-6 mb-lg-0" data-aos="fade-up">
+            <h2>Publications</h2>
+          </div>
+        </div>
+
+        <div class="row no-gutter publication" data-aos="fade-up" data-aos-delay="200">
+            <div class="col-sm-12 col-md-12 col-lg-4 mb-4" data-aos="fade-up">
+              <img class="img-fluid" src="assets/img/img_article_01.png">
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-8 mb-4" data-aos="fade-up">
+              <h4>Becoming manager of my own peers</h4>
+              <p class="article-subtitle">Medium article | Doctolib | May 2022</p>
                 <p>
-                   She's currently a <a class="highlight" href="https://www.doctolib.fr" target="_blank">Product Design Manager at Doctolib</a>, the leading e-health service in Europe. Bettina has 8+ years of experience in different areas such as fintech &#128184, mobility &#128664 and e-commerce &#128722. She <a class="highlight" href="https://medium.com/@medinous" target="_blank">writes about design on Medium</a> and sometimes <a class="highlight" href="https://www.figma.com/proto/XmF4VibGhweD45IwKhbyPh/%F0%9F%8C%BF-Service-Design-as-a-competitive-advantage?node-id=140%3A1142&scaling=scale-down&page-id=136%3A1141&starting-point-node-id=140%3A1142" target="_blank">speaks about it</a> too. Check out her <a href="https://www.linkedin.com/in/bettina-martins/" target="_blank">Linkedin</a> or drop her a message at <a class="highlight" href="mailto:hello@bdavila.me">hello@bdavila.me</a>.
-                 </p>
+                  I started off my journey at Doctolib in July 2021 as a Senior Product Designer. After 3 months in the job, my manager asked me if I was interested in taking over a design lead position that was open in the team. To be honest, I never really wanted to become a team manager because management is a completely different job. In my previous job I was offered a management position but I refused the offer, not because I did not want to follow the management path, but simply because I did not trust in my own capacity to manage a team. This time around was nonetheless different.</p>
+                <a class="readmore" href="https://medium.com/doctolib/becoming-manager-of-my-own-peers-9210b4723195" target="_blank">Read article</a>
+            </div>
+        </div>
 
-                 <br/><br/><br/>
+        <div class="row no-gutter publication" data-aos="fade-up" data-aos-delay="200">
+            <div class="col-sm-12 col-md-12 col-lg-4 mb-4" data-aos="fade-up">
+              <img class="img-fluid" src="assets/img/img_article_02.jpeg">
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-8 mb-4" data-aos="fade-up">
+              <h4>What 21st-century design looks like</h4>
+              <p class="article-subtitle">Medium article | UX Collective | April 2021</p>
+                <p>
+                  Back in October 2020 I had the pleasure to attend Don Norman’s Master Class transmitted by Interaction Design Foundation in which he presented the challenges to the discipline of Design and to all designers in the 21st century. I want to expose in this article the main takeaways I got from Don Norman’s ideas but not without patching them with other references, which I believe it will bring more context and texture to this discussion.
+                </p>
+                <a class="readmore" href="https://medium.com/user-experience-design-1/what-21st-century-design-looks-like-c08ffe98e428" target="_blank">Read article</a>
+            </div>
+        </div>
 
+        <div class="row no-gutter publication" data-aos="fade-up" data-aos-delay="200">
+            <div class="col-sm-12 col-md-12 col-lg-4 mb-4" data-aos="fade-up">
+              <img class="img-fluid" src="assets/img/img_article_04.jpeg">
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-8 mb-4" data-aos="fade-up">
+              <h4>Service Design: CX and UX as a competitive business advantage</h4>
+              <p class="article-subtitle">Medium article | AB Tasty | June 2020</p>
+                <p>
+                  Many organisations today, from startups to governments, are investing in customer experience (CX) and user experience (UX) for their success, bringing more human-centred design capabilities to increase the business relevance of their projects for clients. And this is happening thanks to a growing number of organisations struggling to meet customers’ expectations and delivering a consistent quality of service across different channels.                </p>
+                <a class="readmore" href="https://medium.com/the-ab-tasty-tech-blog/service-design-cx-and-ux-as-a-competitive-business-advantage-8f44eac2285" target="_blank">Read article</a>
+            </div>
+        </div>
 
-    </div> <!-- #container -->
+        <div class="row no-gutter publication" data-aos="fade-up" data-aos-delay="200">
+            <div class="col-sm-12 col-md-12 col-lg-4 mb-4" data-aos="fade-up">
+              <img class="img-fluid" src="assets/img/img_article_03.jpeg">
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-8 mb-4" data-aos="fade-up">
+              <h4>Reframing the problem</h4>
+              <p class="article-subtitle">Medium article | NYC Design | January 2019</p>
+                <p>
+                  Our problem statement will define the direction we take on the solution space. In this case, no matter how dedicated and efficient is your process in developing the new solution, the results will never be satisfactory if we are addressing the wrong problem. I know this scope is related to design field — more specifically to the design thinking process — but it is not at all restricted to designers and related roles. In fact, design thinking is a methodology utilized by many great innovators in literature, art, music, science, engineering, and business, of course.
+                </p>
+                <a class="readmore" href="https://medium.com/nyc-design/reframing-the-problem-200f6c966dfc" target="_blank">Read article</a>
+            </div>
+        </div>
 
+        <div class="row no-gutter publication" data-aos="fade-up" data-aos-delay="200">
+            <div class="col-sm-12 col-md-12 col-lg-4 mb-4" data-aos="fade-up" style="text-align: center">
+              <img class="img-fluid" src="assets/img/dissertation.jpg">
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-8 mb-4" data-aos="fade-up">
+              <h4>Women in Resistance: MULHERIL and Portal Catarinas as alternative media for women's empowerment in Florianópolis</h4>
+              <p class="article-subtitle">Dissertation | MA New Media and Society from University of Leicester, UK | April 2018</p>
+                <p>
+                  This master's dissertation shows how the two media groups provide conditions for women’s empowerment as alternative media in the city of Florianópolis, Brazil. The lack of female representation in politics and the symbolic and physical violence women suffer on a daily-basis in the country are linked to the gender gap in the media and Information and Communication Technologies (ICTs). Consequently, structural inequalities in the online world are mapped onto to offline relations of power. The literature chosen draws on feminist theories and media studies to illustrate the presence of women on the Internet and to measure how MULHERIL and Portal Catarinas collaborate with women’s empowerment in their local context.
+                </p>
+                <a class="readmore" href="dissertation/Women_in_Resistance_MULHERIL_and_Portal.pdf" target="_blank">Read full dissertation</a>
+            </div>
+        </div>
 
-<script src="js/jquery-2.1.1.js"></script>
-<script src="js/main.js"></script> <!-- Resource jQuery -->
+      </div>
+    </section>
 
-    </body>
+    <!-- ======= Testimonials Section ======= -->
+    <section id="reviews" class="section pt-0">
+      <div class="container">
+
+        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-wrap">
+                <div class="testimonial">
+                  <img src="assets/img/dom.jpeg" alt="Image" class="img-fluid">
+                  <blockquote>
+                    <p>Bettina's contributions to designing our suite of products were top-notch in usability and humility towards a user-centric approach. She oversaw a team of product designers in a very complex field that aimed to improve the daily lives of medical care teams. Her team benefited from her ability to grasp high complex circumstances and offer simplification through elegant design solutions. I would love to work with Bettina again.</p>
+                  </blockquote>
+                  <p>&mdash; Dom Dressler</br>
+                  <span style="color:#777;">Design Director at Doctolib</span></p>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-wrap">
+                <div class="testimonial">
+                  <img src="assets/img/julie.jpeg" alt="Image" class="img-fluid">
+                  <blockquote>
+                    <p>Bettina is an amazing Product Designer! Not only she's super joyful and friendly, but she’s extremely talented. I’ve been impressed by how fast she managed to understand the needs we had, despite the complexity of the projects of our feature team. Also, she brought amazing organizational ideas to improve the collaboration between Product Designer / Product Manager / Developers. In a nutshell, I’ve loved working with Bettina!</p>
+                  </blockquote>
+                  <p>&mdash; Julie Massard</br>
+                  <span style="color:#777;">Product Manager at Doctolib</span></p>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-wrap">
+                <div class="testimonial">
+                  <img src="assets/img/steven.jpeg" alt="Image" class="img-fluid">
+                  <blockquote>
+                    <!--<p>Es un gusto trabajar con Bettina, excelente persona que esta siempre dispuesta a ayudar con el objetivo del grupo y lidera de manera correcta para que podamos darle al cliente la interfaz adecuada para que logre su objetivo.</p>-->
+                    <p>It is a pleasure to work with Bettina, she's an excellent person who is always willing to help while respecting the team's work. She leads the project correctly so we can give the client the appropriate interface to achieve their objective.</p>
+                  </blockquote>
+                  <p>&mdash; Jhon Steven Neira</br>
+                  <span style="color:#777;">Big Data Engineer at AB Tasty</span></p>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section><!-- End Testimonials Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+          <p class="mb-1">Talk to me ❤</p>
+          <div class="credits">
+            <a class="highlight" href="mailto:hello@bdavila.me">hello@bdavila.me</a>
+          </div>
+        </div>
+        <div class="col-sm-6 social text-md-end">
+          <a href="https://medium.com/@medinous" target="_blank"><span class="bi bi-medium"></span></a>
+          <a href="https://www.linkedin.com/in/bettina-martins/" target="_blank"><span class="bi bi-linkedin"></span></a>
+          <!--<a href="cv/Bettina-2022.pdf" target="_blank"><span class="bi-file-earmark-arrow-down-fill"></span></a>-->
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/jquery-2.1.1.js"></script>
+  <script src="assets/js/main.js"></script>
+
+</body>
 
 </html>
